@@ -18,6 +18,7 @@ export default function ContactPage() {
             width={200}
             height={60}
             className="h-12 w-auto"
+            priority
           />
         </Link>
         <nav className="flex gap-6 md:gap-8">
