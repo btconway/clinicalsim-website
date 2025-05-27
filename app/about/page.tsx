@@ -142,7 +142,7 @@ export default function AboutPage() {
                 <p className="text-lg text-gray-700 mb-8">
                   Join our waitlist to be among the first to experience the future of medical communication training.
                 </p>
-                <Link href="/contact">
+                <Link href="https://form.typeform.com/to/Zve4CKk2" target="_blank" rel="noopener noreferrer">
                   <Button
                     variant="outline"
                     size="lg"

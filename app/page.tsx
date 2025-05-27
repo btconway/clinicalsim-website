@@ -79,7 +79,7 @@ export default function HomePage() {
             </div>
 
             <div className="animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-700">
-              <Link href="/contact">
+              <Link href="https://form.typeform.com/to/Zve4CKk2" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="outline"
                   size="lg"
