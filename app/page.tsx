@@ -41,18 +41,18 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
       {/* Header */}
-      <header className="flex items-center justify-between px-6 py-6 md:px-12 bg-white/80 backdrop-blur-sm border-b border-white/20">
+      <header className="flex items-center justify-between px-4 py-4 md:px-12 md:py-6 bg-white/80 backdrop-blur-sm border-b border-white/20">
         <Link href="/" className="flex items-center">
           <Image
             src="/ClinicalSim.ai-logo.webp"
             alt="ClinicalSim.ai"
             width={200}
             height={60}
-            className="h-12 w-auto"
+            className="h-8 md:h-12 w-auto"
             priority
           />
         </Link>
-        <nav className="flex gap-6 md:gap-8">
+        <nav className="flex gap-4 md:gap-8">
           <Link href="/about" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
             About
           </Link>
@@ -67,7 +67,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-indigo-600/10"></div>
         <section className="relative flex flex-col items-center justify-center px-6 py-12 md:py-16 text-center">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-light shimmer leading-tight mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            <h1 className="text-2xl md:text-5xl lg:text-6xl font-light shimmer leading-tight mb-8 md:mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
               Pioneering the future of medical communication simulation with research-driven AI solutions.
             </h1>
 
