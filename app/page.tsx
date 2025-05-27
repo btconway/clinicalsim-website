@@ -64,13 +64,13 @@ export default function HomePage() {
       {/* Hero Section */}
       <main className="relative">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-indigo-600/10"></div>
-        <section className="relative flex flex-col items-center justify-center px-6 py-16 md:py-24 text-center min-h-[80vh]">
+        <section className="relative flex flex-col items-center justify-center px-6 py-12 md:py-16 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-light bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent leading-tight mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
               Pioneering the future of medical communication simulation with research-driven AI solutions.
             </h1>
 
-            <div className="mb-12 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-300">
+            <div className="mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-300">
               <p className="text-lg md:text-xl text-blue-600 font-normal mb-6">
                 We are currently accepting applications to trial our AI-Powered Communication Simulation Platform.
               </p>
@@ -92,9 +92,9 @@ export default function HomePage() {
         </section>
 
         {/* Features Section */}
-        <section className="relative px-6 py-16 md:py-24">
+        <section className="relative px-6 py-8 md:py-12">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
                 Advanced Medical Communication Training
               </h2>
