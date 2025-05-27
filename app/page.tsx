@@ -66,24 +66,23 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-indigo-600/10"></div>
         <section className="relative flex flex-col items-center justify-center px-6 py-16 md:py-24 text-center min-h-[80vh]">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent leading-tight mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-light bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent leading-tight mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
               Pioneering the future of medical communication simulation with research-driven AI solutions.
             </h1>
 
-            <div className="space-y-4 mb-12 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-300">
-              <p className="text-lg md:text-xl text-blue-600 font-medium">We are currently accepting applications</p>
-              <p className="text-lg md:text-xl text-blue-600 font-medium">to trial our AI-Powered Communication</p>
-              <p className="text-lg md:text-xl text-blue-600 font-medium">Simulation Platform.</p>
+            <div className="mb-12 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-300">
+              <p className="text-lg md:text-xl text-blue-600 font-normal mb-6">
+                We are currently accepting applications to trial our AI-Powered Communication Simulation Platform.
+              </p>
+              <p className="text-lg md:text-xl text-blue-600 font-normal">Join the waitlist below.</p>
             </div>
-
-            <p className="text-lg md:text-xl text-blue-600 font-medium mb-12 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500">Join the waitlist below.</p>
 
             <div className="animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-700">
               <Link href="/contact">
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white hover:scale-105 px-8 py-3 text-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white hover:scale-105 px-8 py-3 text-lg font-normal transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
                   Join the Waitlist
                 </Button>
@@ -96,7 +95,7 @@ export default function HomePage() {
         <section className="relative px-6 py-16 md:py-24">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
                 Advanced Medical Communication Training
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -116,7 +115,7 @@ export default function HomePage() {
                       <div className="w-12 h-12 mx-auto mb-4 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                         <Icon className="w-6 h-6 text-white" />
                       </div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                      <h3 className="text-xl font-medium text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
                         {feature.title}
                       </h3>
                       <p className="text-gray-600 leading-relaxed">
