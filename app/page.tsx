@@ -66,7 +66,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-indigo-600/10"></div>
         <section className="relative flex flex-col items-center justify-center px-6 py-12 md:py-16 text-center">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-light bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent leading-tight mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-light shimmer leading-tight mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
               Pioneering the future of medical communication simulation with research-driven AI solutions.
             </h1>
 

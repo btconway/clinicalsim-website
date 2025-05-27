@@ -6,6 +6,41 @@
   .text-balance {
     text-wrap: balance;
   }
+  
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      #111827 0%,
+      #1e40af 25%,
+      #3730a3 50%,
+      #60a5fa 75%,
+      #3730a3 100%
+    );
+    background-size: 400% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 6s ease-in-out infinite;
+  }
+  
+  @keyframes shimmer {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .shimmer {
+      animation: none;
+      background: linear-gradient(to right, #111827, #1e40af, #3730a3);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 }
 
 @layer base {
