@@ -44,7 +44,7 @@ export default function HomePage() {
       <header className="flex items-center justify-between px-6 py-6 md:px-12 bg-white/80 backdrop-blur-sm border-b border-white/20">
         <Link href="/" className="flex items-center">
           <Image
-            src="/ClinicalSim.ai-logo.png"
+            src="/ClinicalSim.ai-logo.webp"
             alt="ClinicalSim.ai"
             width={200}
             height={60}

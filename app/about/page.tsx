@@ -8,7 +8,7 @@ export default function AboutPage() {
       <header className="flex items-center justify-between px-6 py-6 md:px-12">
         <Link href="/" className="flex items-center">
           <Image
-            src="/ClinicalSim.ai-logo.png"
+            src="/ClinicalSim.ai-logo.webp"
             alt="ClinicalSim.ai"
             width={200}
             height={60}
@@ -55,7 +55,7 @@ export default function AboutPage() {
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
                 <Image
-                  src="/vinod_havalad.jpeg"
+                  src="/vinod_havalad.webp"
                   alt="Dr. Vinod Havalad"
                   width={80}
                   height={80}
@@ -70,7 +70,7 @@ export default function AboutPage() {
               </div>
               <div className="flex gap-6 items-start">
                 <Image
-                  src="/Gillian_brennan.jpg"
+                  src="/Gillian_brennan.webp"
                   alt="Dr. Gillian Brennan"
                   width={80}
                   height={80}
@@ -85,7 +85,7 @@ export default function AboutPage() {
               </div>
               <div className="flex gap-6 items-start">
                 <Image
-                  src="/rissman lauren.jpeg"
+                  src="/rissman lauren.webp"
                   alt="Dr. Lauren Rissman"
                   width={80}
                   height={80}
