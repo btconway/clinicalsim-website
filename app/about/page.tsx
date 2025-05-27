@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function AboutPage() {
   return (
@@ -29,52 +30,67 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Mission Section */}
+          {/* About Section */}
           <section className="space-y-6">
-            <h2 className="text-3xl font-bold text-gray-900">Our Mission</h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              At ClinicalSim.ai, we believe that effective communication is the cornerstone of exceptional healthcare.
-              Our mission is to revolutionize medical education by providing cutting-edge AI-powered simulation
-              platforms that enable healthcare professionals to practice, refine, and master their communication skills
-              in a safe, controlled environment.
+              ClinicalSim.ai leverages AI-driven just-in-time simulation to democratize access to high-stakes clinical training, enabling clinicians to practice complex conversations—such as end-of-life discussions and challenging disclosures—on-demand and without the logistical constraints of traditional standardized patient programs.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              In a randomized pilot study with pediatric critical care fellows, participants who practiced with our AI chatbot demonstrated clear increases in confidence, communication competence, and perceived utility of simulation training compared to standard reflection alone, while reporting reduced social anxiety and cognitive load.
             </p>
           </section>
 
-          {/* Technology Section */}
+          {/* Team Section */}
           <section className="space-y-6">
-            <h2 className="text-3xl font-bold text-gray-900">Our Technology</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Our platform leverages advanced artificial intelligence and machine learning algorithms to create
-              realistic, interactive patient scenarios. These simulations are grounded in extensive research and
-              clinical best practices, ensuring that healthcare professionals receive training that directly translates
-              to improved patient outcomes.
+            <h2 className="text-3xl font-bold text-gray-900">Our Team</h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              Our multidisciplinary team combines leading experts in pediatric critical care, simulation education, and palliative care:
             </p>
-            <div className="grid md:grid-cols-2 gap-8 mt-8">
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-blue-600">AI-Powered Scenarios</h3>
-                <p className="text-gray-700">
-                  Dynamic patient interactions that adapt to user responses, providing personalized learning
-                  experiences.
-                </p>
+            <div className="space-y-8">
+              <div className="flex gap-6 items-start">
+                <Image
+                  src="/vinod_havalad.jpeg"
+                  alt="Dr. Vinod Havalad"
+                  width={80}
+                  height={80}
+                  className="rounded-full object-cover flex-shrink-0"
+                />
+                <div className="space-y-2">
+                  <h3 className="text-xl font-semibold text-blue-600">Dr. Vinod Havalad, MD</h3>
+                  <p className="text-gray-700">
+                    Program Director of the Pediatric Critical Care Fellowship and Director of the Pediatric Simulation Program at Advocate Children's Hospital Park Ridge; board certified in Pediatrics and Pediatric Critical Care Medicine, faculty since 2012
+                  </p>
+                </div>
               </div>
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-blue-600">Research-Driven Content</h3>
-                <p className="text-gray-700">
-                  All scenarios are developed based on peer-reviewed research and evidence-based communication
-                  strategies.
-                </p>
+              <div className="flex gap-6 items-start">
+                <Image
+                  src="/Gillian_brennan.jpg"
+                  alt="Dr. Gillian Brennan"
+                  width={80}
+                  height={80}
+                  className="rounded-full object-cover flex-shrink-0"
+                />
+                <div className="space-y-2">
+                  <h3 className="text-xl font-semibold text-blue-600">Dr. Gillian Brennan, MBChB</h3>
+                  <p className="text-gray-700">
+                    Assistant Professor of Pediatrics and Neonatology at University of Chicago Comer Children's Hospital; board certified in Pediatrics and Neonatal–Perinatal Medicine, with a research focus on simulation-based medical education
+                  </p>
+                </div>
               </div>
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-blue-600">Real-Time Feedback</h3>
-                <p className="text-gray-700">
-                  Immediate, actionable feedback helps users identify areas for improvement and track their progress.
-                </p>
-              </div>
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-blue-600">Scalable Platform</h3>
-                <p className="text-gray-700">
-                  Designed to serve individual practitioners, medical schools, and large healthcare organizations.
-                </p>
+              <div className="flex gap-6 items-start">
+                <Image
+                  src="/rissman lauren.jpeg"
+                  alt="Dr. Lauren Rissman"
+                  width={80}
+                  height={80}
+                  className="rounded-full object-cover flex-shrink-0"
+                />
+                <div className="space-y-2">
+                  <h3 className="text-xl font-semibold text-blue-600">Dr. Lauren Rissman, MD</h3>
+                  <p className="text-gray-700">
+                    Pediatric Critical Care and Palliative Care physician at Advocate Children's Hospital; contributor of narrative medicine essays in JAMA exploring clinician communication and resilience; board certified in Pediatics, Pediatric Critical Care Medicine, and Palliative Care Medicine
+                  </p>
+                </div>
               </div>
             </div>
           </section>
@@ -83,21 +99,7 @@ export default function AboutPage() {
           <section className="space-y-6">
             <h2 className="text-3xl font-bold text-gray-900">Our Vision</h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              We envision a future where every healthcare professional has access to world-class communication training,
-              regardless of their location or resources. By democratizing access to high-quality simulation technology,
-              we aim to improve patient care outcomes globally and build stronger, more empathetic healthcare
-              communities.
-            </p>
-          </section>
-
-          {/* Team Section */}
-          <section className="space-y-6">
-            <h2 className="text-3xl font-bold text-gray-900">Our Team</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              ClinicalSim.ai is built by a diverse team of healthcare professionals, AI researchers, educational
-              technologists, and software engineers. Our multidisciplinary approach ensures that our platform meets the
-              real-world needs of healthcare providers while leveraging the latest advances in artificial intelligence
-              and simulation technology.
+              By integrating ClinicalSim.ai into undergraduate, graduate, and continuing professional development curricula, we aim to elevate patient care outcomes, strengthen clinician competence, and foster well-being across the healthcare workforce.
             </p>
           </section>
 
