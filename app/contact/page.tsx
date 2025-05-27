@@ -62,7 +62,11 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div className="space-y-6">
+            <form
+              action="https://formspree.io/f/mzzrnbkk"
+              method="POST"
+              className="space-y-6"
+            >
               {/* Name Fields */}
               <div>
                 <Label htmlFor="name" className="text-white text-base font-normal mb-2 block">
@@ -71,15 +75,17 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <Input
-                      id="firstName"
+                      name="firstName"
                       placeholder="First Name"
+                      required
                       className="bg-transparent border-white border-2 text-white placeholder:text-gray-300 focus:border-white focus:ring-0"
                     />
                   </div>
                   <div>
                     <Input
-                      id="lastName"
+                      name="lastName"
                       placeholder="Last Name"
+                      required
                       className="bg-transparent border-white border-2 text-white placeholder:text-gray-300 focus:border-white focus:ring-0"
                     />
                   </div>
@@ -92,8 +98,9 @@ export default function ContactPage() {
                   Email (required)
                 </Label>
                 <Input
-                  id="email"
+                  name="email"
                   type="email"
+                  required
                   className="bg-transparent border-white border-2 text-white placeholder:text-gray-300 focus:border-white focus:ring-0"
                 />
               </div>
@@ -104,7 +111,7 @@ export default function ContactPage() {
                   Organization
                 </Label>
                 <Input
-                  id="organization"
+                  name="organization"
                   placeholder="Hospital, Medical School, etc."
                   className="bg-transparent border-white border-2 text-white placeholder:text-gray-300 focus:border-white focus:ring-0"
                 />
@@ -113,7 +120,7 @@ export default function ContactPage() {
               {/* Newsletter Checkbox */}
               <div className="flex items-center space-x-2">
                 <Checkbox
-                  id="newsletter"
+                  name="newsletter"
                   className="border-white data-[state=checked]:bg-white data-[state=checked]:text-blue-600"
                 />
                 <Label htmlFor="newsletter" className="text-white text-base">
@@ -127,18 +134,19 @@ export default function ContactPage() {
                   Message (required)
                 </Label>
                 <Textarea
-                  id="message"
+                  name="message"
                   rows={6}
                   placeholder="Tell us about your interest in ClinicalSim.ai..."
+                  required
                   className="bg-transparent border-white border-2 text-white placeholder:text-gray-300 focus:border-white focus:ring-0 resize-none"
                 />
               </div>
 
               {/* Submit Button */}
-              <Button className="bg-transparent border-white border-2 text-white hover:bg-white hover:text-blue-600 px-8 py-3 font-normal">
+              <Button type="submit" className="bg-transparent border-white border-2 text-white hover:bg-white hover:text-blue-600 px-8 py-3 font-normal">
                 Submit
               </Button>
-            </div>
+            </form>
           </div>
         </div>
       </section>
