@@ -1,0 +1,26 @@
+{
+    "redirects": [
+      {
+        "source": "/(.*)",
+        "has": [
+          {
+            "type": "host",
+            "value": "clinicalsimulation.ai"
+          }
+        ],
+        "destination": "https://clinicalsim.ai/$1",
+        "permanent": true
+      },
+      {
+        "source": "/(.*)",
+        "has": [
+          {
+            "type": "host",
+            "value": "www.clinicalsimulation.ai"
+          }
+        ],
+        "destination": "https://clinicalsim.ai/$1",
+        "permanent": true
+      }
+    ]
+  }
