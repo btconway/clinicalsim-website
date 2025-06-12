@@ -67,10 +67,10 @@ export default function HomePage() {
             </h1>
 
             <div className="mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-300">
-              <p className="text-lg md:text-xl text-blue-600 font-normal mb-6">
+              <p className="text-lg md:text-xl text-blue-600 font-light mb-6">
                 We are currently accepting applications to trial our AI-Powered Communication Simulation Platform.
               </p>
-              <p className="text-lg md:text-xl text-blue-600 font-normal">Join the waitlist below.</p>
+              <p className="text-lg md:text-xl text-blue-600 font-light">Join the waitlist below.</p>
             </div>
 
             <div className="animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-700">
@@ -94,7 +94,7 @@ export default function HomePage() {
               <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
                 Advanced Medical Communication Training
               </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
                 Experience the next generation of medical education with our cutting-edge AI simulation platform
               </p>
             </div>
@@ -114,7 +114,7 @@ export default function HomePage() {
                       <h3 className="text-xl font-medium text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
                         {feature.title}
                       </h3>
-                      <p className="text-gray-600 leading-relaxed">
+                      <p className="text-gray-600 font-light leading-relaxed">
                         {feature.description}
                       </p>
                     </CardContent>

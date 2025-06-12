@@ -38,7 +38,7 @@ export default function ContactPage() {
             {/* Contact Info */}
             <div>
               <h1 className="text-4xl md:text-5xl font-light mb-6">Contact us</h1>
-              <p className="text-lg md:text-xl leading-relaxed mb-8">
+              <p className="text-lg md:text-xl font-light leading-relaxed mb-8">
                 Interested in working together? Fill out some info and we will be in touch shortly. We can't wait to
                 hear from you!
               </p>
@@ -46,7 +46,7 @@ export default function ContactPage() {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-xl font-medium mb-2">Get in Touch</h3>
-                  <p className="text-lg">
+                  <p className="text-lg font-light">
                     Whether you're interested in joining our pilot program, have questions about our platform, or want
                     to explore partnership opportunities, we'd love to hear from you.
                   </p>
@@ -54,7 +54,7 @@ export default function ContactPage() {
 
                 <div>
                   <h3 className="text-xl font-medium mb-2">Response Time</h3>
-                  <p className="text-lg">
+                  <p className="text-lg font-light">
                     We typically respond to all inquiries within 24-48 hours during business days.
                   </p>
                 </div>
@@ -159,7 +159,7 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="space-y-4">
               <h3 className="text-xl font-medium text-blue-600">Pilot Program</h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 font-light">
                 Interested in being part of our pilot program? We're looking for forward-thinking healthcare
                 organizations to help shape the future of medical communication training.
               </p>
@@ -167,7 +167,7 @@ export default function ContactPage() {
 
             <div className="space-y-4">
               <h3 className="text-xl font-medium text-blue-600">Partnerships</h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 font-light">
                 We're open to partnerships with medical schools, healthcare systems, and technology companies that share
                 our vision for improving patient care through better communication.
               </p>
@@ -175,7 +175,7 @@ export default function ContactPage() {
 
             <div className="space-y-4">
               <h3 className="text-xl font-medium text-blue-600">Research Collaboration</h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 font-light">
                 Are you a researcher in medical education or healthcare communication? We'd love to explore
                 opportunities for collaboration and knowledge sharing.
               </p>
