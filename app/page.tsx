@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Brain, Users, Shield, Zap, BookOpen, Target } from "lucide-react"
@@ -42,15 +41,11 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
       {/* Header */}
       <header className="flex items-center justify-between px-4 py-4 md:px-12 md:py-6 bg-white/80 backdrop-blur-sm border-b border-white/20">
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/ClinicalSim.ai-logo.webp"
-            alt="ClinicalSim.ai"
-            width={200}
-            height={60}
-            className="h-8 md:h-12 w-auto"
-            priority
-          />
+        <Link href="/" className="flex items-center gap-2">
+          <Brain className="h-8 w-8 text-blue-600" />
+          <span className="text-2xl font-light text-slate-800">
+            ClinicalSim<span className="text-blue-600 shimmer">.ai</span>
+          </span>
         </Link>
         <nav className="flex gap-4 md:gap-8">
           <Link href="/about" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
