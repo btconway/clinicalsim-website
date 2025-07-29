@@ -62,18 +62,18 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-indigo-600/10"></div>
         <section className="relative flex flex-col items-center justify-center px-6 py-12 md:py-16 text-center">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-2xl md:text-5xl lg:text-6xl font-light shimmer leading-tight mb-8 md:mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            <h1 className="text-2xl md:text-5xl lg:text-6xl font-light shimmer leading-tight mb-8 md:mb-12">
               Pioneering the future of medical communication simulation with research-driven AI solutions.
             </h1>
 
-            <div className="mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-300">
+            <div className="mb-8">
               <p className="text-lg md:text-xl text-blue-600 font-light mb-6">
                 We are currently accepting applications to trial our AI-Powered Communication Simulation Platform.
               </p>
               <p className="text-lg md:text-xl text-blue-600 font-light">Join the waitlist below.</p>
             </div>
 
-            <div className="animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-700">
+            <div>
               <Link href="https://form.typeform.com/to/Zve4CKk2" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="outline"

@@ -34,7 +34,7 @@ export default function AboutPage() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24">
           <div className="space-y-12">
             {/* Hero Section */}
-            <div className="text-center animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            <div className="text-center">
               <h1 className="text-4xl md:text-5xl font-light shimmer text-gray-900 mb-6">About ClinicalSim.ai</h1>
               <p className="text-xl text-gray-600 font-light leading-relaxed">
                 Transforming medical education through innovative AI-powered communication simulation technology.
@@ -42,7 +42,7 @@ export default function AboutPage() {
             </div>
 
           {/* About Section */}
-          <section className="animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-300">
+          <section>
             <Card className="bg-white/70 backdrop-blur-sm border-white/20 hover:bg-white/90 hover:shadow-xl transition-all duration-300">
               <CardContent className="p-8 space-y-6">
                 <p className="text-lg text-gray-700 font-light leading-relaxed">
@@ -57,7 +57,7 @@ export default function AboutPage() {
 
 
           {/* Vision Section */}
-          <section className="space-y-6 animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-700">
+          <section className="space-y-6">
             <h2 className="text-3xl font-light text-gray-900">Our Vision</h2>
             <Card className="bg-white/70 backdrop-blur-sm border-white/20 hover:bg-white/90 hover:shadow-xl transition-all duration-300">
               <CardContent className="p-8">
@@ -69,7 +69,7 @@ export default function AboutPage() {
           </section>
 
           {/* CTA Section */}
-          <section className="text-center animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-1000">
+          <section className="text-center">
             <Card className="bg-white/80 backdrop-blur-sm border-white/20 hover:bg-white/95 hover:shadow-2xl transition-all duration-300">
               <CardContent className="p-8 md:p-12">
                 <h2 className="text-3xl font-light text-gray-900 mb-4">Ready to Transform Medical Communication?</h2>
