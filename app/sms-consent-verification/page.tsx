@@ -2,66 +2,71 @@ export default function SMSConsentVerification() {
   return (
     <div className="min-h-screen bg-white p-8">
       <div className="max-w-2xl mx-auto">
-        <h1 className="text-2xl font-bold mb-6">SMS Consent Verification</h1>
+        <h1 className="text-2xl font-bold mb-6">Text Message Consent Form</h1>
         
         <div className="space-y-6 text-gray-800">
-          <div className="border-l-4 border-blue-500 pl-4">
-            <h2 className="text-lg font-semibold mb-2">Express Consent for Informational Messages</h2>
-            <p>
-              I, Ben Conway, provide express consent to receive automated informational messages and responses from my personal AI assistant system. I understand that:
+          <div className="border-2 border-blue-500 p-6 rounded bg-blue-50">
+            <h2 className="text-xl font-bold mb-4 text-blue-900">EXPRESS WRITTEN CONSENT</h2>
+            <p className="text-lg font-semibold mb-4">
+              <strong>I, Ben Conway, hereby provide my express written consent to receive text messages from my Personal AI Assistant system.</strong>
             </p>
-            <ul className="mt-3 ml-4 space-y-1 text-sm list-disc">
-              <li>This system will send me informational responses to my queries</li>
-              <li>I will receive automated assistance and reminder messages</li>
-              <li>I can stop these messages at any time by replying STOP</li>
-              <li>This is for my personal use only</li>
+          </div>
+
+          <div className="bg-gray-50 p-6 rounded border">
+            <h3 className="text-lg font-semibold mb-3">What I'm Consenting To:</h3>
+            <ul className="space-y-2 ml-4 list-disc">
+              <li><strong>I consent to receive automated text message responses from my AI assistant</strong></li>
+              <li><strong>I understand these messages will be informational in nature</strong></li>
+              <li><strong>I understand I can receive reminders, answers to questions, and general assistance</strong></li>
+              <li><strong>I understand message and data rates may apply</strong></li>
+              <li><strong>I can opt out at any time by replying STOP</strong></li>
             </ul>
           </div>
 
-          <div className="bg-gray-50 p-4 rounded">
-            <h3 className="font-semibold mb-2">Use Case Description:</h3>
-            <p className="text-sm">
-              Personal conversational AI assistant that provides informational responses, reminders, and general assistance. 
-              I am the sole user who will send queries and receive automated responses from my AI system. 
-              My wife may also send queries to add items to my todo list.
+          <div className="bg-gray-50 p-6 rounded border">
+            <h3 className="text-lg font-semibold mb-3">Consent Details:</h3>
+            <div className="space-y-2">
+              <p><strong>Phone Number:</strong> +1[YOUR_PHONE_NUMBER]</p>
+              <p><strong>Date of Consent:</strong> {new Date().toLocaleDateString()}</p>
+              <p><strong>Signature/Agreement:</strong> Ben Conway</p>
+            </div>
+          </div>
+
+          <div className="bg-yellow-50 p-6 rounded border border-yellow-300">
+            <h3 className="text-lg font-semibold mb-3">Use Case Description:</h3>
+            <p>
+              Personal informational AI assistant that provides automated responses to user queries, reminders, and general assistance. 
+              Single user (myself) will send questions and receive informational responses. My wife may also send queries to add items to my todo list.
             </p>
           </div>
 
-          <div className="bg-gray-50 p-4 rounded">
-            <h3 className="font-semibold mb-2">Sample Message:</h3>
-            <p className="text-sm italic">
-              "Based on your query about the weather, here's today's forecast: Sunny, 75°F with light winds. Is there anything else I can help you with?"
+          <div className="bg-green-50 p-6 rounded border border-green-300">
+            <h3 className="text-lg font-semibold mb-3">Sample Message:</h3>
+            <p className="italic font-medium">
+              "Hi Ben, based on your question about today's schedule, you have a meeting at 2 PM. Reply STOP to opt out. Msg&data rates may apply."
             </p>
           </div>
 
-          <div className="bg-gray-50 p-4 rounded">
-            <h3 className="font-semibold mb-2">Message Categories:</h3>
-            <ul className="text-sm space-y-1 ml-4 list-disc">
-              <li>Informational responses to user queries</li>
-              <li>Personal reminders and notifications</li>
+          <div className="bg-purple-50 p-6 rounded border border-purple-300">
+            <h3 className="text-lg font-semibold mb-3">Message Categories:</h3>
+            <ul className="space-y-1 ml-4 list-disc">
+              <li>Customer Care - Informational responses to user queries</li>
+              <li>Account Notifications - Personal reminders and notifications</li>
               <li>General assistance messages</li>
             </ul>
           </div>
 
-          <div className="bg-gray-50 p-4 rounded">
-            <h3 className="font-semibold mb-2">Additional Information:</h3>
-            <p className="text-sm">
-              This is a personal project for individual use only. No third parties will receive 
-              messages from this number. The AI assistant will only provide informational responses 
-              to messages I send to it. No promotional or marketing messages will be sent.
+          <div className="bg-red-50 p-6 rounded border border-red-300">
+            <h3 className="text-lg font-semibold mb-3">Important Disclaimers:</h3>
+            <p className="font-medium">
+              <em>This consent is for personal use only. No third parties will receive messages from this system. 
+              No promotional or marketing messages will be sent. This is solely for informational responses and personal assistance.</em>
             </p>
           </div>
 
-          <div className="border-t pt-4">
-            <p className="text-sm text-gray-600">
-              This document serves as verification of consent for informational SMS messaging services as required 
-              by Twilio for toll-free number verification.
-            </p>
-            <p className="text-sm text-gray-500 mt-2">
-              Date: {new Date().toLocaleDateString()}
-            </p>
-            <p className="text-sm text-gray-500">
-              Signature/Agreement: Ben Conway
+          <div className="border-t-2 border-gray-300 pt-6">
+            <p className="text-center text-lg font-semibold">
+              This document serves as verification of express written consent for informational SMS messaging services as required by Twilio for toll-free number verification.
             </p>
           </div>
         </div>
