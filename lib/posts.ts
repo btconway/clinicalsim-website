@@ -10,6 +10,15 @@ export interface Post {
 
 const posts: Post[] = [
   {
+    slug: "end-of-life-care-communication",
+    title: "End-of-Life Conversations: Practice Makes Progress",
+    description: "EOL conversations are low-frequency, high-stakes events. Traditional training models cant provide the practice clinicians need.",
+    date: "2026-02-06",
+    author: "ClinicalSim.ai Team",
+    readingTime: "5 min read",
+    tags: ["end-of-life", "palliative care", "communication"],
+  },
+  {
     slug: "why-communication-training-matters",
     title: "Why Communication Training Matters",
     description: "Communication failures are the leading driver of malpractice claims, yet most physicians receive minimal structured training. The gap between what's at stake and how we prepare is wider than most realize.",
