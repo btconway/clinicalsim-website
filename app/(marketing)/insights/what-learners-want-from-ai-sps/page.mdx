@@ -1,0 +1,144 @@
+import { ArticleLayout } from "@/components/article-layout"
+import { getPostBySlug } from "@/lib/posts"
+
+export const metadata = {
+  title: "What Medical Learners Actually Want from AI Standardized Patients | ClinicalSim.ai",
+  description: "New CHI 2026 research reveals six key requirements for AI-SP design—straight from the medical students who would use them.",
+}
+
+<ArticleLayout post={getPostBySlug("what-learners-want-from-ai-sps")}>
+
+## The Research
+
+A new study from CHI 2026 (the premier human-computer interaction conference) offers something rare in the AI-SP conversation: the medical student perspective.
+
+Researchers from CUHK Shenzhen, Nankai University, and MIT Media Lab interviewed 12 clinical-year medical students and conducted three co-design workshops to understand what learners actually need from AI Standardized Patients.
+
+The findings challenge some common assumptions about what makes AI-SP training effective.
+
+## The Core Finding: "It Talks Like a Patient, But Feels Different"
+
+The paper's title captures the central tension: current LLM-based AI-SPs can generate fluent, natural-sounding patient dialogue, but learners consistently report that something essential is missing.
+
+This isn't primarily a technical problem—it's an instructional design problem.
+
+## Six Learner-Centered Requirements
+
+The research identified six key needs that emerged from interviews and were refined through co-design workshops:
+
+### 1. Goal-Aligned Fidelity Modes
+
+Learners don't want one uniform AI-SP experience. They need different modes for different purposes:
+
+- **OSCE mode**: Strict, standardized, exam-like encounters with consistent evaluation criteria
+- **Daily practice mode**: Exploratory, flexible encounters that allow for clinical reasoning development
+- **Skill-building mode**: Scaffolded practice with adjustable difficulty and optional hints
+
+The fidelity of the simulation should match the learning objective—not be uniformly "realistic."
+
+### 2. Policy-Driven Information Release
+
+Current AI-SPs often feel like "games" where learners have to guess what information is available. The research suggests implementing clear rules:
+
+- **Perceptual cues** (jaundice, rashes, visible distress) should be immediately apparent without asking
+- **Inquiry-dependent information** should require appropriate clinical questions
+- **Information release rules** should be consistent and predictable, not arbitrary
+
+This preserves both realism and fairness.
+
+### 3. Multimodal Evidence Interaction
+
+Human SPs limit physical examination practice for safety and practicality. Learners wanted AI-SPs to bridge this gap through:
+
+- **Visual examination interfaces** (body maps with clickable regions)
+- **Sensory cues** (sounds, images, test results)
+- **Virtual test ordering** with realistic turnaround and cost considerations
+- **Physical exam simulations** that would be unsafe or impractical with human actors
+
+The goal isn't perfect sensory realism—it's practicing the integration of evidence-gathering with communication.
+
+### 4. Hybrid Input as a Reliability Layer
+
+Voice-based AI interaction breaks down. Learners anticipated this and emphasized the need for:
+
+- **Voice-first interaction** for natural conversation
+- **Text input fallback** when voice recognition fails
+- **Keyword triggers** for specific clinical queries
+- **Responsive hints** when learners get stuck
+
+This reduces anxiety and prevents breakdowns from derailing the learning experience.
+
+### 5. Learner-Controlled Scaffolding and Dual-Loop Feedback
+
+Participants reframed AI-SPs as tools for **deliberate practice**, not assessment. Key requirements:
+
+- **Adjustable difficulty**: From "friendly mode" with prompts to "stress-test mode" for exam prep
+- **In-action cues**: Lightweight feedback during the encounter (trust indicators, facial expressions)
+- **Post-session debrief**: Structured review connecting errors to clinical reasoning
+- **Knowledge linking**: Connecting mistakes to textbook references and clinical guidelines
+
+### 6. Controllable Affective Variability
+
+Real patients have different personalities, emotional states, and backgrounds. Learners wanted:
+
+- **Selectable patient personas**: Elderly patients, pediatric patients, anxious patients, etc.
+- **Emotional response variability**: Crying, frustration, confusion, relief
+- **Cultural and social context**: Different backgrounds and health beliefs
+- **Replayable scenarios**: Practice the same clinical case with different patient personalities
+
+This treats affect as a **controllable training variable**, not just a realism feature.
+
+## The Shift: From Conversational Realism to Instructional Usability
+
+The most important insight from this research: learners don't judge AI-SP quality by how natural the conversation sounds. They judge it by whether the system supports their learning goals.
+
+**Conversational realism ≠ educational value.**
+
+What matters more:
+- **Transparency**: Is it clear what mode I'm in and what's expected?
+- **Controllability**: Can I adjust difficulty and scaffolding?
+- **Observability**: Do I understand how I'm performing during and after?
+- **Learnability**: Does feedback help me improve?
+
+## Positioning AI-SPs in the Training Ecology
+
+The researchers emphasize that AI-SPs should complement—not replace—human standardized patients:
+
+| Human SPs | AI-SPs |
+|-----------|--------|
+| High-stakes assessment | Deliberate practice between sessions |
+| Embodied social presence | Unlimited repetition |
+| Nuanced relational interaction | Configurable difficulty |
+| Expert feedback | Structured, consistent feedback |
+| Logistically constrained | On-demand, scalable |
+
+This layered approach uses each modality for what it does best.
+
+## Implications for ClinicalSim.ai
+
+This research validates several key design decisions in our platform:
+
+✅ **Voice-first with text fallback** — Matches the hybrid input requirement  
+✅ **Structured scenarios with clear objectives** — Aligns with goal-aligned fidelity  
+✅ **Immediate performance feedback** — Addresses the dual-loop feedback need  
+✅ **On-demand availability** — Enables deliberate practice between limited SP sessions  
+
+And it points to future enhancements:
+
+🔄 **Adjustable difficulty modes** — Explicit OSCE vs. practice modes  
+🔄 **Expanded affective variability** — More patient personas and emotional states  
+🔄 **Enhanced post-session debrief** — Stronger knowledge linking and reasoning reconstruction  
+
+## The Bottom Line
+
+Medical learners aren't looking for AI-SPs that perfectly replicate human patients. They're looking for reliable, transparent, controllable tools that support deliberate practice of high-stakes communication skills.
+
+The "empathy gap" isn't a reason to abandon AI-SPs. It's a design challenge to solve through instructional usability—not just conversational fluency.
+
+---
+
+*This post summarizes research from: Gao, Z., Zhu, G., Luo, H., Pan, D., Tang, H., Zhang, B., Pei, J., Li, J., & Wang, B. (2026). "It Talks Like a Patient, But Feels Different": Co-Designing AI Standardized Patients with Medical Learners. CHI 2026, Barcelona, Spain.*
+
+**Ready to experience AI-powered communication training designed for medical learners?** [Contact us](/contact) to schedule a demonstration.
+
+</ArticleLayout>

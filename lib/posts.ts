@@ -10,13 +10,13 @@ export interface Post {
 
 const posts: Post[] = [
   {
-    slug: "end-of-life-care-communication",
-    title: "End-of-Life Conversations: Practice Makes Progress",
-    description: "EOL conversations are low-frequency, high-stakes events. Traditional training models cant provide the practice clinicians need.",
-    date: "2026-02-06",
+    slug: "what-learners-want-from-ai-sps",
+    title: "What Medical Learners Actually Want from AI Standardized Patients",
+    description: "New CHI 2026 research reveals six key requirements for AI-SP design—straight from the medical students who would use them.",
+    date: "2026-02-07",
     author: "ClinicalSim.ai Team",
-    readingTime: "5 min read",
-    tags: ["end-of-life", "palliative care", "communication"],
+    readingTime: "6 min read",
+    tags: ["research", "AI-SP", "medical education", "HCI"],
   },
   {
     slug: "end-of-life-care-communication",
