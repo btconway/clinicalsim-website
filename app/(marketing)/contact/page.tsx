@@ -1,36 +1,14 @@
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Checkbox } from "@/components/ui/checkbox"
-import { Brain } from "lucide-react"
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-      {/* Header */}
-      <header className="flex items-center justify-between px-4 py-4 md:px-12 md:py-6 bg-white/80 backdrop-blur-sm border-b border-white/20">
-        <Link href="/" className="flex items-center gap-2">
-          <Brain className="h-8 w-8 text-blue-600" />
-          <span className="text-2xl font-light text-slate-800">
-            ClinicalSim<span className="text-blue-600 shimmer">.ai</span>
-          </span>
-        </Link>
-        <nav className="flex gap-4 md:gap-8">
-          <Link href="/about" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
-            About
-          </Link>
-          <Link href="/contact" className="text-gray-700 hover:text-gray-900 font-medium border-b-2 border-blue-600 transition-colors">
-            Contact
-          </Link>
-        </nav>
-      </header>
-
+    <>
       {/* Contact Hero Section */}
-      <main className="relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-indigo-600/10"></div>
-        <section className="relative bg-blue-600 text-white py-16 md:py-24">
+      <section className="bg-blue-600 text-white py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-12">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16">
             {/* Contact Info */}
@@ -149,8 +127,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-        {/* Additional Contact Information */}
-        <section className="relative py-16 md:py-24 bg-gray-50/80 backdrop-blur-sm">
+      {/* Additional Contact Information */}
+      <section className="py-16 md:py-24 bg-gray-50/80 backdrop-blur-sm">
         <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
           <h2 className="text-3xl font-light text-gray-900 mb-8">Other Ways to Connect</h2>
 
@@ -180,8 +158,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-        </section>
-      </main>
-    </div>
+      </section>
+    </>
   )
 }

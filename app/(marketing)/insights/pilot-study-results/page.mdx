@@ -1,0 +1,69 @@
+import { ArticleLayout } from "@/components/article-layout"
+import { getPostBySlug } from "@/lib/posts"
+
+export const metadata = {
+  title: "What Our Pilot Study Revealed | ClinicalSim.ai",
+  description: "A randomized controlled trial with PICU fellows showed that AI-powered practice improves confidence, reduces anxiety, and produces measurable gains.",
+}
+
+<ArticleLayout post={getPostBySlug("pilot-study-results")}>
+
+## Why We Ran a Randomized Controlled Trial
+
+Most medical education technology companies rely on satisfaction surveys or anecdotal testimonials to demonstrate value. We chose a different approach: a randomized controlled trial with blinded evaluation using validated assessment tools.
+
+In a field where a meta-analysis of 59 simulation RCTs found that only 49% had proper allocation concealment and only 19% had proper blinding, we believed rigorous methodology was essential — not just for credibility, but because we needed to know whether the platform actually works.
+
+## Study Design
+
+Our pilot study enrolled pediatric critical care (PICU) fellows and used a crossover design:
+
+- **All participants** received the same didactic teaching session
+- **Intervention group** practiced with the AI voice simulation before their standardized patient encounter
+- **Control group** received a standard reflection period before their encounter
+- **Groups then crossed over**, so every participant experienced the AI practice
+- **All encounters** were scored by a blinded evaluator using a validated checklist-style assessment tool
+
+This design allowed us to measure the specific impact of AI practice while ensuring every participant benefited from the platform.
+
+## What We Found
+
+The results showed clear, consistent benefits across multiple dimensions:
+
+**Increased confidence and competence.** Fellows who practiced with the AI simulation demonstrated measurable improvements in communication competence, as scored by the blinded evaluator using validated assessment criteria.
+
+**Reduced anxiety.** Participants reported lower social anxiety and cognitive load when using the AI platform compared to other practice methods. The low-pressure environment allowed them to focus on skill development rather than performance anxiety.
+
+**High perceived utility.** Participants consistently rated the platform as useful and realistic, with particular appreciation for the ability to rehearse specific language and phrasing.
+
+## What Learners Told Us
+
+The qualitative feedback revealed insights we hadn't fully anticipated:
+
+> "It was helpful to have time to think and reflect without feeling the pressure of a person across from you expecting a response."
+
+The absence of social pressure emerged as a key theme. Learners felt free to pause, reconsider their word choices, and try different approaches — something that's difficult in live simulations where there's always someone watching.
+
+> "Helpful to practice responses... and choose phrasing of the responses."
+
+Deliberate language practice — rehearsing the exact words you'd use to deliver devastating news — turns out to be something physicians rarely get to do. The AI simulation provides a space for this kind of detailed, repetitive practice.
+
+> "Practice/experience actually saying things."
+
+There's a meaningful difference between knowing what to say and having actually said it. The voice-based format requires learners to articulate their thoughts out loud, building muscle memory for conversations where every word matters.
+
+## Why This Matters for the Market
+
+ClinicalSim.ai is currently the only AI communication training platform with published RCT data. This places us in the top tier of evidence quality for the entire medical education technology market.
+
+For institutions evaluating whether to invest in AI-powered communication training, this evidence changes the conversation from "prove it works" to "show me how to implement it." For faculty champions considering whether to recommend the platform, published evidence provides the scientific backing needed to advocate for adoption without career risk.
+
+## What's Next
+
+Our ongoing research agenda includes multi-site replication studies, expansion to additional specialties, and measurement of behavior change in actual clinical practice. We're committed to building the evidence base that this field needs.
+
+---
+
+*Interested in bringing ClinicalSim.ai to your institution? [Join our waitlist](https://form.typeform.com/to/Zve4CKk2) or [contact us](/contact) to discuss pilot programs.*
+
+</ArticleLayout>

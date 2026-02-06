@@ -10,7 +10,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'ClinicalSim.ai',
-  description: 'AI-driven clinical communication simulation enabling on-demand training for high-stakes medical conversations.',
+  description: 'Practice the conversations that matter most. AI voice simulation for high-stakes medical conversations — backed by published research.',
   icons: {
     icon: '/favicon.svg',
     apple: '/apple-touch-icon.png',

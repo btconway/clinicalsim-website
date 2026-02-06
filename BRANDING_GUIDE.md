@@ -3,8 +3,8 @@
 ## Brand Identity
 
 **Brand Name:** ClinicalSim.ai
-**Tagline:** "Pioneering the future of medical communication simulation with research-driven AI solutions"
-**Mission:** AI-driven clinical communication simulation enabling on-demand training for high-stakes medical conversations
+**Tagline:** "Practice the conversations that matter most."
+**Mission:** AI voice simulation for high-stakes medical conversations — goals of care, end-of-life discussions, difficult disclosures — on-demand, backed by published research.
 
 ## Typography
 
@@ -173,11 +173,13 @@ className="bg-transparent border-white border-2 text-white hover:bg-white hover:
 - **Compassionate** focus on healthcare improvement
 
 ### Key Messaging
-- AI-driven just-in-time simulation
-- Democratizing access to high-stakes clinical training
-- Research-validated methodology
-- On-demand training without logistical constraints
-- Improving patient care outcomes through better communication
+- Practice the conversations that matter most — goals of care, end-of-life, difficult disclosures
+- The only AI communication platform backed by a published randomized controlled trial
+- On-demand voice simulation from any device, 24/7 — no scheduling, no actors, no sim center
+- ACGME-aligned: directly addresses interpersonal and communication skills milestones
+- Scalable and cost-effective: traditional SP encounters cost $150-300 each
+- Augments existing simulation programs — structured practice at scale, not a replacement
+- Evidence-informed, outcome-focused positioning: lead with the problem and the proof, not the technology
 
 ## Technical Implementation
 

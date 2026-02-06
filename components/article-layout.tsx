@@ -1,0 +1,51 @@
+import Link from "next/link"
+import { ArrowLeft } from "lucide-react"
+import type { Post } from "@/lib/posts"
+
+export function ArticleLayout({
+  post,
+  children,
+}: {
+  post: Post
+  children: React.ReactNode
+}) {
+  return (
+    <section className="px-6 py-12 md:py-20">
+      <article className="max-w-3xl mx-auto">
+        <Link
+          href="/insights"
+          className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-gray-900 font-light mb-8 transition-colors"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          Back to Insights
+        </Link>
+
+        <div className="mb-10">
+          <div className="flex items-center gap-3 text-sm text-gray-500 font-light mb-4">
+            <time dateTime={post.date}>
+              {new Date(post.date).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </time>
+            <span>&middot;</span>
+            <span>{post.readingTime}</span>
+            <span>&middot;</span>
+            <span>{post.author}</span>
+          </div>
+          <h1 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
+            {post.title}
+          </h1>
+          <p className="text-xl text-gray-600 font-light leading-relaxed">
+            {post.description}
+          </p>
+        </div>
+
+        <div className="border-t border-gray-200 pt-8">
+          {children}
+        </div>
+      </article>
+    </section>
+  )
+}
