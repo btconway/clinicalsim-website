@@ -9,6 +9,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `pnpm start` - Start production server
 - `pnpm lint` - Run ESLint
 
+## Shell Commands
+
+**IMPORTANT**: Always quote file paths containing special characters (parentheses, spaces, etc.) in shell commands.
+
+- ❌ `git diff app/(marketing)/insights/page.tsx` - Will fail with "no matches found"
+- ✅ `git diff "app/(marketing)/insights/page.tsx"` - Works correctly
+
+This applies to all shell commands including `git`, `ls`, `cat`, etc.
+
 ## Architecture Overview
 
 This is a Next.js 15 application using the App Router with a component-driven architecture built on shadcn/ui and Radix UI primitives.
