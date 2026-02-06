@@ -8,9 +8,9 @@ export default function InsightsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="text-center px-6 py-16 md:py-24">
+      <section className="text-center px-6 pt-20 pb-16 md:pt-28 md:pb-24">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-light shimmer text-gray-900 mb-6">Insights</h1>
+          <h1 className="text-4xl md:text-5xl font-light shimmer text-gray-900 mb-6 leading-tight">Insights</h1>
           <p className="text-xl text-gray-600 font-light leading-relaxed">
             Research, analysis, and perspectives on communication training in medical education.
           </p>
