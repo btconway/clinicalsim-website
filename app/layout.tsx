@@ -1,11 +1,19 @@
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
+import { Poppins, IBM_Plex_Mono } from 'next/font/google'
 import './globals.css'
 
-const poppins = Poppins({ 
+const poppins = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
   display: 'swap',
+  variable: '--font-poppins',
+})
+
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-ibm-plex-mono',
 })
 
 export const metadata: Metadata = {
@@ -25,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className} suppressHydrationWarning={true}>{children}</body>
+      <body className={`${poppins.variable} ${ibmPlexMono.variable} font-sans`} suppressHydrationWarning={true}>{children}</body>
     </html>
   )
 }

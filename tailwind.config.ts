@@ -11,9 +11,22 @@ const config: Config = {
   theme: {
   	extend: {
   		fontFamily: {
-  			sans: ['Poppins', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+  			sans: ['var(--font-poppins)', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+  			mono: ['var(--font-ibm-plex-mono)', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
   		},
   		colors: {
+  			warm: {
+  				DEFAULT: '#F97316',
+  				foreground: '#FFFFFF',
+  			},
+  			success: {
+  				DEFAULT: '#10B981',
+  				foreground: '#FFFFFF',
+  			},
+  			navy: {
+  				DEFAULT: '#1E3A8A',
+  				foreground: '#FFFFFF',
+  			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -66,9 +79,12 @@ const config: Config = {
   			}
   		},
   		borderRadius: {
+  			xs: '4px',
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
+  			sm: 'calc(var(--radius) - 4px)',
+  			xl: '16px',
+  			'2xl': '24px',
   		},
   		keyframes: {
   			'accordion-down': {
