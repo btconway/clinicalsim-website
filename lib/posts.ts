@@ -10,6 +10,15 @@ export interface Post {
 
 const posts: Post[] = [
   {
+    slug: "breaking-bad-news-medical-training",
+    title: "Breaking Bad News: The Skill No One Teaches",
+    description: "Breaking bad news is a core clinical skill — yet most physicians have never practiced it before doing it for real.",
+    date: "2026-02-07",
+    author: "ClinicalSim.ai Team",
+    readingTime: "5 min read",
+    tags: ["breaking bad news", "medical training", "communication"],
+  },
+  {
     slug: "what-learners-want-from-ai-sps",
     title: "What Medical Learners Actually Want from AI Standardized Patients",
     description: "New CHI 2026 research reveals six key requirements for AI-SP design—straight from the medical students who would use them.",
