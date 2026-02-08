@@ -10,6 +10,15 @@ export interface Post {
 
 const posts: Post[] = [
   {
+    slug: "healthcare-simulation-technology-trends",
+    title: "Where Medical Simulation Is Headed in 2026",
+    description: "From VR to AI voice agents, medical simulation technology is evolving rapidly. Heres what matters for 2026.",
+    date: "2026-02-08",
+    author: "ClinicalSim.ai Team",
+    readingTime: "5 min read",
+    tags: ["simulation", "technology trends", "medical education"],
+  },
+  {
     slug: "breaking-bad-news-medical-training",
     title: "Breaking Bad News: The Skill No One Teaches",
     description: "Breaking bad news is a core clinical skill — yet most physicians have never practiced it before doing it for real.",
