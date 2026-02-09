@@ -34,7 +34,7 @@ export default function InsightsPage() {
       <section className="relative text-center px-6 pt-20 pb-16 md:pt-28 md:pb-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 -z-10" />
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-light shimmer mb-6 leading-tight">Insights</h1>
+          <h1 className="text-4xl md:text-5xl font-light shimmer mb-6 leading-normal">Insights</h1>
           <p className="text-xl text-gray-700 font-light leading-relaxed">
             Research, analysis, and perspectives on <span className="text-warm font-medium">communication training</span> in medical education.
           </p>
