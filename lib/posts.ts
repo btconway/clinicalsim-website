@@ -10,6 +10,15 @@ export interface Post {
 
 const posts: Post[] = [
   {
+    slug: "hospital-communication-training-roi",
+    title: "The ROI of Communication Training: By the Numbers",
+    description: "The business case for communication training is clear: reduced malpractice risk, improved HCAHPS scores, and better outcomes.",
+    date: "2026-02-09",
+    author: "ClinicalSim.ai Team",
+    readingTime: "5 min read",
+    tags: ["ROI", "communication training", "hospital administration"],
+  },
+  {
     slug: "healthcare-simulation-technology-trends",
     title: "Where Medical Simulation Is Headed in 2026",
     description: "From VR to AI voice agents, medical simulation technology is evolving rapidly. Heres what matters for 2026.",
