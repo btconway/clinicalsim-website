@@ -61,3 +61,56 @@ The project uses shadcn/ui components which are:
 ### Build Configuration
 - ESLint and TypeScript errors ignored during builds
 - Images unoptimized for static export compatibility
+
+## Content Management
+
+### Blog Posts (Insights)
+- **Location**: `app/(marketing)/insights/[slug]/page.mdx`
+- **Registry**: `lib/posts.ts` - Must be updated when adding new posts
+- **Layout**: Posts use `components/article-layout.tsx` wrapper
+- **Workflow**: Blog posts may be created by separate agents/processes
+  - Always check `lib/posts.ts` for the current list of posts
+  - Verify new posts are registered in the posts array with metadata
+  - Ensure MDX files follow the ArticleLayout pattern
+  - **IMPORTANT**: When multiple agents work on this codebase, always pull latest changes before making commits to avoid conflicts with blog post additions
+
+### MDX Content Guidelines
+- Use `page.mdx` files that import ArticleLayout component
+- Escape special characters: `p<0.001` → `p&lt;0.001`
+- Follow established tag conventions (see Insights page for color coding)
+
+## Design System (Updated Feb 2026)
+
+### Custom Components Library
+**Feature Components:**
+- `components/feature-card.tsx` - Asymmetric cards with border glow hover, color variants (default, warm, navy, success)
+- `components/stat-highlight.tsx` - Large statistics with IBM Plex Mono font, multiple color variants
+- `components/evidence-showcase.tsx` - RCT study display with badges and citations
+
+**Layout Components:**
+- `components/asymmetric-grid.tsx` - Flexible layouts: featured-left/right, staggered, mixed
+- `components/section-divider.tsx` - SVG dividers: diagonal-down/up, wave, curve
+
+**Media Components:**
+- `components/demo-video-section.tsx` - Video embed with custom warm accent play button
+- `components/screenshot-gallery.tsx` - Lightbox gallery with keyboard navigation
+
+### Color System
+- **Primary**: Blue (#3B82F6) - Brand identity, navigation
+- **Warm Accent**: Orange (#F97316) - CTAs, metrics, highlights - `text-warm`, `bg-warm`, `border-warm`
+- **Success**: Green (#10B981) - Outcomes, testimonials - `text-success`, `bg-success`
+- **Navy**: Deep blue (#1E3A8A) - Authority, headers - `text-navy`, `bg-navy`
+
+### Typography
+- **Primary**: Poppins (300-700) - All body text, headlines, UI
+- **Secondary**: IBM Plex Mono (400-700) - Statistics, data - `font-mono` class
+
+### Button Variants
+- `gradient-primary` - Blue-indigo-purple gradient with shimmer
+- `warm-accent` - Orange border with sliding fill animation
+- `warm-filled` - Solid warm accent background
+- `text-link` - Animated underline on hover
+
+### Border Radius System
+- `rounded-xs` (4px), `rounded-sm` (6px), `rounded-md` (8px), `rounded-lg` (8px), `rounded-xl` (16px), `rounded-2xl` (24px)
+- **Guideline**: Vary based on component importance, avoid uniform 8px everywhere

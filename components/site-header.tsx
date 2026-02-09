@@ -26,7 +26,7 @@ export function SiteHeader() {
           <Link
             key={link.href}
             href={link.href}
-            className={`text-gray-700 hover:text-gray-900 font-medium transition-colors ${
+            className={`text-gray-700 hover:text-gray-900 font-medium transition-colors pb-1 ${
               pathname === link.href || pathname?.startsWith(link.href + "/")
                 ? "border-b-2 border-blue-600"
                 : ""
