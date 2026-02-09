@@ -10,6 +10,15 @@ export interface Post {
 
 const posts: Post[] = [
   {
+    slug: "osce-case-design-guide",
+    title: "How to Design Effective OSCE Cases: A Practical Guide for Medical Educators",
+    description: "Proven strategies for creating OSCE cases that assess clinical competence. Practical frameworks, common pitfalls, and validation methods.",
+    date: "2026-02-09",
+    author: "ClinicalSim.ai Team",
+    readingTime: "10 min read",
+    tags: ["OSCE", "case design", "medical education", "assessment"],
+  },
+  {
     slug: "hospital-communication-training-roi",
     title: "The ROI of Communication Training: By the Numbers",
     description: "The business case for communication training is clear: reduced malpractice risk, improved HCAHPS scores, and better outcomes.",
