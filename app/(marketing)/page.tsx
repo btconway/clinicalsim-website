@@ -78,7 +78,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section - Enhanced with diagonal background and new CTA */}
-      <section className="relative flex flex-col items-center justify-center px-6 py-16 md:py-24 text-center overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center px-6 py-16 md:py-24 text-center">
         {/* Diagonal Background Gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 -z-10" />
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-purple-600/5 to-indigo-600/5 -z-10" />

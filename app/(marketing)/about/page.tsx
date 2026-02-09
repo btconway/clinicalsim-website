@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative text-center px-6 py-16 md:py-24 overflow-hidden">
+      <section className="relative text-center px-6 py-16 md:py-24">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 -z-10" />
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-light shimmer mb-6">About ClinicalSim.ai</h1>
