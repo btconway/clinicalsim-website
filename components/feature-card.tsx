@@ -56,7 +56,7 @@ export function FeatureCard({
       {...props}
     >
       <div className={cn("w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110", styles.iconContainer)}>
-        <Icon className="w-6 h-6 text-white" />
+        <Icon className="w-7 h-7 text-white" />
       </div>
 
       <h3 className="text-xl md:text-2xl font-medium mb-3 text-gray-900">

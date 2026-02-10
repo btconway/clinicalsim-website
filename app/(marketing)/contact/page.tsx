@@ -149,7 +149,7 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300">
               <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-warm to-orange-600 flex items-center justify-center mb-6">
-                <UsersIcon className="w-6 h-6 text-white" />
+                <UsersIcon className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-xl font-medium text-navy mb-3">Pilot Program</h3>
               <p className="text-gray-700 font-light leading-relaxed">
@@ -160,7 +160,7 @@ export default function ContactPage() {
 
             <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300">
               <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 flex items-center justify-center mb-6">
-                <HandshakeIcon className="w-6 h-6 text-white" />
+                <HandshakeIcon className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-xl font-medium text-navy mb-3">Partnerships</h3>
               <p className="text-gray-700 font-light leading-relaxed">
@@ -171,7 +171,7 @@ export default function ContactPage() {
 
             <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300">
               <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-success to-emerald-600 flex items-center justify-center mb-6">
-                <FlaskConicalIcon className="w-6 h-6 text-white" />
+                <FlaskConicalIcon className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-xl font-medium text-navy mb-3">Research Collaboration</h3>
               <p className="text-gray-700 font-light leading-relaxed">

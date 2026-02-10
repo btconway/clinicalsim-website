@@ -20,7 +20,7 @@ export function BrainIcon({ className, ...props }: IconProps) {
 export function BookOpenIcon({ className, ...props }: IconProps) {
   return (
     <svg
-      viewBox="0 0 1200 1200"
+      viewBox="200 200 800 800"
       className={cn("fill-current", className)}
       {...props}
     >
