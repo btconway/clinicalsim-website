@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Image from "next/image"
-import { Play } from "lucide-react"
+import { PlayIcon } from "@/components/icons"
 import { cn } from "@/lib/utils"
 
 export interface DemoVideoSectionProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -108,7 +108,7 @@ export function DemoVideoSection({
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-warm shadow-2xl flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-warm/50">
-                <Play className="w-10 h-10 md:w-12 md:h-12 text-white ml-1" fill="white" />
+                <PlayIcon className="w-10 h-10 md:w-12 md:h-12 text-white ml-1" />
               </div>
             </div>
           </>
@@ -118,7 +118,7 @@ export function DemoVideoSection({
         {!videoUrl && !youtubeUrl && (
           <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-600/90 to-indigo-600/90">
             <div className="text-center text-white p-8">
-              <Play className="w-16 h-16 mx-auto mb-4 opacity-50" />
+              <PlayIcon className="w-16 h-16 mx-auto mb-4 opacity-50" />
               <p className="text-2xl font-medium">Demo Video Coming Soon</p>
               <p className="text-lg font-light mt-2 opacity-80">
                 We&apos;re preparing an in-depth product demonstration

@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Image from "next/image"
-import { X, ChevronLeft, ChevronRight } from "lucide-react"
+import { XIcon, ChevronLeftIcon, ChevronRightIcon } from "@/components/icons"
 import { cn } from "@/lib/utils"
 
 export interface Screenshot {
@@ -104,7 +104,7 @@ export function ScreenshotGallery({
             onClick={closeLightbox}
             aria-label="Close"
           >
-            <X className="w-8 h-8" />
+            <XIcon className="w-8 h-8" />
           </button>
 
           {/* Previous Button */}
@@ -116,7 +116,7 @@ export function ScreenshotGallery({
             }}
             aria-label="Previous"
           >
-            <ChevronLeft className="w-10 h-10" />
+            <ChevronLeftIcon className="w-10 h-10" />
           </button>
 
           {/* Image Container */}
@@ -150,7 +150,7 @@ export function ScreenshotGallery({
             }}
             aria-label="Next"
           >
-            <ChevronRight className="w-10 h-10" />
+            <ChevronRightIcon className="w-10 h-10" />
           </button>
 
           {/* Counter */}

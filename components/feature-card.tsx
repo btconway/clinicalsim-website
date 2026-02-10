@@ -1,9 +1,9 @@
 import * as React from "react"
-import { LucideIcon } from "lucide-react"
+import * as React from "react"
 import { cn } from "@/lib/utils"
 
 export interface FeatureCardProps extends React.HTMLAttributes<HTMLDivElement> {
-  icon: LucideIcon
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>
   title: string
   description: string
   variant?: "default" | "warm" | "navy" | "success"
