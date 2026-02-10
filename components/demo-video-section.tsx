@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils"
 
 export interface DemoVideoSectionProps extends React.HTMLAttributes<HTMLDivElement> {
   videoUrl?: string
+  youtubeUrl?: string
   thumbnailUrl?: string
   title?: string
   description?: string
@@ -21,6 +22,7 @@ const aspectRatioStyles = {
 
 export function DemoVideoSection({
   videoUrl,
+  youtubeUrl,
   thumbnailUrl = "/placeholder-video-thumbnail.jpg",
   title = "See ClinicalSim.ai in Action",
   description,
@@ -59,13 +61,26 @@ export function DemoVideoSection({
       {/* Video Container */}
       <div
         className={cn(
-          "relative rounded-2xl overflow-hidden shadow-2xl bg-gray-900 group cursor-pointer",
-          aspectRatioStyles[aspectRatio]
+          "relative rounded-2xl overflow-hidden shadow-2xl bg-gray-900",
+          aspectRatioStyles[aspectRatio],
+          !youtubeUrl && "group cursor-pointer"
         )}
-        onClick={handlePlay}
+        onClick={!youtubeUrl ? handlePlay : undefined}
       >
+        {/* YouTube iframe */}
+        {youtubeUrl && (
+          <iframe
+            src={youtubeUrl}
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="absolute inset-0 w-full h-full"
+          />
+        )}
+
         {/* Video Element */}
-        {videoUrl && (
+        {videoUrl && !youtubeUrl && (
           <video
             ref={videoRef}
             className={cn(
@@ -81,7 +96,7 @@ export function DemoVideoSection({
         )}
 
         {/* Thumbnail with Play Button */}
-        {!isPlaying && (
+        {!isPlaying && !videoUrl && !youtubeUrl && (
           <>
             <Image
               src={thumbnailUrl}
@@ -100,7 +115,7 @@ export function DemoVideoSection({
         )}
 
         {/* Coming Soon Overlay (if no video URL provided) */}
-        {!videoUrl && (
+        {!videoUrl && !youtubeUrl && (
           <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-600/90 to-indigo-600/90">
             <div className="text-center text-white p-8">
               <Play className="w-16 h-16 mx-auto mb-4 opacity-50" />

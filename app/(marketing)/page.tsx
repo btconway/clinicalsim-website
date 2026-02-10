@@ -148,8 +148,7 @@ export default function HomePage() {
           <DemoVideoSection
             title="See ClinicalSim.ai in Action"
             description="Watch how learners practice difficult conversations with AI-powered simulation"
-            // videoUrl="/demo-video.mp4" // Uncomment when video is ready
-            thumbnailUrl="/placeholder-video-thumbnail.jpg"
+            youtubeUrl="https://www.youtube.com/embed/HRFtR44QlQk?si=dwv7JdCHPUtWSQIL&amp;start=97"
           />
         </div>
       </section>
