@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { StatHighlight } from "@/components/stat-highlight"
 import { EvidenceShowcase } from "@/components/evidence-showcase"
 import { SectionDivider } from "@/components/section-divider"
-import { CheckIcon } from "@/components/icons"
+import { Check } from "lucide-react"
 
 export default function AboutPage() {
   return (
@@ -74,7 +74,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <h3 className="text-xl font-medium text-navy flex items-center gap-2">
                   <span className="w-8 h-8 rounded-lg bg-warm flex items-center justify-center flex-shrink-0">
-                    <CheckIcon className="w-5 h-5 text-white" />
+                    <Check className="w-5 h-5 text-white" />
                   </span>
                   Scenario Library
                 </h3>
@@ -109,7 +109,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <h3 className="text-xl font-medium text-navy flex items-center gap-2">
                   <span className="w-8 h-8 rounded-lg bg-success flex items-center justify-center flex-shrink-0">
-                    <CheckIcon className="w-5 h-5 text-white" />
+                    <Check className="w-5 h-5 text-white" />
                   </span>
                   Platform Capabilities
                 </h3>
@@ -170,15 +170,15 @@ export default function AboutPage() {
               <h3 className="text-lg font-medium text-navy mb-4">Measured Improvements</h3>
               <ul className="space-y-3 text-gray-700 font-light">
                 <li className="flex items-start gap-3">
-                  <CheckIcon className="w-5 h-5 text-success mt-0.5 flex-shrink-0" />
+                  <Check className="w-5 h-5 text-success mt-0.5 flex-shrink-0" />
                   Increased confidence and communication competence
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckIcon className="w-5 h-5 text-success mt-0.5 flex-shrink-0" />
+                  <Check className="w-5 h-5 text-success mt-0.5 flex-shrink-0" />
                   Improved scores on validated assessment tools
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckIcon className="w-5 h-5 text-success mt-0.5 flex-shrink-0" />
+                  <Check className="w-5 h-5 text-success mt-0.5 flex-shrink-0" />
                   Blinded evaluators confirmed skill improvements
                 </li>
               </ul>
@@ -188,15 +188,15 @@ export default function AboutPage() {
               <h3 className="text-lg font-medium text-navy mb-4">Learner Experience</h3>
               <ul className="space-y-3 text-gray-700 font-light">
                 <li className="flex items-start gap-3">
-                  <CheckIcon className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                   Reduced social anxiety during practice
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckIcon className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                   High perceived utility and realism ratings
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckIcon className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <Check className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                   Preferred for iterative practice
                 </li>
               </ul>

@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { BrainIcon } from "@/components/icons"
+import { Brain } from "lucide-react"
 
 export function SiteHeader() {
   const pathname = usePathname()
@@ -16,7 +16,7 @@ export function SiteHeader() {
   return (
     <header className="flex items-center justify-between px-4 py-4 md:px-12 md:py-6 bg-white/80 backdrop-blur-sm border-b border-white/20">
       <Link href="/" className="flex items-center gap-2">
-        <BrainIcon className="h-8 w-8 text-blue-600" />
+        <Brain className="h-8 w-8 text-blue-600" />
         <span className="text-2xl font-light text-slate-800">
           ClinicalSim<span className="text-blue-600 shimmer">.ai</span>
         </span>

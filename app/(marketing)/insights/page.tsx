@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { getAllPosts } from "@/lib/posts"
 import { SectionDivider } from "@/components/section-divider"
-import { BookOpenIcon } from "@/components/icons"
+import { BookOpen } from "lucide-react"
 
 export default function InsightsPage() {
   const posts = getAllPosts()
@@ -52,7 +52,7 @@ export default function InsightsPage() {
               <div className="group bg-gradient-to-br from-white to-blue-50/50 backdrop-blur-sm border-2 border-warm/30 rounded-2xl p-8 md:p-10 shadow-xl hover:shadow-2xl border-glow-hover transition-all duration-300 cursor-pointer">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-warm to-orange-600 flex items-center justify-center flex-shrink-0">
-                    <BookOpenIcon className="w-7 h-7 text-white" />
+                    <BookOpen className="w-7 h-7 text-white" />
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-3 text-sm text-gray-500 font-light mb-3">

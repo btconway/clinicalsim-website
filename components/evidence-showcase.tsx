@@ -1,6 +1,6 @@
 import * as React from "react"
 import Link from "next/link"
-import { BookOpenIcon, ExternalLinkIcon } from "@/components/icons"
+import { BookOpen, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
@@ -48,7 +48,7 @@ export function EvidenceShowcase({
       {/* Icon and Title */}
       <div className="flex items-start gap-4 mb-4">
         <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 flex items-center justify-center flex-shrink-0">
-          <BookOpenIcon className="w-7 h-7 text-white" />
+          <BookOpen className="w-6 h-6 text-white" />
         </div>
         <div className="flex-1">
           <h3 className="text-xl md:text-2xl font-semibold text-navy mb-2">
@@ -74,7 +74,7 @@ export function EvidenceShowcase({
             className="group"
           >
             Read Full Study
-            <ExternalLinkIcon className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+            <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
         </Link>
       )}

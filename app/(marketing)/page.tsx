@@ -6,42 +6,42 @@ import { EvidenceShowcase } from "@/components/evidence-showcase"
 import { AsymmetricGrid } from "@/components/asymmetric-grid"
 import { SectionDivider } from "@/components/section-divider"
 import { DemoVideoSection } from "@/components/demo-video-section"
-import { BookOpenIcon, GraduationCapIcon, MicIcon, ClockIcon, BarChartIcon, DollarSignIcon } from "@/components/icons"
+import { BookOpen, GraduationCap, Mic, Clock, BarChart3, DollarSign } from "lucide-react"
 
 export default function HomePage() {
   const features = [
     {
-      icon: BookOpenIcon,
+      icon: BookOpen,
       title: "Published Research",
       description: "The only AI communication platform backed by a randomized controlled trial with PICU fellows, with blinded evaluation using validated assessment tools.",
       variant: "warm" as const,
     },
     {
-      icon: GraduationCapIcon,
+      icon: GraduationCap,
       title: "ACGME Aligned",
       description: "Directly addresses Interpersonal and Communication Skills milestones required across every specialty, with structured assessment and progress tracking.",
       variant: "default" as const,
     },
     {
-      icon: MicIcon,
+      icon: Mic,
       title: "Realistic Voice Practice",
       description: "Real-time spoken conversations with AI patients for goals of care, difficult disclosures, breaking bad news, and family meetings — not text-based chat.",
       variant: "default" as const,
     },
     {
-      icon: ClockIcon,
+      icon: Clock,
       title: "On-Demand, 24/7",
       description: "No scheduling, no actors, no sim center booking. Practice from any device, anytime — including right before a real conversation.",
       variant: "default" as const,
     },
     {
-      icon: BarChartIcon,
+      icon: BarChart3,
       title: "Structured Feedback",
       description: "Automated assessment scoring empathy, language sensitivity, and information delivery. Full transcripts and progress tracking using validated frameworks.",
       variant: "default" as const,
     },
     {
-      icon: DollarSignIcon,
+      icon: DollarSign,
       title: "Scalable & Cost-Effective",
       description: "Traditional SP encounters cost $150-300 each. Scale communication training across your entire program without scaling costs.",
       variant: "success" as const,

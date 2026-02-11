@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { BrainIcon } from "@/components/icons"
+import { Brain } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function SiteFooter() {
@@ -10,7 +10,7 @@ export function SiteFooter() {
           {/* Logo and Description */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <BrainIcon className="h-6 w-6 text-blue-600" />
+              <Brain className="h-6 w-6 text-blue-600" />
               <span className="text-xl font-light text-slate-800">
                 ClinicalSim<span className="text-blue-600">.ai</span>
               </span>

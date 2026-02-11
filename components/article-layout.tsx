@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowLeftIcon } from "@/components/icons"
+import { ArrowLeft } from "lucide-react"
 import type { Post } from "@/lib/posts"
 
 export function ArticleLayout({
@@ -16,7 +16,7 @@ export function ArticleLayout({
           href="/insights"
           className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-gray-900 font-light mb-8 transition-colors"
         >
-          <ArrowLeftIcon className="w-4 h-4" />
+          <ArrowLeft className="w-4 h-4" />
           Back to Insights
         </Link>
 
