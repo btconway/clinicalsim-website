@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
+import { JsonLd } from "@/components/json-ld"
 import type { Post } from "@/lib/posts"
 
 export function ArticleLayout({
@@ -11,6 +12,33 @@ export function ArticleLayout({
 }) {
   return (
     <section className="px-6 py-12 md:py-20">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: post.title,
+          description: post.description,
+          datePublished: post.date,
+          author: {
+            "@type": "Organization",
+            name: "ClinicalSim.ai",
+            url: "https://clinicalsim.ai",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "ClinicalSim.ai",
+            url: "https://clinicalsim.ai",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://clinicalsim.ai/logo.svg",
+            },
+          },
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": `https://clinicalsim.ai/insights/${post.slug}`,
+          },
+        }}
+      />
       <article className="max-w-3xl mx-auto">
         <Link
           href="/insights"

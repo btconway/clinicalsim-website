@@ -5,6 +5,7 @@ import { StatHighlight } from "@/components/stat-highlight"
 import { FeatureCard } from "@/components/feature-card"
 import { EvidenceShowcase } from "@/components/evidence-showcase"
 import { SectionDivider } from "@/components/section-divider"
+import { JsonLd } from "@/components/json-ld"
 import { type Solution } from "@/lib/solutions"
 import { getPostBySlug } from "@/lib/posts"
 import {
@@ -26,8 +27,50 @@ export function SolutionPageLayout({ solution, children }: SolutionPageLayoutPro
     .map((slug) => getPostBySlug(slug))
     .filter(Boolean)
 
+  const faqJsonLd = solution.faqs && solution.faqs.length > 0 ? {
+    "@context": "https://schema.org" as const,
+    "@type": "FAQPage" as const,
+    mainEntity: solution.faqs.map((faq) => ({
+      "@type": "Question" as const,
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer" as const,
+        text: faq.answer,
+      },
+    })),
+  } : null
+
   return (
     <>
+      <JsonLd
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://clinicalsim.ai",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Solutions",
+                item: "https://clinicalsim.ai/solutions",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: solution.shortTitle,
+                item: `https://clinicalsim.ai/solutions/${solution.slug}`,
+              },
+            ],
+          },
+          ...(faqJsonLd ? [faqJsonLd] : []),
+        ]}
+      />
       {/* Hero Section */}
       <section className="relative px-6 py-12 md:py-20">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 -z-10" />
@@ -42,9 +85,15 @@ export function SolutionPageLayout({ solution, children }: SolutionPageLayoutPro
             <span className="text-gray-700">{solution.shortTitle}</span>
           </nav>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-light shimmer leading-loose pb-3 mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-light shimmer leading-loose pb-3 mb-4">
             {solution.title}
           </h1>
+
+          {solution.lastUpdated && (
+            <p className="text-sm text-gray-400 font-light mb-4">
+              Last updated: {new Date(solution.lastUpdated).toLocaleDateString("en-US", { month: "long", year: "numeric" })}
+            </p>
+          )}
 
           <p className="text-xl md:text-2xl text-gray-700 font-light leading-relaxed mb-4">
             <span className="text-warm font-medium">{solution.heroSubtitle}</span>
@@ -256,6 +305,32 @@ export function SolutionPageLayout({ solution, children }: SolutionPageLayoutPro
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      {solution.faqs && solution.faqs.length > 0 && (
+        <section className="px-6 py-12 md:py-16 bg-white">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-light text-navy mb-8">
+              Frequently Asked <span className="text-warm font-medium">Questions</span>
+            </h2>
+            <div className="space-y-6">
+              {solution.faqs.map((faq, index) => (
+                <div key={index} className="border border-gray-200 rounded-xl overflow-hidden">
+                  <details className="group">
+                    <summary className="flex items-center justify-between cursor-pointer px-6 py-5 bg-white hover:bg-gray-50 transition-colors">
+                      <h3 className="text-lg font-medium text-gray-900 pr-4">{faq.question}</h3>
+                      <ChevronRight className="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-90" />
+                    </summary>
+                    <div className="px-6 pb-5 pt-2">
+                      <p className="text-base text-gray-700 font-light leading-relaxed">{faq.answer}</p>
+                    </div>
+                  </details>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Children slot for page-specific content */}
       {children}

@@ -1,7 +1,25 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { getAllPosts } from "@/lib/posts"
 import { SectionDivider } from "@/components/section-divider"
 import { BookOpen } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Insights — Research & Evidence for Medical Communication Training",
+  description: "Evidence-based insights on medical communication training, simulation technology, and the clinical conversations that drive patient outcomes. Research from ClinicalSim.ai.",
+  openGraph: {
+    title: "Insights from ClinicalSim.ai",
+    description: "Evidence-based insights on medical communication training, simulation technology, and clinical conversation outcomes.",
+    url: "https://clinicalsim.ai/insights",
+  },
+  twitter: {
+    title: "Insights from ClinicalSim.ai",
+    description: "Research and evidence on medical communication training.",
+  },
+  alternates: {
+    canonical: "https://clinicalsim.ai/insights",
+  },
+}
 
 export default function InsightsPage() {
   const posts = getAllPosts()

@@ -44,6 +44,11 @@ export interface RevenueProjection {
   source?: string
 }
 
+export interface FaqItem {
+  question: string
+  answer: string
+}
+
 export interface Solution {
   slug: string
   title: string
@@ -86,6 +91,12 @@ export interface Solution {
 
   // Related blog posts
   relatedPostSlugs: string[]
+
+  // FAQs (for GEO structured data)
+  faqs?: FaqItem[]
+
+  // Last updated date
+  lastUpdated?: string
 }
 
 const solutions: Solution[] = [
@@ -225,6 +236,27 @@ const solutions: Solution[] = [
       "end-of-life-care-communication",
       "hospital-communication-training-roi",
     ],
+
+    faqs: [
+      {
+        question: "What is advance care planning?",
+        answer: "Advance care planning (ACP) is a process in which patients, their families, and their healthcare providers discuss and document preferences for future medical care — particularly care desired near the end of life. ACP conversations cover topics like resuscitation preferences, comfort care goals, and designation of a healthcare proxy. Medicare reimburses these conversations under CPT codes 99497 and 99498.",
+      },
+      {
+        question: "What are the CPT codes for advance care planning?",
+        answer: "Medicare reimburses advance care planning under two CPT codes: 99497 covers the first 30 minutes of face-to-face ACP discussion ($86.84 reimbursement), and 99498 is an add-on code for each additional 30 minutes ($74.83). There is no annual frequency limit on ACP billing under Medicare.",
+      },
+      {
+        question: "How much does Medicare reimburse for ACP conversations?",
+        answer: "Medicare reimburses approximately $87 for the initial 30-minute ACP conversation (CPT 99497) and $75 for each additional 30 minutes (CPT 99498). There is no annual cap — providers can bill for ACP conversations as often as clinically appropriate. Despite this, fewer than 5% of eligible Medicare beneficiaries receive a billed ACP conversation annually (Health Affairs, 2021).",
+      },
+      {
+        question: "Why don't more providers bill for advance care planning?",
+        answer: "The primary barrier to ACP billing is provider readiness, not patient demand. Most internal medicine and family medicine residencies offer no dedicated ACP training module. Providers consistently cite discomfort and lack of confidence as the primary barrier to initiating ACP conversations. When providers receive structured ACP training, billing rates increase significantly — one study in JAMA Health Forum (2024) found that ACP training increased billing 11x, from 1.3% to 14% of eligible visits.",
+      },
+    ],
+
+    lastUpdated: "2026-02-14",
   },
 
   {
@@ -349,6 +381,27 @@ const solutions: Solution[] = [
       "end-of-life-care-communication",
       "hospital-communication-training-roi",
     ],
+
+    faqs: [
+      {
+        question: "What is a goals-of-care conversation?",
+        answer: "A goals-of-care conversation is a structured clinical discussion in which a provider explores a seriously ill patient's values, understanding of their illness, and preferences for future treatment. These conversations help align medical care with what matters most to the patient — whether that's pursuing aggressive treatment, focusing on comfort, or something in between. The Serious Illness Conversation Guide (SICG) from Ariadne Labs is a widely used framework for conducting these conversations.",
+      },
+      {
+        question: "How do goals-of-care conversations reduce ICU costs?",
+        answer: "Goals-of-care conversations reduce ICU costs by helping patients make informed decisions that often lead to less aggressive interventions. A landmark JAMA study (Wright et al., 2008) found that end-of-life discussions were associated with 3x lower ICU admission rates (4.1% vs 12.4%). Palliative care consultation — which centers on goals-of-care conversations — saves an average of $4,908 per admission for patients who die in hospital (Morrison et al., Archives of Internal Medicine, 2008).",
+      },
+      {
+        question: "What is the Serious Illness Conversation Guide?",
+        answer: "The Serious Illness Conversation Guide (SICG) is a structured communication framework developed by Ariadne Labs to help clinicians have more effective conversations with seriously ill patients. The guide covers key domains: understanding the patient's awareness of their illness, exploring their values and priorities, sharing prognostic information, and making treatment recommendations. Studies show the SICG improves outcomes, but providers need practice to implement it effectively.",
+      },
+      {
+        question: "What percentage of malpractice claims involve communication failures?",
+        answer: "Communication failures are the root cause of 66% of sentinel events according to The Joint Commission, and drive approximately 40% of malpractice claims. CRICO/Harvard estimates that communication breakdowns contribute to $1.7 billion in annual malpractice costs. Communication-related malpractice cases have 39% greater odds of closing with an indemnity payment compared to non-communication-related cases.",
+      },
+    ],
+
+    lastUpdated: "2026-02-14",
   },
 
   {
@@ -484,6 +537,27 @@ const solutions: Solution[] = [
       "hospital-communication-training-roi",
       "why-communication-training-matters",
     ],
+
+    faqs: [
+      {
+        question: "What is CPT 99483?",
+        answer: "CPT 99483 is the Medicare billing code for a comprehensive cognitive assessment and care plan. It covers approximately 50 minutes of face-to-face time and reimburses at roughly $282. The assessment includes cognition-focused evaluation, functional assessment, care plan creation, and advance care planning. Despite its availability, utilization remains low — the GAO found that while usage tripled between 2018 and 2022, it covers fewer than 3% of the eligible population.",
+      },
+      {
+        question: "Why is cognitive impairment underdiagnosed?",
+        answer: "Over 50% of cognitive impairment cases in primary care go undiagnosed (JPAD, 2024). The primary barrier is provider readiness — not patient access. Over a quarter of primary care clinicians had zero patients with a diagnosed mild cognitive impairment in their panel, despite 20% expected prevalence. Providers report the diagnosis disclosure conversation as the primary reason they avoid formal cognitive assessment.",
+      },
+      {
+        question: "How much does Medicare pay for cognitive assessment?",
+        answer: "Medicare reimburses approximately $282 for a comprehensive cognitive assessment and care plan under CPT 99483. This covers approximately 50 minutes and includes cognition-focused evaluation, functional assessment, care plan creation, and advance care planning. For a 75-PCP health system with moderate billing, this represents over $1M in annual revenue opportunity (GAO 2024).",
+      },
+      {
+        question: "What is the cost of dementia care in the United States?",
+        answer: "Alzheimer's and dementia care costs the US $384 billion annually (Alzheimer's Association, 2025). Medicare beneficiaries with dementia cost 3x more than those without. Additionally, unpaid dementia caregiving is valued at $413 billion annually. Seven million Americans are currently living with Alzheimer's disease, and earlier diagnosis through cognitive assessment can significantly improve care planning and reduce crisis-driven costs.",
+      },
+    ],
+
+    lastUpdated: "2026-02-14",
   },
 
   {
@@ -607,6 +681,27 @@ const solutions: Solution[] = [
       "hospital-communication-training-roi",
       "why-communication-training-matters",
     ],
+
+    faqs: [
+      {
+        question: "Why are so few doctors trained in menopause care?",
+        answer: "A 2023 survey of US OB/GYN residency program directors found that only 31.3% reported having a dedicated menopause curriculum (Menopause, 2023). This means 69% of OB/GYN residencies graduate physicians with no structured menopause training. Fewer than 1% of actively licensed US physicians are certified menopause practitioners through The Menopause Society. The result is that fewer than 7% of residents in key specialties feel prepared to support menopausal patients (BCG, 2025).",
+      },
+      {
+        question: "What percentage of OB/GYN residencies teach menopause?",
+        answer: "Only 31.3% of OB/GYN residency programs include a dedicated menopause curriculum, according to a 2023 national survey published in Menopause (68.3% response rate, 145 program directors surveyed). This gap leaves the majority of graduating OB/GYNs unprepared to manage the most common midlife health transition affecting over 55 million American women.",
+      },
+      {
+        question: "What is the menopause care gap?",
+        answer: "The menopause care gap refers to the disconnect between the large population of women needing menopause care (55M+ in the US, with 1.3M entering menopause each year) and the small number of providers trained to help them (fewer than 1% of US physicians are certified menopause practitioners). 85% of menopausal women experience symptoms significant enough to affect daily life, yet 1 in 3 women don't feel confident advocating for themselves in menopause-related healthcare visits. BCG projects the menopause market at $40B+ as demand grows.",
+      },
+      {
+        question: "How can hospitals build menopause care programs?",
+        answer: "Hospitals can build menopause care programs by training existing OB/GYN, primary care, and internal medicine providers in menopause symptom assessment, hormone therapy discussion, and patient communication. Midi Health reached $150M in run rate serving 25,000 menopause patients per week — proving significant market demand. A health system with 10 trained OB/GYNs seeing 15 menopause patients per week can generate $500K-$750K in annual visit revenue, plus downstream referrals.",
+      },
+    ],
+
+    lastUpdated: "2026-02-14",
   },
 ]
 

@@ -1,9 +1,27 @@
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Users, Handshake, FlaskConical } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Contact Us — Request a Pilot",
+  description: "Contact ClinicalSim.ai to request a pilot program, schedule a demo, or learn how AI voice simulation can improve medical communication training at your institution.",
+  openGraph: {
+    title: "Contact ClinicalSim.ai",
+    description: "Request a pilot program or learn how AI voice simulation can improve medical communication training at your institution.",
+    url: "https://clinicalsim.ai/contact",
+  },
+  twitter: {
+    title: "Contact ClinicalSim.ai",
+    description: "Request a pilot program or schedule a demo.",
+  },
+  alternates: {
+    canonical: "https://clinicalsim.ai/contact",
+  },
+}
 
 export default function ContactPage() {
   return (

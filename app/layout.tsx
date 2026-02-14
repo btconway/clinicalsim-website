@@ -17,13 +17,24 @@ const ibmPlexMono = IBM_Plex_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'ClinicalSim.ai',
-  description: 'Practice the conversations that matter most. AI voice simulation for high-stakes medical conversations — backed by published research.',
+  metadataBase: new URL('https://clinicalsim.ai'),
+  title: {
+    default: 'ClinicalSim.ai — AI Voice Simulation for Medical Communication Training',
+    template: '%s | ClinicalSim.ai',
+  },
+  description: 'Practice the conversations that matter most. AI voice simulation for high-stakes medical conversations — goals of care, advance care planning, diagnosis disclosure — backed by a published randomized controlled trial.',
   icons: {
     icon: '/favicon.svg',
     apple: '/apple-touch-icon.png',
   },
-  generator: 'v0.dev',
+  openGraph: {
+    type: 'website',
+    siteName: 'ClinicalSim.ai',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+  },
 }
 
 export default function RootLayout({

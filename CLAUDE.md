@@ -114,3 +114,42 @@ The project uses shadcn/ui components which are:
 ### Border Radius System
 - `rounded-xs` (4px), `rounded-sm` (6px), `rounded-md` (8px), `rounded-lg` (8px), `rounded-xl` (16px), `rounded-2xl` (24px)
 - **Guideline**: Vary based on component importance, avoid uniform 8px everywhere
+
+## GEO (Generative Engine Optimization) Guidelines
+
+All content on this site must be optimized for discovery by AI search systems (ChatGPT, Perplexity, Google AI Overviews, etc.). Follow these rules when creating or modifying pages:
+
+### Page Metadata (Required for all TSX pages)
+- Every page MUST have `export const metadata: Metadata` with: `title`, `description`, `openGraph` (title, description, url), `twitter` (title, description), and `alternates.canonical`
+- Root layout (`app/layout.tsx`) uses `metadataBase` and template titles (`%s | ClinicalSim.ai`)
+- Descriptions should include specific stats and source references where possible
+
+### Structured Data (JSON-LD)
+- Use `components/json-ld.tsx` helper for all structured data
+- Marketing layout includes Organization + WebSite schemas
+- Blog posts include Article schema via `components/article-layout.tsx`
+- Solution pages include BreadcrumbList + FAQPage schemas via `components/solution-page-layout.tsx`
+- When adding new page types, add appropriate JSON-LD schema
+
+### Citation Magnets & Extractable Content
+- Include self-contained, quotable definition blocks (2-3 sentences with a stat + source)
+- FAQ sections on solution pages: clear Q/A format, self-contained answers, each with a stat + source
+- "Key Takeaway" blocks at the top of high-value blog posts: 1 quotable sentence + stat
+- All statistics must include their source attribution
+
+### Content Structure for AI Discoverability
+- Use clear heading hierarchy (H2 for sections, H3 for subsections)
+- Write self-contained paragraphs — avoid ambiguous pronouns; AI systems extract individual passages
+- Include specific numbers, CPT codes, dollar amounts, and percentages with source citations
+- FAQ answers should be independently understandable without reading the question
+
+### Infrastructure Files
+- `app/robots.ts` — Crawler rules; blocks GPTBot (training) while allowing search crawlers
+- `app/sitemap.ts` — Auto-generated from `lib/posts.ts`, `lib/solutions.ts`, `lib/audiences.ts`
+- `public/llms.txt` — Page index for LLM crawlers; update when adding/removing pages
+- When adding new pages, update `app/sitemap.ts` and `public/llms.txt`
+
+### Solution Page Data (`lib/solutions.ts`)
+- `faqs` field: Array of `{ question, answer }` for FAQ section + FAQPage JSON-LD
+- `lastUpdated` field: ISO date string displayed in hero section
+- When modifying solution page content, update `lastUpdated` date

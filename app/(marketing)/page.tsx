@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { FeatureCard } from "@/components/feature-card"
@@ -9,6 +10,23 @@ import { DemoVideoSection } from "@/components/demo-video-section"
 import { AudienceCard } from "@/components/audience-card"
 import { getAllAudiences } from "@/lib/audiences"
 import { BookOpen, Heart, TrendingUp, Mic, Users, BarChart3, ArrowRight } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "AI Voice Simulation for Medical Communication Training",
+  description: "ClinicalSim.ai is an AI-powered voice simulation platform for practicing high-stakes medical conversations — goals of care, advance care planning, diagnosis disclosure — on-demand from any device. Backed by a published randomized controlled trial.",
+  openGraph: {
+    title: "ClinicalSim.ai — Practice the Conversations That Matter Most",
+    description: "AI voice simulation for high-stakes medical conversations. The only AI communication training platform backed by a published randomized controlled trial.",
+    url: "https://clinicalsim.ai",
+  },
+  twitter: {
+    title: "ClinicalSim.ai — Practice the Conversations That Matter Most",
+    description: "AI voice simulation for high-stakes medical conversations. Backed by a published RCT.",
+  },
+  alternates: {
+    canonical: "https://clinicalsim.ai",
+  },
+}
 
 export default function HomePage() {
   const audiences = getAllAudiences()
@@ -117,6 +135,18 @@ export default function HomePage() {
       </section>
 
       <SectionDivider variant="diagonal-down" color="white" />
+
+      {/* Definition Block — GEO citation magnet */}
+      <section className="px-6 py-10 md:py-12 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <div className="border-l-4 border-warm pl-6 md:pl-8">
+            <h2 className="text-xl md:text-2xl font-light text-navy mb-3">What is ClinicalSim.ai?</h2>
+            <p className="text-base md:text-lg text-gray-700 font-light leading-relaxed">
+              ClinicalSim.ai is an AI-powered voice simulation platform for practicing high-stakes medical conversations. Clinicians practice real-time spoken dialogue with AI patients — goals of care, end-of-life discussions, diagnosis disclosure — on-demand from any device. It is the only AI communication training platform backed by a published randomized controlled trial with blinded evaluation using validated assessment tools.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Problem Statement Section - Full-width with stats */}
       <section className="px-6 py-12 md:py-16 bg-white">

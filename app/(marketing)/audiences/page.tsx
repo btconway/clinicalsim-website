@@ -1,9 +1,27 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { AudienceCard } from "@/components/audience-card"
 import { SectionDivider } from "@/components/section-divider"
 import { getAllAudiences } from "@/lib/audiences"
 import { ArrowRight } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Who We Serve — Health Systems, Clinicians & Medical Educators",
+  description: "ClinicalSim.ai serves health system leaders seeking ROI from communication training, clinicians building confidence in difficult conversations, and medical educators meeting ACGME requirements at scale.",
+  openGraph: {
+    title: "Who ClinicalSim.ai Serves",
+    description: "AI communication training for health system leaders, clinicians, and medical educators.",
+    url: "https://clinicalsim.ai/audiences",
+  },
+  twitter: {
+    title: "Who ClinicalSim.ai Serves",
+    description: "AI communication training for health systems, clinicians, and educators.",
+  },
+  alternates: {
+    canonical: "https://clinicalsim.ai/audiences",
+  },
+}
 
 export default function AudiencesPage() {
   const audiences = getAllAudiences()

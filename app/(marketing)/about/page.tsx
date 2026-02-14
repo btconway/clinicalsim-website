@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { StatHighlight } from "@/components/stat-highlight"
@@ -6,6 +7,23 @@ import { SectionDivider } from "@/components/section-divider"
 import { AudienceCard } from "@/components/audience-card"
 import { getAllAudiences } from "@/lib/audiences"
 import { Check, ArrowRight } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "About ClinicalSim.ai — AI Medical Communication Training",
+  description: "ClinicalSim.ai is an AI-powered voice simulation platform for high-stakes medical conversations. Built on research with PICU fellows, backed by a published randomized controlled trial.",
+  openGraph: {
+    title: "About ClinicalSim.ai",
+    description: "AI-powered voice simulation for high-stakes medical conversations. Built on research, backed by a published RCT.",
+    url: "https://clinicalsim.ai/about",
+  },
+  twitter: {
+    title: "About ClinicalSim.ai",
+    description: "AI-powered voice simulation for high-stakes medical conversations. Built on research, backed by a published RCT.",
+  },
+  alternates: {
+    canonical: "https://clinicalsim.ai/about",
+  },
+}
 
 export default function AboutPage() {
   const audiences = getAllAudiences()

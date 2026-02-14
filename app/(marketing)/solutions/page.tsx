@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { SolutionCard } from "@/components/solution-card"
@@ -6,6 +7,23 @@ import { FeatureCard } from "@/components/feature-card"
 import { SectionDivider } from "@/components/section-divider"
 import { getAllSolutions } from "@/lib/solutions"
 import { BookOpen, TrendingUp, BarChart3 } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Clinical Solutions — AI Simulation for High-Stakes Conversations",
+  description: "AI voice simulation training for advance care planning, goals of care, cognitive assessments, and menopause care. Practice billable clinical conversations with dedicated Medicare CPT codes.",
+  openGraph: {
+    title: "Clinical Solutions from ClinicalSim.ai",
+    description: "AI voice simulation for advance care planning, goals of care, cognitive assessments, and menopause care conversations.",
+    url: "https://clinicalsim.ai/solutions",
+  },
+  twitter: {
+    title: "Clinical Solutions from ClinicalSim.ai",
+    description: "AI voice simulation for high-stakes clinical conversations with dedicated billing codes.",
+  },
+  alternates: {
+    canonical: "https://clinicalsim.ai/solutions",
+  },
+}
 
 export default function SolutionsPage() {
   const solutions = getAllSolutions()
