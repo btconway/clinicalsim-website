@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button"
 import { StatHighlight } from "@/components/stat-highlight"
 import { FeatureCard } from "@/components/feature-card"
 import { EvidenceShowcase } from "@/components/evidence-showcase"
-import { AsymmetricGrid } from "@/components/asymmetric-grid"
 import { SectionDivider } from "@/components/section-divider"
 import { type Solution } from "@/lib/solutions"
 import { getPostBySlug } from "@/lib/posts"
@@ -208,7 +207,7 @@ export function SolutionPageLayout({ solution, children }: SolutionPageLayoutPro
             </p>
           </div>
 
-          <AsymmetricGrid layout="staggered" gap="large">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {solution.simulationBenefits.map((benefit, index) => (
               <FeatureCard
                 key={index}
@@ -220,7 +219,7 @@ export function SolutionPageLayout({ solution, children }: SolutionPageLayoutPro
                 expandOnHover
               />
             ))}
-          </AsymmetricGrid>
+          </div>
         </div>
       </section>
 
