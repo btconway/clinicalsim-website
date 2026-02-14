@@ -3,9 +3,13 @@ import { Button } from "@/components/ui/button"
 import { StatHighlight } from "@/components/stat-highlight"
 import { EvidenceShowcase } from "@/components/evidence-showcase"
 import { SectionDivider } from "@/components/section-divider"
-import { Check } from "lucide-react"
+import { AudienceCard } from "@/components/audience-card"
+import { getAllAudiences } from "@/lib/audiences"
+import { Check, ArrowRight } from "lucide-react"
 
 export default function AboutPage() {
+  const audiences = getAllAudiences()
+
   return (
     <>
       {/* Hero Section */}
@@ -14,7 +18,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-light shimmer mb-6">About ClinicalSim.ai</h1>
           <p className="text-xl text-gray-700 font-light leading-relaxed">
-            Closing the gap between how physicians learn to communicate and what <span className="text-warm font-medium">patients actually need</span>.
+            Better patient outcomes. Lower institutional risk. New revenue from conversations that aren&apos;t happening yet. The gap between how clinicians learn to communicate and what the healthcare system needs has never been wider. <span className="text-warm font-medium">ClinicalSim closes that gap.</span>
           </p>
         </div>
       </section>
@@ -23,36 +27,41 @@ export default function AboutPage() {
 
       {/* The Problem - Stats Highlight */}
       <section className="px-6 py-12 md:py-16 bg-white">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-light text-navy mb-8 text-center">The Problem</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <StatHighlight
+              value="90%"
+              label="of physicians lack confidence in goals-of-care conversations"
+              variant="warm"
+            />
+            <StatHighlight
+              value="<2hrs"
+              label="of formal communication training across entire residency"
+              variant="navy"
+            />
             <StatHighlight
               value="40%"
               label="of malpractice claims involve communication failures"
               variant="warm"
             />
             <StatHighlight
-              value="2-4"
-              label="formal communication sessions across entire residency"
-              variant="navy"
-            />
-            <StatHighlight
-              value="$1.7B"
-              label="in costs linked to communication breakdowns"
-              variant="warm"
+              value="$1.5M+"
+              label="in annual revenue opportunity from unbilled conversations"
+              variant="success"
             />
           </div>
 
           <div className="bg-white/70 border border-gray-200 rounded-2xl p-8 space-y-6 shadow-lg">
             <p className="text-lg text-gray-700 font-light leading-relaxed">
-              The conversations that matter most — telling a parent their child is dying, disclosing a medical error, guiding a family through goals of care — are <span className="text-navy font-medium">low-frequency, high-stakes events</span>. Residents may encounter only 1-3 real end-of-life conversations during training.
+              Billable clinical conversations — advance care planning, cognitive assessments, goals of care — go unheld every day because providers lack the confidence to initiate them. Medicare reimburses ACP at <span className="font-mono text-warm font-medium">$87 per conversation</span> with no annual cap, yet fewer than 5% of eligible patients receive one. The gap isn&apos;t patient need. It&apos;s <span className="text-navy font-medium">provider readiness</span>.
             </p>
             <p className="text-lg text-gray-700 font-light leading-relaxed">
-              Current methods can&apos;t close this gap: standardized patient encounters cost <span className="font-mono text-warm font-medium">$150-300</span> each, require scheduling and sim center booking, and don&apos;t scale to meet demand.
+              The bottleneck is training. The average resident receives fewer than two hours of formal communication instruction across their entire residency. Standardized patient programs cost <span className="font-mono text-warm font-medium">$150-300</span> per encounter and can&apos;t scale to meet demand. Most programs still rely on ad-hoc observation and role-modeling — an approach the ACGME explicitly acknowledges <span className="text-navy font-medium">is not sufficient</span>.
             </p>
             <p className="text-lg text-gray-700 font-light leading-relaxed">
-              The ACGME requires residents to demonstrate interpersonal and communication skills as a core competency, and explicitly acknowledges that <span className="text-navy font-medium">on-the-job training without structured teaching is not sufficient</span>. But most programs still rely on ad-hoc methods like observation and role-modeling.
+              The cost is concrete: communication failures drive 40% of malpractice claims, drag down HCAHPS scores tied to Medicare reimbursement, and leave <span className="font-mono text-warm font-medium">$1.5M+</span> in billable revenue on the table annually for a mid-size system. These aren&apos;t soft skills — they&apos;re <span className="text-navy font-medium">operational, financial, and clinical imperatives</span>.
             </p>
           </div>
         </div>
@@ -66,8 +75,11 @@ export default function AboutPage() {
           <h2 className="text-3xl md:text-4xl font-light text-navy mb-8 text-center">Our Approach</h2>
 
           <div className="bg-white/90 rounded-2xl p-8 md:p-10 shadow-xl mb-8">
-            <p className="text-lg md:text-xl text-gray-700 font-light leading-relaxed mb-8">
+            <p className="text-lg md:text-xl text-gray-700 font-light leading-relaxed mb-4">
               ClinicalSim.ai uses <span className="text-warm font-medium">AI voice simulation</span> to let clinicians practice difficult conversations on-demand — real-time spoken dialogue with AI patients, not text-based chat. Practice from any device, anytime, without scheduling actors or booking a sim center.
+            </p>
+            <p className="text-lg text-navy font-medium mb-8">
+              The bottleneck is training. The product is training.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -81,11 +93,15 @@ export default function AboutPage() {
                 <ul className="space-y-3 text-gray-700 font-light pl-10">
                   <li className="flex items-start gap-3">
                     <span className="text-warm mt-1 text-sm">●</span>
+                    Advance care planning
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-warm mt-1 text-sm">●</span>
                     Goals of care conversations
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-warm mt-1 text-sm">●</span>
-                    End-of-life discussions
+                    Cognitive assessments
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-warm mt-1 text-sm">●</span>
@@ -93,11 +109,11 @@ export default function AboutPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-warm mt-1 text-sm">●</span>
-                    Medical error disclosure
+                    Menopause care
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-warm mt-1 text-sm">●</span>
-                    Organ donation discussions
+                    Medical error disclosure
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-warm mt-1 text-sm">●</span>
@@ -232,39 +248,78 @@ export default function AboutPage() {
                 </blockquote>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <SectionDivider variant="curve" color="slate" />
-
-      {/* Our Vision */}
-      <section className="px-6 py-12 md:py-16 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-light text-navy mb-8 text-center">Our Vision</h2>
-          <div className="bg-white/90 rounded-2xl p-8 md:p-10 shadow-xl">
-            <p className="text-lg md:text-xl text-gray-700 font-light leading-relaxed">
-              We&apos;re working to make structured communication training the standard across all levels of medical education — from medical students to practicing physicians. By augmenting existing simulation programs with on-demand AI practice, we aim to ensure that <span className="text-warm font-medium">every clinician enters their most difficult conversations prepared, not just hopeful</span>. Better communication means better outcomes for patients, reduced risk for institutions, and greater confidence for the physicians who carry these conversations for the rest of their careers.
+            <p className="text-center text-gray-600 font-light mt-8">
+              Our pilot data comes from PICU fellows — and the platform is now expanding across specialties, from primary care to oncology, wherever difficult conversations happen.
             </p>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      <SectionDivider variant="curve" color="blue" />
+
+      {/* Who We Serve */}
+      <section className="px-6 py-12 md:py-16 bg-gradient-to-br from-blue-50 via-indigo-50 to-slate-50">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-light text-navy mb-4 text-center">Who We Serve</h2>
+          <p className="text-lg text-gray-600 font-light text-center mb-10 max-w-2xl mx-auto">
+            ClinicalSim works for everyone involved in clinical communication — from the systems that deploy it, to the clinicians who use it, to the educators who build curricula around it.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            {audiences.map((audience) => (
+              <AudienceCard
+                key={audience.slug}
+                icon={audience.icon}
+                title={audience.shortTitle}
+                subtitle={audience.subtitle}
+                bullets={audience.cardBullets}
+                href={`/audiences/${audience.slug}`}
+                variant={audience.colorVariant}
+              />
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/solutions"
+              className="inline-flex items-center text-blue-600 font-medium hover:text-warm transition-colors group"
+            >
+              View our clinical solutions
+              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider variant="diagonal-down" color="navy" />
+
+      {/* CTA Section with Vision */}
       <section className="px-6 py-16 md:py-20 bg-gradient-to-br from-navy via-blue-900 to-indigo-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-light mb-4">Interested in a pilot program?</h2>
-          <p className="text-lg md:text-xl font-light mb-8 text-blue-100">
-            We&apos;re partnering with academic medical centers to bring structured, scalable communication training to residency and fellowship programs.
+          <h2 className="text-3xl md:text-4xl font-light mb-4">Ready to close the training gap?</h2>
+          <p className="text-lg md:text-xl font-light mb-8 text-blue-100 max-w-3xl mx-auto">
+            We&apos;re scaling structured communication training from PICU to every specialty — measurable impact for patients, institutions, and the clinicians who carry these conversations for the rest of their careers. <span className="text-warm font-medium">Every clinician enters their most difficult conversations prepared, not just hopeful.</span>
           </p>
-          <Link href="https://form.typeform.com/to/Zve4CKk2" target="_blank" rel="noopener noreferrer">
-            <Button
-              variant="warm-filled"
-              size="xl"
-            >
-              Join the Waitlist
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact">
+              <Button
+                variant="warm-filled"
+                size="xl"
+              >
+                Request a Pilot
+              </Button>
+            </Link>
+            <Link href="https://form.typeform.com/to/Zve4CKk2" target="_blank" rel="noopener noreferrer">
+              <Button
+                variant="outline"
+                size="xl"
+                className="border-white/40 text-white hover:bg-white/10"
+              >
+                Join the Waitlist
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
     </>
