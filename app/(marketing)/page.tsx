@@ -6,44 +6,44 @@ import { EvidenceShowcase } from "@/components/evidence-showcase"
 import { AsymmetricGrid } from "@/components/asymmetric-grid"
 import { SectionDivider } from "@/components/section-divider"
 import { DemoVideoSection } from "@/components/demo-video-section"
-import { BookOpen, GraduationCap, Mic, Clock, BarChart3, DollarSign, ArrowRight } from "lucide-react"
+import { BookOpen, Heart, TrendingUp, Mic, Users, BarChart3, ArrowRight } from "lucide-react"
 
 export default function HomePage() {
   const features = [
     {
-      icon: BookOpen,
-      title: "Published Research",
-      description: "The only AI communication platform backed by a randomized controlled trial with PICU fellows, with blinded evaluation using validated assessment tools.",
+      icon: Heart,
+      title: "Better Conversations, Better Care",
+      description: "Patients with documented goals-of-care conversations see 68% fewer ICU admissions and higher rates of goal-concordant care. Training is the bottleneck.",
       variant: "warm" as const,
     },
     {
-      icon: GraduationCap,
-      title: "ACGME Aligned",
-      description: "Directly addresses Interpersonal and Communication Skills milestones required across every specialty, with structured assessment and progress tracking.",
-      variant: "default" as const,
-    },
-    {
-      icon: DollarSign,
-      title: "Scalable & Cost-Effective",
-      description: "Traditional SP encounters cost $150-300 each. Scale communication training across your entire program without scaling costs.",
+      icon: TrendingUp,
+      title: "Unlock Revenue You're Missing",
+      description: "ACP, cognitive assessments, and other high-value conversations have dedicated billing codes — but most providers never bill them because they've never practiced.",
       variant: "success" as const,
     },
     {
-      icon: Mic,
-      title: "Realistic Voice Practice",
-      description: "Real-time spoken conversations with AI patients for goals of care, difficult disclosures, breaking bad news, and family meetings — not text-based chat.",
-      variant: "default" as const,
-    },
-    {
-      icon: Clock,
-      title: "On-Demand, 24/7",
-      description: "No scheduling, no actors, no sim center booking. Practice from any device, anytime — including right before a real conversation.",
+      icon: BookOpen,
+      title: "Evidence-Based",
+      description: "The only AI communication platform backed by a randomized controlled trial with blinded evaluation using validated assessment tools (ACGME milestones, Calgary-Cambridge).",
       variant: "warm" as const,
     },
     {
+      icon: Mic,
+      title: "Voice-Based, Not Chat",
+      description: "Real-time spoken conversations with AI patients — goals of care, diagnosis disclosure, family meetings — because the real thing isn't typed.",
+      variant: "default" as const,
+    },
+    {
+      icon: Users,
+      title: "Scale Across Your System",
+      description: "Deploy training across every department and provider level without scheduling, logistics, or linear cost scaling. From 10 providers to 1,000.",
+      variant: "default" as const,
+    },
+    {
       icon: BarChart3,
-      title: "Structured Feedback",
-      description: "Automated assessment scoring empathy, language sensitivity, and information delivery. Full transcripts and progress tracking using validated frameworks.",
+      title: "Measurable Impact",
+      description: "Track provider confidence, conversation quality, and billing patterns over time. Demonstrate ROI to leadership with structured data, not anecdotes.",
       variant: "default" as const,
     }
   ]
@@ -56,9 +56,9 @@ export default function HomePage() {
       variant: "warm" as const,
     },
     {
-      value: "2-4",
-      label: "SP sessions a resident gets across their entire training to practice",
-      source: "Program survey data",
+      value: "<2hrs",
+      label: "of formal communication training in most residency programs",
+      source: "Medical education surveys",
       variant: "navy" as const,
     },
     {
