@@ -44,7 +44,7 @@ export function SiteHeader() {
   const isSolutionsActive = pathname === "/solutions" || pathname?.startsWith("/solutions/")
 
   return (
-    <header className="flex items-center justify-between px-4 py-4 md:px-12 md:py-6 bg-white/80 backdrop-blur-sm border-b border-white/20">
+    <header className="relative z-50 flex items-center justify-between px-4 py-4 md:px-12 md:py-6 bg-white/80 backdrop-blur-sm border-b border-white/20">
       <Link href="/" className="flex items-center gap-2">
         <Brain className="h-8 w-8 text-blue-600" />
         <span className="text-2xl font-light text-slate-800">
