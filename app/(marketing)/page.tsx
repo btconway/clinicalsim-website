@@ -50,28 +50,28 @@ export default function HomePage() {
 
   const stats = [
     {
-      value: "40%",
-      label: "of malpractice claims involve communication failures",
-      source: "CRICO/Candello 2025",
-      variant: "warm" as const,
-    },
-    {
-      value: "$1.7B",
-      label: "in malpractice costs linked to communication breakdowns",
-      source: "CRICO/Harvard",
+      value: "90%",
+      label: "of physicians say they lack confidence in goals-of-care conversations",
+      source: "AAHPM survey data",
       variant: "warm" as const,
     },
     {
       value: "2-4",
-      label: "typical SP sessions a resident gets across their entire training",
+      label: "SP sessions a resident gets across their entire training to practice",
       source: "Program survey data",
       variant: "navy" as const,
     },
     {
-      value: "$150-300",
-      label: "cost per traditional standardized patient encounter",
-      source: "Industry benchmark",
-      variant: "navy" as const,
+      value: "50%+",
+      label: "of cognitive impairment cases go undiagnosed due to provider discomfort",
+      source: "Alzheimer's Association",
+      variant: "warm" as const,
+    },
+    {
+      value: "$86-282",
+      label: "per conversation in billable codes that go unused without training",
+      source: "CMS Fee Schedule 2026",
+      variant: "success" as const,
     }
   ]
 
@@ -119,10 +119,10 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-light text-navy mb-4">
-              The training gap is <span className="text-warm font-medium">measurable</span>.
+              The confidence gap is <span className="text-warm font-medium">real</span>.
             </h2>
             <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
-              Communication failures drive malpractice claims, yet residents get minimal practice with the conversations that matter most.
+              Physicians want to have these conversations well. They just never get to practice. The result is avoidable suffering, missed diagnoses, and revenue that never materializes.
             </p>
           </div>
 
