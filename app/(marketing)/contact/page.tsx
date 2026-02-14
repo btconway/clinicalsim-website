@@ -147,7 +147,7 @@ export default function ContactPage() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
               <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-warm to-orange-600 flex items-center justify-center mb-6">
                 <Users className="w-6 h-6 text-white" />
               </div>
@@ -158,7 +158,7 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
               <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 flex items-center justify-center mb-6">
                 <Handshake className="w-6 h-6 text-white" />
               </div>
@@ -169,7 +169,7 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
               <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-success to-emerald-600 flex items-center justify-center mb-6">
                 <FlaskConical className="w-6 h-6 text-white" />
               </div>

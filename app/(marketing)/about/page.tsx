@@ -44,7 +44,7 @@ export default function AboutPage() {
             />
           </div>
 
-          <div className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-2xl p-8 space-y-6 shadow-lg">
+          <div className="bg-white/70 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 space-y-6 shadow-lg">
             <p className="text-lg text-gray-700 font-light leading-relaxed">
               The conversations that matter most — telling a parent their child is dying, disclosing a medical error, guiding a family through goals of care — are <span className="text-navy font-medium">low-frequency, high-stakes events</span>. Residents may encounter only 1-3 real end-of-life conversations during training.
             </p>

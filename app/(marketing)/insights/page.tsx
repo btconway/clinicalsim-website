@@ -104,7 +104,7 @@ export default function InsightsPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {otherPosts.map((post) => (
                   <Link key={post.slug} href={`/insights/${post.slug}`}>
-                    <div className="group h-full bg-white/90 backdrop-blur-sm border border-white/20 rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl border-glow-hover transition-all duration-300 cursor-pointer">
+                    <div className="group h-full bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl border-glow-hover transition-all duration-300 cursor-pointer">
                       <div className="flex items-center gap-3 text-sm text-gray-500 font-light mb-4">
                         <time dateTime={post.date}>
                           {new Date(post.date).toLocaleDateString("en-US", {

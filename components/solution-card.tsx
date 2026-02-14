@@ -50,7 +50,7 @@ export function SolutionCard({
       <div
         className={cn(
           "relative bg-white/70 backdrop-blur-sm rounded-xl p-6 md:p-8",
-          "border border-white/20 transition-all duration-300",
+          "border border-gray-200 transition-all duration-300",
           "border-glow-hover h-full",
           "hover:bg-white/90 hover:shadow-xl",
           className

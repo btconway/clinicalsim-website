@@ -14,19 +14,19 @@ export interface FeatureCardProps extends React.HTMLAttributes<HTMLDivElement> {
 const variantStyles = {
   default: {
     iconContainer: "bg-gradient-to-r from-blue-600 to-indigo-600",
-    border: "border-white/20",
+    border: "border-gray-200",
   },
   warm: {
     iconContainer: "bg-gradient-to-r from-warm to-orange-600",
-    border: "border-warm/20",
+    border: "border-warm/30",
   },
   navy: {
     iconContainer: "bg-navy",
-    border: "border-navy/20",
+    border: "border-navy/30",
   },
   success: {
     iconContainer: "bg-gradient-to-r from-success to-emerald-600",
-    border: "border-success/20",
+    border: "border-success/30",
   },
 }
 
