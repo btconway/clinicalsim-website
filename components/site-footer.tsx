@@ -24,6 +24,9 @@ export function SiteFooter() {
           <div className="space-y-4">
             <h3 className="text-sm font-medium text-gray-900 uppercase tracking-wider">Navigate</h3>
             <nav className="flex flex-col gap-2">
+              <Link href="/solutions" className="text-sm text-gray-600 hover:text-gray-900 font-light transition-colors">
+                Solutions
+              </Link>
               <Link href="/about" className="text-sm text-gray-600 hover:text-gray-900 font-light transition-colors">
                 About
               </Link>

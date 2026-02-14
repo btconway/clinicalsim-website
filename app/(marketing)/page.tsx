@@ -84,7 +84,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-purple-600/5 to-indigo-600/5 -z-10" />
 
         <div className="max-w-4xl mx-auto relative z-10">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-light shimmer leading-tight mb-6 md:mb-8">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-light shimmer leading-loose pb-3 mb-6 md:mb-8">
             Practice the conversations that matter most.
           </h1>
 

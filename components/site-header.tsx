@@ -8,6 +8,7 @@ export function SiteHeader() {
   const pathname = usePathname()
 
   const links = [
+    { href: "/solutions", label: "Solutions" },
     { href: "/about", label: "About" },
     { href: "/insights", label: "Insights" },
     { href: "/contact", label: "Contact" },
