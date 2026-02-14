@@ -38,7 +38,7 @@ export default function HomePage() {
       icon: Clock,
       title: "On-Demand, 24/7",
       description: "No scheduling, no actors, no sim center booking. Practice from any device, anytime — including right before a real conversation.",
-      variant: "default" as const,
+      variant: "warm" as const,
     },
     {
       icon: BarChart3,
