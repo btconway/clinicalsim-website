@@ -10,7 +10,17 @@ export function SiteHeader() {
   const pathname = usePathname()
   const [solutionsOpen, setSolutionsOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
+  const timeoutRef = useRef<ReturnType<typeof setTimeout>>(null)
   const solutions = getAllSolutions()
+
+  const openDropdown = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current)
+    setSolutionsOpen(true)
+  }
+
+  const closeDropdown = () => {
+    timeoutRef.current = setTimeout(() => setSolutionsOpen(false), 150)
+  }
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -19,7 +29,10 @@ export function SiteHeader() {
       }
     }
     document.addEventListener("mousedown", handleClickOutside)
-    return () => document.removeEventListener("mousedown", handleClickOutside)
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+      if (timeoutRef.current) clearTimeout(timeoutRef.current)
+    }
   }, [])
 
   const links = [
@@ -43,8 +56,8 @@ export function SiteHeader() {
         <div
           ref={dropdownRef}
           className="relative"
-          onMouseEnter={() => setSolutionsOpen(true)}
-          onMouseLeave={() => setSolutionsOpen(false)}
+          onMouseEnter={openDropdown}
+          onMouseLeave={closeDropdown}
         >
           <button
             onClick={() => setSolutionsOpen(!solutionsOpen)}
