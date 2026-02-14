@@ -27,6 +27,9 @@ export function SiteFooter() {
               <Link href="/solutions" className="text-sm text-gray-600 hover:text-gray-900 font-light transition-colors">
                 Solutions
               </Link>
+              <Link href="/audiences" className="text-sm text-gray-600 hover:text-gray-900 font-light transition-colors">
+                Who We Serve
+              </Link>
               <Link href="/about" className="text-sm text-gray-600 hover:text-gray-900 font-light transition-colors">
                 About
               </Link>

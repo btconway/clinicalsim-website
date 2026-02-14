@@ -6,9 +6,13 @@ import { EvidenceShowcase } from "@/components/evidence-showcase"
 import { AsymmetricGrid } from "@/components/asymmetric-grid"
 import { SectionDivider } from "@/components/section-divider"
 import { DemoVideoSection } from "@/components/demo-video-section"
+import { AudienceCard } from "@/components/audience-card"
+import { getAllAudiences } from "@/lib/audiences"
 import { BookOpen, Heart, TrendingUp, Mic, Users, BarChart3, ArrowRight } from "lucide-react"
 
 export default function HomePage() {
+  const audiences = getAllAudiences()
+
   const features = [
     {
       icon: Heart,
@@ -248,21 +252,38 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Solutions Bridge */}
+      {/* Audience Selector */}
       <section className="px-6 py-12 md:py-16 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-light text-navy mb-4">
-            Training that drives <span className="text-warm font-medium">outcomes</span>
-          </h2>
-          <p className="text-lg text-gray-600 font-light leading-relaxed mb-8 max-w-2xl mx-auto">
-            There are clinical conversations with dedicated billing codes and clear reimbursement pathways that aren&apos;t happening at scale — because providers have never practiced them.
-          </p>
-          <Link href="/solutions">
-            <Button variant="warm-accent" size="lg">
-              Explore Solutions
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-light text-navy mb-4">
+              Built for how you think about <span className="text-warm font-medium">training</span>
+            </h2>
+            <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
+              Different roles. Different priorities. Same platform.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            {audiences.map((audience) => (
+              <AudienceCard
+                key={audience.slug}
+                icon={audience.icon}
+                title={audience.title}
+                subtitle={audience.subtitle}
+                bullets={audience.cardBullets}
+                href={`/audiences/${audience.slug}`}
+                variant={audience.colorVariant}
+              />
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Link href="/solutions" className="inline-flex items-center text-blue-600 font-medium hover:text-warm transition-colors">
+              View our clinical solutions
               <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-          </Link>
+            </Link>
+          </div>
         </div>
       </section>
 

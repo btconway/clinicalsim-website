@@ -5,33 +5,55 @@ import { usePathname } from "next/navigation"
 import { useState, useRef, useEffect } from "react"
 import { Brain, ChevronDown } from "lucide-react"
 import { getAllSolutions } from "@/lib/solutions"
+import { getAllAudiences } from "@/lib/audiences"
 
 export function SiteHeader() {
   const pathname = usePathname()
   const [solutionsOpen, setSolutionsOpen] = useState(false)
-  const dropdownRef = useRef<HTMLDivElement>(null)
-  const timeoutRef = useRef<ReturnType<typeof setTimeout>>(null)
+  const [audiencesOpen, setAudiencesOpen] = useState(false)
+  const solutionsDropdownRef = useRef<HTMLDivElement>(null)
+  const audiencesDropdownRef = useRef<HTMLDivElement>(null)
+  const solutionsTimeoutRef = useRef<ReturnType<typeof setTimeout>>(null)
+  const audiencesTimeoutRef = useRef<ReturnType<typeof setTimeout>>(null)
   const solutions = getAllSolutions()
+  const audiences = getAllAudiences()
 
-  const openDropdown = () => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current)
+  const openSolutions = () => {
+    if (solutionsTimeoutRef.current) clearTimeout(solutionsTimeoutRef.current)
+    setAudiencesOpen(false)
+    if (audiencesTimeoutRef.current) clearTimeout(audiencesTimeoutRef.current)
     setSolutionsOpen(true)
   }
 
-  const closeDropdown = () => {
-    timeoutRef.current = setTimeout(() => setSolutionsOpen(false), 150)
+  const closeSolutions = () => {
+    solutionsTimeoutRef.current = setTimeout(() => setSolutionsOpen(false), 150)
+  }
+
+  const openAudiences = () => {
+    if (audiencesTimeoutRef.current) clearTimeout(audiencesTimeoutRef.current)
+    setSolutionsOpen(false)
+    if (solutionsTimeoutRef.current) clearTimeout(solutionsTimeoutRef.current)
+    setAudiencesOpen(true)
+  }
+
+  const closeAudiences = () => {
+    audiencesTimeoutRef.current = setTimeout(() => setAudiencesOpen(false), 150)
   }
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      if (solutionsDropdownRef.current && !solutionsDropdownRef.current.contains(event.target as Node)) {
         setSolutionsOpen(false)
+      }
+      if (audiencesDropdownRef.current && !audiencesDropdownRef.current.contains(event.target as Node)) {
+        setAudiencesOpen(false)
       }
     }
     document.addEventListener("mousedown", handleClickOutside)
     return () => {
       document.removeEventListener("mousedown", handleClickOutside)
-      if (timeoutRef.current) clearTimeout(timeoutRef.current)
+      if (solutionsTimeoutRef.current) clearTimeout(solutionsTimeoutRef.current)
+      if (audiencesTimeoutRef.current) clearTimeout(audiencesTimeoutRef.current)
     }
   }, [])
 
@@ -42,6 +64,7 @@ export function SiteHeader() {
   ]
 
   const isSolutionsActive = pathname === "/solutions" || pathname?.startsWith("/solutions/")
+  const isAudiencesActive = pathname === "/audiences" || pathname?.startsWith("/audiences/")
 
   return (
     <header className="relative z-50 flex items-center justify-between px-4 py-4 md:px-12 md:py-6 bg-white/80 backdrop-blur-sm border-b border-white/20">
@@ -54,13 +77,16 @@ export function SiteHeader() {
       <nav className="flex items-center gap-4 md:gap-8">
         {/* Solutions dropdown */}
         <div
-          ref={dropdownRef}
+          ref={solutionsDropdownRef}
           className="relative"
-          onMouseEnter={openDropdown}
-          onMouseLeave={closeDropdown}
+          onMouseEnter={openSolutions}
+          onMouseLeave={closeSolutions}
         >
           <button
-            onClick={() => setSolutionsOpen(!solutionsOpen)}
+            onClick={() => {
+              setSolutionsOpen(!solutionsOpen)
+              setAudiencesOpen(false)
+            }}
             className={`flex items-center gap-1 text-gray-700 hover:text-gray-900 font-medium transition-colors pb-1 ${
               isSolutionsActive ? "border-b-2 border-blue-600" : ""
             }`}
@@ -93,6 +119,57 @@ export function SiteHeader() {
                   onClick={() => setSolutionsOpen(false)}
                 >
                   View All Solutions
+                </Link>
+              </div>
+            </div>
+            </div>
+          )}
+        </div>
+
+        {/* Who We Serve dropdown */}
+        <div
+          ref={audiencesDropdownRef}
+          className="relative"
+          onMouseEnter={openAudiences}
+          onMouseLeave={closeAudiences}
+        >
+          <button
+            onClick={() => {
+              setAudiencesOpen(!audiencesOpen)
+              setSolutionsOpen(false)
+            }}
+            className={`flex items-center gap-1 text-gray-700 hover:text-gray-900 font-medium transition-colors pb-1 ${
+              isAudiencesActive ? "border-b-2 border-blue-600" : ""
+            }`}
+          >
+            Who We Serve
+            <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${audiencesOpen ? "rotate-180" : ""}`} />
+          </button>
+
+          {audiencesOpen && (
+            <div className="absolute top-full left-0 pt-2 w-72 z-50">
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border border-gray-100 py-2">
+              {audiences.map((audience) => {
+                const Icon = audience.icon
+                return (
+                  <Link
+                    key={audience.slug}
+                    href={`/audiences/${audience.slug}`}
+                    className="flex items-center gap-3 px-4 py-2.5 hover:bg-blue-50/70 transition-colors"
+                    onClick={() => setAudiencesOpen(false)}
+                  >
+                    <Icon className="h-4 w-4 text-blue-600 shrink-0" />
+                    <span className="text-sm text-gray-700">{audience.title}</span>
+                  </Link>
+                )
+              })}
+              <div className="border-t border-gray-100 mt-1 pt-1">
+                <Link
+                  href="/audiences"
+                  className="block px-4 py-2.5 text-sm font-medium text-blue-600 hover:bg-blue-50/70 transition-colors"
+                  onClick={() => setAudiencesOpen(false)}
+                >
+                  View All
                 </Link>
               </div>
             </div>
