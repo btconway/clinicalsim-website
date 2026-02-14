@@ -170,7 +170,7 @@ export default function SolutionsPage() {
               </Button>
             </Link>
             <Link href="https://form.typeform.com/to/Zve4CKk2" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
+              <Button variant="outline" size="lg" className="border-white/30 text-white bg-transparent hover:bg-white/10">
                 Join the Waitlist
               </Button>
             </Link>
