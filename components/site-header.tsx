@@ -2,17 +2,33 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Brain } from "lucide-react"
+import { useState, useRef, useEffect } from "react"
+import { Brain, ChevronDown } from "lucide-react"
+import { getAllSolutions } from "@/lib/solutions"
 
 export function SiteHeader() {
   const pathname = usePathname()
+  const [solutionsOpen, setSolutionsOpen] = useState(false)
+  const dropdownRef = useRef<HTMLDivElement>(null)
+  const solutions = getAllSolutions()
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setSolutionsOpen(false)
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => document.removeEventListener("mousedown", handleClickOutside)
+  }, [])
 
   const links = [
-    { href: "/solutions", label: "Solutions" },
     { href: "/about", label: "About" },
     { href: "/insights", label: "Insights" },
     { href: "/contact", label: "Contact" },
   ]
+
+  const isSolutionsActive = pathname === "/solutions" || pathname?.startsWith("/solutions/")
 
   return (
     <header className="flex items-center justify-between px-4 py-4 md:px-12 md:py-6 bg-white/80 backdrop-blur-sm border-b border-white/20">
@@ -22,7 +38,53 @@ export function SiteHeader() {
           ClinicalSim<span className="text-blue-600 shimmer">.ai</span>
         </span>
       </Link>
-      <nav className="flex gap-4 md:gap-8">
+      <nav className="flex items-center gap-4 md:gap-8">
+        {/* Solutions dropdown */}
+        <div
+          ref={dropdownRef}
+          className="relative"
+          onMouseEnter={() => setSolutionsOpen(true)}
+          onMouseLeave={() => setSolutionsOpen(false)}
+        >
+          <button
+            onClick={() => setSolutionsOpen(!solutionsOpen)}
+            className={`flex items-center gap-1 text-gray-700 hover:text-gray-900 font-medium transition-colors pb-1 ${
+              isSolutionsActive ? "border-b-2 border-blue-600" : ""
+            }`}
+          >
+            Solutions
+            <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${solutionsOpen ? "rotate-180" : ""}`} />
+          </button>
+
+          {solutionsOpen && (
+            <div className="absolute top-full left-0 mt-2 w-72 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+              {solutions.map((solution) => {
+                const Icon = solution.icon
+                return (
+                  <Link
+                    key={solution.slug}
+                    href={`/solutions/${solution.slug}`}
+                    className="flex items-center gap-3 px-4 py-2.5 hover:bg-blue-50/70 transition-colors"
+                    onClick={() => setSolutionsOpen(false)}
+                  >
+                    <Icon className="h-4 w-4 text-blue-600 shrink-0" />
+                    <span className="text-sm text-gray-700">{solution.shortTitle}</span>
+                  </Link>
+                )
+              })}
+              <div className="border-t border-gray-100 mt-1 pt-1">
+                <Link
+                  href="/solutions"
+                  className="block px-4 py-2.5 text-sm font-medium text-blue-600 hover:bg-blue-50/70 transition-colors"
+                  onClick={() => setSolutionsOpen(false)}
+                >
+                  View All Solutions
+                </Link>
+              </div>
+            </div>
+          )}
+        </div>
+
         {links.map((link) => (
           <Link
             key={link.href}
