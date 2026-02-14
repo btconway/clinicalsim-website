@@ -10,8 +10,8 @@
 - [Advance Care Planning](https://clinicalsim.ai/solutions/advance-care-planning): ACP conversation training — CPT 99497/99498, $87 per conversation, no annual cap. Fewer than 5% of eligible patients receive a billed ACP conversation.
 - [Goals of Care](https://clinicalsim.ai/solutions/goals-of-care): Serious illness conversation training. Communication failures drive 66% of sentinel events (1995-2005) and 40% of malpractice claims (Candello, 2025).
 - [Cognitive Assessments](https://clinicalsim.ai/solutions/cognitive-assessments): Cognitive assessment and dementia diagnosis training — CPT 99483, ~$260 reimbursement. Over 50% of cases go undiagnosed.
-- [Menopause Care](https://clinicalsim.ai/solutions/menopause-care): Menopause conversation training. ~54M US women affected, fewer than 1% of physicians certified. $40B+ market opportunity.
+- [Menopause Care](https://clinicalsim.ai/solutions/menopause-care): Menopause conversation training. ~54M US women affected, fewer than 1% of providers certified. $40B+ market opportunity.
 - [Health System Leaders](https://clinicalsim.ai/audiences/health-system-leaders): ROI-focused communication training for health system executives — revenue capture, malpractice reduction, HCAHPS improvement.
-- [Clinicians](https://clinicalsim.ai/audiences/clinicians): On-demand, private, voice-based practice for physicians and providers preparing for difficult conversations.
+- [Clinicians](https://clinicalsim.ai/audiences/clinicians): On-demand, private, voice-based practice for clinicians — physicians, NPs, and PAs — preparing for difficult conversations.
 - [Medical Educators](https://clinicalsim.ai/audiences/medical-educators): ACGME-aligned communication training at scale — evidence-based simulation with milestone tracking.
 - [Insights](https://clinicalsim.ai/insights): Research and evidence on medical communication training, simulation technology, and clinical conversation outcomes.

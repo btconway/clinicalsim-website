@@ -312,7 +312,7 @@ const solutions: Solution[] = [
     trainingGapDescription:
       "The average resident receives fewer than two hours of formal training in serious illness conversations across their entire residency. Yet these conversations determine ICU utilization, goal-concordant care rates, and family satisfaction scores. The mismatch between stakes and preparation is staggering.",
     trainingGapBullets: [
-      "Only 29% of seriously ill patients report having had a goals-of-care conversation with their physician",
+      "Only 29% of seriously ill patients report having had a goals-of-care conversation with their provider",
       "Residents consistently rate goals-of-care as their lowest-confidence communication skill",
       "The Serious Illness Conversation Guide (SICG) from Ariadne Labs improves outcomes — but requires practice to implement effectively",
       "Simulation-based communication training improves performance on validated assessment tools within a single session",
@@ -565,13 +565,13 @@ const solutions: Solution[] = [
     title: "Menopause & Midlife Women's Health Conversations",
     shortTitle: "Menopause Care",
     description:
-      "Over 50 million American women in perimenopause or menopause — and fewer than 1% of doctors are certified to help them. The gap is training.",
+      "Over 50 million American women in perimenopause or menopause — and fewer than 1% of providers are certified to help them. The gap is training.",
     icon: Flower2,
     colorVariant: "success",
 
     heroSubtitle: "A generation of women underserved — and almost no providers trained to help.",
     heroDescription:
-      "Over 1.3 million American women enter menopause every year — and the vast majority can't find a provider who knows how to help them. Fewer than 1% of US physicians are certified menopause practitioners. BCG projects the menopause market will reach $40 billion. Hospitals that train providers in menopause conversations will be able to serve a patient population that currently has nowhere to turn.",
+      "Over 1.3 million American women enter menopause every year — and the vast majority can't find a provider who knows how to help them. Fewer than 1% of US physicians are certified menopause practitioners — and NPs and PAs, who provide the majority of primary care visits, face the same training gap. BCG projects the menopause market will reach $40 billion. Hospitals that train providers in menopause conversations will be able to serve a patient population that currently has nowhere to turn.",
 
     revenueStats: [
       {
@@ -611,10 +611,10 @@ const solutions: Solution[] = [
 
     trainingGapHeadline: "69% of OB/GYN residencies have no menopause curriculum.",
     trainingGapDescription:
-      "A 2023 survey of US OB/GYN residency program directors found that only 31.3% reported having a menopause curriculum. The result is a generation of physicians entering practice unprepared to manage the most common midlife health transition — sending patients to direct-to-consumer alternatives or out of the health system entirely.",
+      "A 2023 survey of US OB/GYN residency program directors found that only 31.3% reported having a menopause curriculum. The result is a generation of clinicians entering practice unprepared to manage the most common midlife health transition — sending patients to direct-to-consumer alternatives or out of the health system entirely.",
     trainingGapBullets: [
       "Only 31% of OB/GYN residency programs include a dedicated menopause curriculum",
-      "Fewer than 1% of actively licensed US doctors hold Menopause Society certification",
+      "Fewer than 1% of actively licensed US physicians hold Menopause Society certification (BCG, 2025)",
       "1 in 3 women don't feel confident advocating for themselves in menopause-related healthcare visits (Bonafide Health, State of Menopause 2025)",
       "Women frequently report being dismissed by providers, with symptoms incorrectly attributed to anxiety or aging",
     ],
@@ -684,8 +684,8 @@ const solutions: Solution[] = [
 
     faqs: [
       {
-        question: "Why are so few doctors trained in menopause care?",
-        answer: "A 2023 survey of US OB/GYN residency program directors found that only 31.3% reported having a dedicated menopause curriculum (Menopause, 2023). This means nearly 69% of OB/GYN residencies graduate physicians with no structured menopause training. Fewer than 1% of actively licensed US physicians are certified menopause practitioners (BCG, 2025). The result is that fewer than 7% of residents in key specialties feel prepared to support menopausal patients (BCG, 2025).",
+        question: "Why are so few providers trained in menopause care?",
+        answer: "A 2023 survey of US OB/GYN residency program directors found that only 31.3% reported having a dedicated menopause curriculum (Menopause, 2023). This means nearly 69% of OB/GYN residencies graduate physicians with no structured menopause training — and NP and PA programs have similarly sparse menopause education. Fewer than 1% of actively licensed US physicians are certified menopause practitioners (BCG, 2025). The result is that fewer than 7% of residents in key specialties feel prepared to support menopausal patients (BCG, 2025).",
       },
       {
         question: "What percentage of OB/GYN residencies teach menopause?",

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "AI voice simulation for menopause and midlife women's health conversations. Fewer than 1% of US physicians are certified menopause practitioners, and 69% of OB/GYN residencies have no menopause curriculum.",
   openGraph: {
     title: "Menopause Care Simulation — ClinicalSim.ai",
-    description: "Train providers in menopause conversations. ~54M US women in menopause, fewer than 1% of doctors certified to help.",
+    description: "Train providers in menopause conversations. ~54M US women in menopause, fewer than 1% of providers certified to help.",
     url: "https://clinicalsim.ai/solutions/menopause-care",
   },
   twitter: {

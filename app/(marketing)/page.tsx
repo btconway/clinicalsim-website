@@ -115,7 +115,7 @@ export default function HomePage() {
           </p>
 
           <p className="text-base md:text-lg text-gray-500 font-light mb-8 max-w-2xl mx-auto">
-            Built on research with PICU fellows. Designed for the conversations physicians face but rarely get to practice.
+            Built on research with PICU fellows. Designed for the conversations clinicians face but rarely get to practice.
           </p>
 
           <div className="space-y-3">
@@ -156,7 +156,7 @@ export default function HomePage() {
               The confidence gap is <span className="text-warm font-medium">real</span>.
             </h2>
             <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
-              Physicians want to have these conversations well. They just never get to practice. The result is avoidable suffering, missed diagnoses, and revenue that never materializes.
+              Clinicians want to have these conversations well. They just never get to practice. The result is avoidable suffering, missed diagnoses, and revenue that never materializes.
             </p>
           </div>
 
@@ -197,7 +197,7 @@ export default function HomePage() {
               Why ClinicalSim.ai
             </h2>
             <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
-              Built for the conversations physicians face but rarely get to practice.
+              Built for the conversations clinicians face but rarely get to practice.
             </p>
           </div>
 

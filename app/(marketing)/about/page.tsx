@@ -268,7 +268,7 @@ export default function AboutPage() {
             </div>
 
             <p className="text-center text-gray-600 font-light mt-8">
-              Our pilot data comes from PICU fellows — and the platform is now expanding across specialties, from primary care to oncology, wherever difficult conversations happen.
+              Our pilot data comes from PICU fellows — and the platform is now expanding across specialties and provider types, from primary care to oncology, wherever difficult conversations happen. Physicians, nurse practitioners, and PAs all face these same conversations — and all can bill for them.
             </p>
           </div>
         </div>

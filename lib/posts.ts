@@ -39,7 +39,7 @@ const posts: Post[] = [
   {
     slug: "breaking-bad-news-medical-training",
     title: "Breaking Bad News: The Skill No One Teaches",
-    description: "Breaking bad news is a core clinical skill — yet most physicians have never practiced it before doing it for real.",
+    description: "Breaking bad news is a core clinical skill — yet most clinicians have never practiced it before doing it for real.",
     date: "2026-02-07",
     author: "ClinicalSim.ai Team",
     readingTime: "5 min read",
@@ -66,7 +66,7 @@ const posts: Post[] = [
   {
     slug: "why-communication-training-matters",
     title: "Why Communication Training Matters",
-    description: "Communication failures are the leading driver of malpractice claims, yet most physicians receive minimal structured training. The gap between what's at stake and how we prepare is wider than most realize.",
+    description: "Communication failures are the leading driver of malpractice claims, yet most clinicians receive minimal structured training. The gap between what's at stake and how we prepare is wider than most realize.",
     date: "2025-01-15",
     author: "ClinicalSim.ai Team",
     readingTime: "5 min read",

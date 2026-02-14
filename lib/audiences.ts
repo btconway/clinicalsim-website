@@ -89,7 +89,7 @@ const audiences: Audience[] = [
       {
         headline: "Malpractice exposure you can reduce",
         description:
-          "Communication-related malpractice cases have 39% greater odds of closing with indemnity payment. 6% of physicians attract 40% of suits — and patient complaints driven by communication failures are the strongest predictor.",
+          "Communication-related malpractice cases have 39% greater odds of closing with indemnity payment. 6% of physicians attract 40% of suits — and across all provider types, patient complaints driven by communication failures are the strongest predictor of claims.",
         stat: "$1.7B",
         statSource: "Malpractice costs from communication breakdowns over five years (CRICO, 2009-2013)",
       },
@@ -138,7 +138,7 @@ const audiences: Audience[] = [
       {
         title: "Capture Billable Conversations",
         description:
-          "Train providers to confidently initiate and bill for ACP (CPT 99497/98), cognitive assessments (CPT 99483), and other reimbursable conversations that are currently left on the table.",
+          "Train physicians, NPs, and PAs to confidently initiate and bill for ACP (CPT 99497/98), cognitive assessments (CPT 99483), and other reimbursable conversations that are currently left on the table. These CPT codes are billable by any qualified provider — expanding your revenue potential across the entire care team.",
       },
       {
         title: "Reduce Risk System-Wide",
@@ -148,7 +148,7 @@ const audiences: Audience[] = [
       {
         title: "Protect HCAHPS Revenue",
         description:
-          "Improve physician communication scores that directly drive Medicare Value-Based Purchasing payments. Cleveland Clinic's communication training significantly improved CGCAHPS scores across 1,537 physicians.",
+          "Improve provider communication scores that directly drive Medicare Value-Based Purchasing payments. Cleveland Clinic's communication training significantly improved CGCAHPS scores across 1,537 physicians — and the same communication skills drive HCAHPS performance regardless of provider type.",
       },
       {
         title: "Scale Without Logistics",
@@ -191,25 +191,25 @@ const audiences: Audience[] = [
 
     heroHeadline: "Practice on your terms, build real confidence",
     heroDescription:
-      "You know the conversations that keep you up at night — goals of care, breaking bad news, difficult disclosures. You've seen colleagues struggle with them. You've struggled yourself. But when did you last get to practice? ClinicalSim gives you unlimited, private, voice-based practice with AI patients — on your schedule, from your phone, with no one watching until you're ready.",
+      "You know the conversations that keep you up at night — goals of care, breaking bad news, difficult disclosures. You've seen colleagues struggle with them. You've struggled yourself. But when did you last get to practice? Whether you're a physician, nurse practitioner, or PA, ClinicalSim gives you unlimited, private, voice-based practice with AI patients — on your schedule, from your phone, with no one watching until you're ready.",
 
     painPoints: [
       {
         headline: "High stakes, minimal preparation",
         description:
-          "The average resident receives fewer than two hours of formal communication training across their entire residency. Yet these conversations determine patient outcomes, family satisfaction, and your own professional confidence.",
+          "The average resident receives fewer than two hours of formal communication training across their entire residency — and NP and PA programs rarely include dedicated communication simulation either. Yet these conversations determine patient outcomes, family satisfaction, and your own professional confidence.",
         stat: "<2hrs",
         statSource: "Formal communication training in most residency programs",
       },
       {
         headline: "No safe space to practice",
         description:
-          "Traditional simulation requires scheduling, observers, and performance pressure. Many physicians avoid it entirely. You need a way to practice that feels safe enough to make mistakes and learn from them.",
+          "Traditional simulation requires scheduling, observers, and performance pressure. Many clinicians avoid it entirely. You need a way to practice that feels safe enough to make mistakes and learn from them.",
       },
       {
         headline: "Confidence affects everything",
         description:
-          "Fewer than half of residents report confidence in goals-of-care conversations. That discomfort leads to avoidance — conversations that don't happen, screenings that get skipped, diagnoses that go undelivered.",
+          "Fewer than half of residents report confidence in goals-of-care conversations — and the gap persists across all provider types. That discomfort leads to avoidance — conversations that don't happen, screenings that get skipped, diagnoses that go undelivered.",
         stat: "<50%",
         statSource: "Residents confident in goals-of-care conversations (medical education literature)",
       },
@@ -266,6 +266,11 @@ const audiences: Audience[] = [
         title: "Build Skills That Stick",
         description:
           "Unlimited repetitions means you can practice the exact conversation you're preparing for — not a one-time workshop you'll forget in a month.",
+      },
+      {
+        title: "Bill the Conversations You Practice",
+        description:
+          "Physicians, NPs, and PAs can all bill for advance care planning (CPT 99497/98), cognitive assessments (CPT 99483), and other reimbursable conversations. ClinicalSim prepares you to initiate, navigate, and document these conversations confidently — regardless of your credential.",
       },
     ],
 
