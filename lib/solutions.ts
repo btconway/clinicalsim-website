@@ -94,11 +94,11 @@ const solutions: Solution[] = [
     title: "Advance Care Planning Conversations",
     shortTitle: "Advance Care Planning",
     description:
-      "Medicare reimburses ACP conversations with no annual frequency cap — but most providers never bill them. The bottleneck is training.",
+      "Most patients never have an advance care planning conversation with their provider — even though Medicare created dedicated billing codes to make it happen. The bottleneck is training.",
     icon: Heart,
     colorVariant: "warm",
 
-    heroSubtitle: "A billable conversation most providers never have.",
+    heroSubtitle: "A conversation every patient deserves — and most providers never feel ready for.",
     heroDescription:
       "Medicare created dedicated billing codes for advance care planning conversations — CPT 99497 and 99498 — with no annual frequency cap. Yet fewer than 5% of eligible Medicare beneficiaries have a billed ACP conversation each year. The gap isn't demand. It's provider readiness.",
 
@@ -155,7 +155,7 @@ const solutions: Solution[] = [
 
     trainingGapHeadline: "The conversation nobody practices.",
     trainingGapDescription:
-      "Advance care planning is a billable clinical service, yet most providers have never practiced it in a structured setting. The result: eligible patients go without documented preferences, hospitals miss reimbursable encounters, and families face crisis-point decisions without guidance.",
+      "Advance care planning is a clinical service with dedicated Medicare billing codes, yet most providers have never practiced it in a structured setting. The result: eligible patients go without documented preferences, families face crisis-point decisions without guidance, and hospitals miss conversations that Medicare specifically created billing codes to encourage.",
     trainingGapBullets: [
       "Most internal medicine and family medicine residencies offer no dedicated ACP training module",
       "Providers cite discomfort and lack of confidence as the primary barrier to initiating ACP",
@@ -170,9 +170,9 @@ const solutions: Solution[] = [
           "Simulate complete ACP discussions — from opening the topic to documenting preferences — in a realistic, voice-based format.",
       },
       {
-        title: "Build Billing Confidence",
+        title: "From Practice to Action",
         description:
-          "Providers who've practiced ACP conversations are more likely to initiate and bill for them consistently.",
+          "Providers who've practiced ACP conversations are more likely to initiate them consistently — and document them appropriately.",
       },
       {
         title: "Reduce Family Conflict",
@@ -238,7 +238,7 @@ const solutions: Solution[] = [
 
     heroSubtitle: "The highest-stakes conversation in medicine — and the least practiced.",
     heroDescription:
-      "Goals-of-care conversations directly determine whether patients receive care aligned with their values. When these conversations happen well, ICU utilization drops, patient satisfaction rises, and malpractice exposure shrinks. When they don't happen — or happen poorly — hospitals absorb the cost.",
+      "Goals-of-care conversations directly determine whether patients receive care aligned with their values. When these conversations happen well, ICU utilization drops, patient satisfaction rises, and malpractice exposure shrinks. When they don't happen — or happen poorly — patients receive care misaligned with their values, families are left in crisis, and hospitals absorb the downstream cost.",
 
     revenueStats: [
       {
@@ -342,7 +342,7 @@ const solutions: Solution[] = [
 
     ctaHeadline: "Train the conversation that drives every downstream decision.",
     ctaDescription:
-      "ClinicalSim gives your teams unlimited practice with the conversations that determine ICU utilization, family satisfaction, and malpractice risk.",
+      "ClinicalSim gives your teams unlimited practice with the conversations that determine family satisfaction, care quality, and institutional risk.",
 
     relatedPostSlugs: [
       "breaking-bad-news-medical-training",
@@ -356,13 +356,13 @@ const solutions: Solution[] = [
     title: "Cognitive Assessments & Dementia Diagnosis Conversations",
     shortTitle: "Cognitive Assessments",
     description:
-      "CPT 99483 reimburses ~$282 for cognitive care planning — but utilization remains extremely low despite a massive eligible population.",
+      "Over half of cognitive impairment cases in primary care go undiagnosed — even though Medicare reimburses comprehensive cognitive assessment. The gap is provider confidence.",
     icon: Brain,
     colorVariant: "blue",
 
-    heroSubtitle: "A $282 code that most primary care providers never bill.",
+    heroSubtitle: "A critical diagnosis conversation most primary care providers avoid.",
     heroDescription:
-      "Medicare's CPT 99483 reimburses comprehensive cognitive assessment and care planning at approximately $282 per visit. With 7 million Americans living with Alzheimer's — and over half of cognitive impairment cases undiagnosed in primary care — the revenue opportunity is enormous. But providers need to be trained in the conversation.",
+      "Seven million Americans are living with Alzheimer's — and over half of cognitive impairment cases in primary care go undiagnosed. Medicare reimburses comprehensive cognitive assessment and care planning (CPT 99483) at approximately $282 per visit, but millions of patients are going without a diagnosis. The gap isn't patient need — it's provider readiness.",
 
     revenueStats: [
       {
@@ -428,14 +428,14 @@ const solutions: Solution[] = [
           "Simulate delivering cognitive impairment results to patients and families with empathy, clarity, and appropriate next steps.",
       },
       {
-        title: "Build 99483 Billing Confidence",
+        title: "Build Clinical Confidence",
         description:
-          "Providers who've practiced the full assessment conversation are more likely to complete and bill the comprehensive evaluation.",
+          "Providers who've practiced the full assessment conversation are more likely to complete the comprehensive evaluation and document it appropriately.",
       },
       {
         title: "Connect Screening to Action",
         description:
-          "Train the conversation that turns an Annual Wellness Visit cognitive screen into a billable care plan under 99483.",
+          "Train the conversation that connects a cognitive screen to a comprehensive care plan — including diagnosis, family support, and documented next steps.",
       },
       {
         title: "Support Caregivers",
@@ -478,7 +478,7 @@ const solutions: Solution[] = [
 
     ctaHeadline: "Close the gap between screening and diagnosis.",
     ctaDescription:
-      "ClinicalSim trains your providers to conduct cognitive assessments confidently — so they screen, diagnose, bill, and support families.",
+      "ClinicalSim trains your providers to conduct cognitive assessments confidently — so they screen, diagnose, support families, and document care appropriately.",
 
     relatedPostSlugs: [
       "hospital-communication-training-roi",
@@ -491,13 +491,13 @@ const solutions: Solution[] = [
     title: "Menopause & Midlife Women's Health Conversations",
     shortTitle: "Menopause Care",
     description:
-      "A $40B+ market opportunity where fewer than 1% of US doctors are certified. The gap is provider training and confidence.",
+      "Over 55 million American women in perimenopause or menopause — and fewer than 1% of doctors are certified to help them. The gap is training.",
     icon: Flower2,
     colorVariant: "success",
 
-    heroSubtitle: "A $40 billion market with almost no trained providers.",
+    heroSubtitle: "A generation of women underserved — and almost no providers trained to help.",
     heroDescription:
-      "Over 1.3 million American women enter menopause every year — and the vast majority can't find a provider who knows how to help them. Fewer than 1% of US physicians are certified menopause practitioners. BCG projects the menopause market will reach $40 billion. Hospitals that train providers in menopause conversations will capture a massive, underserved patient population.",
+      "Over 1.3 million American women enter menopause every year — and the vast majority can't find a provider who knows how to help them. Fewer than 1% of US physicians are certified menopause practitioners. BCG projects the menopause market will reach $40 billion. Hospitals that train providers in menopause conversations will be able to serve a patient population that currently has nowhere to turn.",
 
     revenueStats: [
       {
@@ -557,14 +557,14 @@ const solutions: Solution[] = [
           "Practice discussing hormone therapy options, risks, benefits, and contraindications in a judgment-free environment.",
       },
       {
-        title: "Reduce Patient Attrition",
+        title: "Keep Patients in Care",
         description:
-          "Providers who listen effectively and provide evidence-based guidance retain patients who would otherwise leave the system.",
+          "Providers who listen effectively and offer evidence-based guidance build the trust that keeps patients engaged — instead of seeking care outside the system.",
       },
       {
-        title: "Capture a Growing Market",
+        title: "Lead in Women's Health",
         description:
-          "First-mover advantage: hospitals that build menopause competency now will capture patient loyalty in a rapidly growing space.",
+          "Hospitals that build menopause competency now will become the trusted resource for a patient population that's currently underserved — and growing.",
       },
     ],
 
@@ -601,7 +601,7 @@ const solutions: Solution[] = [
 
     ctaHeadline: "Build the menopause practice your community needs.",
     ctaDescription:
-      "ClinicalSim trains your providers in menopause conversations — so you can attract and retain the patients everyone else is losing.",
+      "ClinicalSim trains your providers in menopause conversations — so you can serve the patients who currently have nowhere to turn.",
 
     relatedPostSlugs: [
       "hospital-communication-training-roi",

@@ -19,10 +19,10 @@ export default function SolutionsPage() {
 
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-light shimmer leading-loose pb-3 mb-6 md:mb-8">
-            Training That Drives Revenue
+            Close the Gap Between Training and Practice
           </h1>
           <p className="text-lg md:text-xl text-gray-700 font-light leading-relaxed mb-4 max-w-3xl mx-auto">
-            Hospitals are leaving <span className="text-warm font-medium">millions on the table</span> because providers lack training in high-value clinical conversations that have dedicated billing codes or clear revenue pathways.
+            Critical clinical conversations — with <span className="text-warm font-medium">dedicated billing codes and proven outcomes</span> — aren&apos;t happening at scale because providers lack the training and confidence to initiate them.
           </p>
           <p className="text-base md:text-lg text-gray-500 font-light mb-8 max-w-2xl mx-auto">
             ClinicalSim solves the bottleneck. The bottleneck is training. The product is training.
@@ -36,7 +36,7 @@ export default function SolutionsPage() {
       <section className="px-6 py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-light text-navy mb-6">
-            The <span className="text-warm font-medium">revenue wedge</span>
+            The <span className="text-warm font-medium">untrained conversation</span> problem
           </h2>
           <div className="space-y-4 text-lg text-gray-600 font-light leading-relaxed mb-12">
             <p>
@@ -46,7 +46,7 @@ export default function SolutionsPage() {
               The reason isn&apos;t lack of time or patient demand. It&apos;s that providers have never practiced these conversations. They lack the confidence and skill to initiate, navigate, and bill for them consistently.
             </p>
             <p>
-              The conversations below are just a starting point — each represents a discrete revenue opportunity where the only barrier is <span className="text-warm font-medium">training</span>. ClinicalSim&apos;s platform is built to scale across every evidence-based clinical conversation where better preparation drives better outcomes.
+              The conversations below are just a starting point — each represents a conversation where better preparation drives better outcomes <span className="text-warm font-medium">and measurable financial impact</span>. ClinicalSim&apos;s platform is built to scale across every evidence-based clinical conversation where training is the bottleneck.
             </p>
           </div>
 
@@ -59,7 +59,7 @@ export default function SolutionsPage() {
               $1.5M+
             </div>
             <p className="text-lg text-gray-700 font-light max-w-lg mx-auto">
-              in currently uncaptured revenue and cost savings for a 75-PCP health system — and this is just the starting point
+              in annual value from conversations that should already be happening — including cost savings, avoided ICU days, and reimbursable care — for a 75-PCP health system
             </p>
           </div>
 
@@ -158,10 +158,10 @@ export default function SolutionsPage() {
       <section className="px-6 py-16 md:py-20 bg-gradient-to-br from-navy via-blue-900 to-indigo-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-6">
-            Ready to close the revenue gap?
+            Ready to close the training gap?
           </h2>
           <p className="text-lg md:text-xl font-light mb-8 text-blue-100">
-            See how ClinicalSim can turn training gaps into revenue opportunities for your health system.
+            See how ClinicalSim helps your providers master the conversations that improve patient outcomes — and your bottom line.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">

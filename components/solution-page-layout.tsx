@@ -78,7 +78,7 @@ export function SolutionPageLayout({ solution, children }: SolutionPageLayoutPro
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-light text-navy mb-4">
-              The <span className="text-warm font-medium">revenue opportunity</span>
+              The <span className="text-warm font-medium">opportunity</span>
             </h2>
           </div>
 
@@ -204,7 +204,7 @@ export function SolutionPageLayout({ solution, children }: SolutionPageLayoutPro
               Why <span className="text-warm font-medium">simulation</span> works
             </h2>
             <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
-              Practice builds confidence. Confidence drives behavior change. Behavior change drives revenue.
+              Practice builds confidence. Confidence changes behavior. Better conversations change outcomes.
             </p>
           </div>
 

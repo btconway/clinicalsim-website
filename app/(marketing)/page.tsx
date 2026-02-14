@@ -69,7 +69,7 @@ export default function HomePage() {
     },
     {
       value: "$86-282",
-      label: "per conversation in billable codes that go unused without training",
+      label: "in Medicare-reimbursed conversations that patients aren't receiving",
       source: "CMS Fee Schedule 2026",
       variant: "success" as const,
     }
@@ -185,7 +185,7 @@ export default function HomePage() {
 
       <SectionDivider variant="curve" color="blue" />
 
-      {/* Evidence Section - New prominent section */}
+      {/* Evidence Section - Hidden until study is published
       <section className="px-6 py-12 md:py-16 bg-gradient-to-br from-blue-50 via-indigo-50 to-slate-50">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -206,6 +206,7 @@ export default function HomePage() {
           />
         </div>
       </section>
+      */}
 
       <SectionDivider variant="diagonal-down" color="white" />
 
@@ -251,7 +252,7 @@ export default function HomePage() {
       <section className="px-6 py-12 md:py-16 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-light text-navy mb-4">
-            Training that drives <span className="text-warm font-medium">revenue</span>
+            Training that drives <span className="text-warm font-medium">outcomes</span>
           </h2>
           <p className="text-lg text-gray-600 font-light leading-relaxed mb-8 max-w-2xl mx-auto">
             There are clinical conversations with dedicated billing codes and clear reimbursement pathways that aren&apos;t happening at scale — because providers have never practiced them.
