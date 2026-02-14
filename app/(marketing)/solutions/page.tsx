@@ -46,7 +46,20 @@ export default function SolutionsPage() {
               The reason isn&apos;t lack of time or patient demand. It&apos;s that providers have never practiced these conversations. They lack the confidence and skill to initiate, navigate, and bill for them consistently.
             </p>
             <p>
-              Each conversation below represents a discrete revenue opportunity where the only barrier is <span className="text-warm font-medium">training</span> — exactly what ClinicalSim delivers.
+              The conversations below are just a starting point — each represents a discrete revenue opportunity where the only barrier is <span className="text-warm font-medium">training</span>. ClinicalSim&apos;s platform is built to scale across every evidence-based clinical conversation where better preparation drives better outcomes.
+            </p>
+          </div>
+
+          {/* Aggregate revenue projection */}
+          <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl border border-warm/20 p-8 text-center mb-12">
+            <p className="text-sm uppercase tracking-wider text-gray-500 font-medium mb-3">
+              Combined annual opportunity — initial areas alone
+            </p>
+            <div className="font-mono font-bold text-4xl md:text-5xl lg:text-6xl text-warm mb-3">
+              $1.5M+
+            </div>
+            <p className="text-lg text-gray-700 font-light max-w-lg mx-auto">
+              in currently uncaptured revenue and cost savings for a 75-PCP health system — and this is just the starting point
             </p>
           </div>
 
@@ -80,10 +93,10 @@ export default function SolutionsPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
-              Four conversations. Four <span className="text-warm font-medium">revenue pathways</span>.
+              Starting with the conversations that <span className="text-warm font-medium">matter most</span>.
             </h2>
             <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
-              Each solution targets a specific high-value conversation where the training gap creates a direct revenue gap.
+              There are hundreds of clinical conversations where better training drives better outcomes. These are where we&apos;re starting — high-value conversations with clear evidence gaps and measurable impact.
             </p>
           </div>
 

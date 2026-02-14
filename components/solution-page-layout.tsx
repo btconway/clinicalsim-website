@@ -127,6 +127,49 @@ export function SolutionPageLayout({ solution, children }: SolutionPageLayoutPro
         </section>
       )}
 
+      {/* Do the Math — Revenue Projections */}
+      <section className="px-6 pb-12 md:pb-16 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-light text-navy mb-8">
+            {solution.revenueProjection.sectionHeading}
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Per-provider projection */}
+            <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl border border-warm/20 p-8 text-center">
+              <div className="font-mono font-bold text-4xl md:text-5xl text-warm mb-3">
+                {solution.revenueProjection.perProvider.value}
+              </div>
+              <p className="text-lg text-gray-700 font-medium mb-4">
+                {solution.revenueProjection.perProvider.label}
+              </p>
+              <p className="text-sm text-gray-500 font-light leading-relaxed">
+                {solution.revenueProjection.perProvider.assumption}
+              </p>
+            </div>
+
+            {/* Per-institution projection */}
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl border border-navy/20 p-8 text-center">
+              <div className="font-mono font-bold text-4xl md:text-5xl text-navy mb-3">
+                {solution.revenueProjection.perInstitution.value}
+              </div>
+              <p className="text-lg text-gray-700 font-medium mb-4">
+                {solution.revenueProjection.perInstitution.label}
+              </p>
+              <p className="text-sm text-gray-500 font-light leading-relaxed">
+                {solution.revenueProjection.perInstitution.assumption}
+              </p>
+            </div>
+          </div>
+
+          {solution.revenueProjection.source && (
+            <p className="text-xs text-gray-400 font-light mt-4 text-center italic">
+              {solution.revenueProjection.source}
+            </p>
+          )}
+        </div>
+      </section>
+
       <SectionDivider variant="wave" color="slate" />
 
       {/* The Training Gap */}
@@ -267,7 +310,7 @@ export function SolutionPageLayout({ solution, children }: SolutionPageLayoutPro
               </Button>
             </Link>
             <Link href="/solutions">
-              <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
+              <Button variant="outline" size="lg" className="border-white/30 bg-transparent text-white hover:bg-white/10">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 All Solutions
               </Button>

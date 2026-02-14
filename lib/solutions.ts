@@ -29,6 +29,21 @@ export interface EvidenceItem {
   badges?: string[]
 }
 
+export interface RevenueProjection {
+  perProvider: {
+    value: string
+    label: string
+    assumption: string
+  }
+  perInstitution: {
+    value: string
+    label: string
+    assumption: string
+  }
+  sectionHeading: string
+  source?: string
+}
+
 export interface Solution {
   slug: string
   title: string
@@ -46,6 +61,9 @@ export interface Solution {
 
   // CPT codes (optional)
   cptCodes?: CptCode[]
+
+  // Revenue projection ("Do the Math")
+  revenueProjection: RevenueProjection
 
   // Training gap
   trainingGapHeadline: string
@@ -120,6 +138,21 @@ const solutions: Solution[] = [
       },
     ],
 
+    revenueProjection: {
+      sectionHeading: "What this means for your health system",
+      perProvider: {
+        value: "$4,200",
+        label: "per PCP per year",
+        assumption: "Based on 48 ACP conversations/year at $87 each (conservative pace)",
+      },
+      perInstitution: {
+        value: "$630K",
+        label: "for a 75-PCP health system",
+        assumption: "At moderate billing pace of 96 conversations per provider/year",
+      },
+      source: "JAMA Health Forum 2024: ACP training increased billing 11x (1.3% to 14%)",
+    },
+
     trainingGapHeadline: "The conversation nobody practices.",
     trainingGapDescription:
       "Advance care planning is a billable clinical service, yet most providers have never practiced it in a structured setting. The result: eligible patients go without documented preferences, hospitals miss reimbursable encounters, and families face crisis-point decisions without guidance.",
@@ -184,9 +217,9 @@ const solutions: Solution[] = [
       },
     ],
 
-    ctaHeadline: "Turn every eligible visit into a billable conversation.",
+    ctaHeadline: "Give every patient the conversation they deserve.",
     ctaDescription:
-      "ClinicalSim helps your providers practice ACP conversations so they're confident enough to have them — and bill for them — consistently.",
+      "ClinicalSim helps your providers practice ACP conversations so they're confident enough to have them — early, often, and well.",
 
     relatedPostSlugs: [
       "end-of-life-care-communication",
@@ -227,6 +260,21 @@ const solutions: Solution[] = [
         variant: "warm",
       },
     ],
+
+    revenueProjection: {
+      sectionHeading: "What this means for your institution",
+      perProvider: {
+        value: "$4,908",
+        label: "in potential savings per palliative care consult",
+        assumption: "Average cost savings for patients who died in hospital (Morrison et al., 2008)",
+      },
+      perInstitution: {
+        value: "$2.25M",
+        label: "per year in avoided ICU costs for a 300-bed hospital",
+        assumption: "Based on 3,000 ICU admissions/year with 5% averted at ~$15,000 average ICU stay",
+      },
+      source: "Annals of ATS 2020; Morrison et al., Archives of Internal Medicine, 2008",
+    },
 
     trainingGapHeadline: "Two hours of training for a career of difficult conversations.",
     trainingGapDescription:
@@ -348,6 +396,21 @@ const solutions: Solution[] = [
       },
     ],
 
+    revenueProjection: {
+      sectionHeading: "What this means for your health system",
+      perProvider: {
+        value: "$6,800",
+        label: "per PCP per year",
+        assumption: "Based on 24 cognitive assessments/year at ~$282 each (conservative pace)",
+      },
+      perInstitution: {
+        value: "$1M+",
+        label: "for a 75-PCP health system",
+        assumption: "At moderate billing pace of 48 assessments per provider/year",
+      },
+      source: "GAO 2024: Utilization tripled 2018-2022 but remains under 3% of eligible population",
+    },
+
     trainingGapHeadline: "Most providers avoid the diagnosis conversation entirely.",
     trainingGapDescription:
       "Delivering a cognitive impairment or dementia diagnosis is one of the most emotionally complex conversations in primary care. Without training, providers default to avoidance — skipping screening, deferring referrals, and leaving the 99483 code unbilled. The GAO found that while utilization tripled between 2018 and 2022, it remains a fraction of the eligible population.",
@@ -456,6 +519,21 @@ const solutions: Solution[] = [
         variant: "warm",
       },
     ],
+
+    revenueProjection: {
+      sectionHeading: "What this means for your practice",
+      perProvider: {
+        value: "$500-$800",
+        label: "in visit revenue per menopause patient per year",
+        assumption: "Initial consultation plus 2-3 follow-ups at commercial rates",
+      },
+      perInstitution: {
+        value: "$500K-$750K",
+        label: "per year for 10 trained OB/GYNs",
+        assumption: "Each seeing 15 menopause patients/week = 7,500 patient-visits/year, plus downstream referrals",
+      },
+      source: "Midi Health reached $150M run rate / 25,000 patients per week — proving market demand",
+    },
 
     trainingGapHeadline: "69% of OB/GYN residencies have no menopause curriculum.",
     trainingGapDescription:
