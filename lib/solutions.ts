@@ -281,14 +281,14 @@ const solutions: Solution[] = [
       },
       {
         value: "66%",
-        label: "of sentinel events involve communication failures as root cause",
+        label: "of sentinel events involved communication failures as root cause (1995-2005)",
         source: "The Joint Commission",
         variant: "navy",
       },
       {
         value: "$1.7B",
-        label: "in annual malpractice costs linked to communication breakdowns",
-        source: "CRICO/Harvard",
+        label: "in malpractice costs linked to communication breakdowns over five years",
+        source: "CRICO Benchmarking Report, 2009-2013",
         variant: "warm",
       },
     ],
@@ -397,7 +397,7 @@ const solutions: Solution[] = [
       },
       {
         question: "What percentage of malpractice claims involve communication failures?",
-        answer: "Communication failures are the root cause of 66% of sentinel events according to The Joint Commission, and drive approximately 40% of malpractice claims. CRICO/Harvard estimates that communication breakdowns contribute to $1.7 billion in annual malpractice costs. Communication-related malpractice cases have 39% greater odds of closing with an indemnity payment compared to non-communication-related cases.",
+        answer: "Communication failures were the root cause of 66% of sentinel events reported to The Joint Commission (1995-2005), and drive approximately 40% of malpractice claims (Candello, 2025). CRICO found that communication breakdowns contributed to $1.7 billion in malpractice costs over a five-year period (2009-2013). Communication-related malpractice cases have 39% greater odds of closing with an indemnity payment compared to non-communication-related cases (Candello, 2025).",
       },
     ],
 
@@ -415,11 +415,11 @@ const solutions: Solution[] = [
 
     heroSubtitle: "A critical diagnosis conversation most primary care providers avoid.",
     heroDescription:
-      "Seven million Americans are living with Alzheimer's — and over half of cognitive impairment cases in primary care go undiagnosed. Medicare reimburses comprehensive cognitive assessment and care planning (CPT 99483) at approximately $282 per visit, but millions of patients are going without a diagnosis. The gap isn't patient need — it's provider readiness.",
+      "Over 7 million Americans are living with Alzheimer's — and over half of cognitive impairment cases in primary care go undiagnosed. Medicare reimburses comprehensive cognitive assessment and care planning (CPT 99483) at approximately $260 per visit, but millions of patients are going without a diagnosis. The gap isn't patient need — it's provider readiness.",
 
     revenueStats: [
       {
-        value: "~$282",
+        value: "~$260",
         label: "Medicare reimbursement for cognitive assessment and care planning (CPT 99483)",
         source: "CMS Medicare Fee Schedule",
         variant: "warm",
@@ -442,8 +442,8 @@ const solutions: Solution[] = [
       {
         code: "99483",
         description:
-          "Assessment and care plan for patient with cognitive impairment (approximately 50 minutes)",
-        reimbursement: "~$282",
+          "Assessment and care plan for patient with cognitive impairment (approximately 60 minutes)",
+        reimbursement: "~$260",
         notes:
           "Includes cognition-focused evaluation, functional assessment, care plan creation, and advance care planning",
       },
@@ -452,9 +452,9 @@ const solutions: Solution[] = [
     revenueProjection: {
       sectionHeading: "What this means for your health system",
       perProvider: {
-        value: "$6,800",
+        value: "$6,200",
         label: "per PCP per year",
-        assumption: "Based on 24 cognitive assessments/year at ~$282 each (conservative pace)",
+        assumption: "Based on 24 cognitive assessments/year at ~$260 each (conservative pace)",
       },
       perInstitution: {
         value: "$1M+",
@@ -468,7 +468,7 @@ const solutions: Solution[] = [
     trainingGapDescription:
       "Delivering a cognitive impairment or dementia diagnosis is one of the most emotionally complex conversations in primary care. Without training, providers default to avoidance — skipping screening, deferring referrals, and leaving the 99483 code unbilled. The GAO found that while utilization tripled between 2018 and 2022, it remains a fraction of the eligible population.",
     trainingGapBullets: [
-      "Over a quarter of primary care clinicians had zero patients with a diagnosed mild cognitive impairment in their panel — despite 20% expected prevalence",
+      "Over a quarter of primary care clinicians had zero patients with a diagnosed mild cognitive impairment in their panel — despite 20% expected prevalence (Liu et al., JPAD, 2024)",
       "GAO found 99483 utilization tripled from 2018–2022 but challenges with provider training remain the primary barrier",
       "Only 8% of expected cognitive impairment cases are actually diagnosed in primary care",
       "Providers report the diagnosis disclosure conversation as the primary reason they avoid formal cognitive assessment",
@@ -516,7 +516,7 @@ const solutions: Solution[] = [
         variant: "navy",
       },
       {
-        value: "7M",
+        value: "7.2M",
         label: "Americans living with Alzheimer's disease",
         source: "Alzheimer's Association, 2025",
         variant: "blue",
@@ -541,19 +541,19 @@ const solutions: Solution[] = [
     faqs: [
       {
         question: "What is CPT 99483?",
-        answer: "CPT 99483 is the Medicare billing code for a comprehensive cognitive assessment and care plan. It covers approximately 50 minutes of face-to-face time and reimburses at roughly $282. The assessment includes cognition-focused evaluation, functional assessment, care plan creation, and advance care planning. Despite its availability, utilization remains low — the GAO found that while usage tripled between 2018 and 2022, it covers fewer than 3% of the eligible population.",
+        answer: "CPT 99483 is the Medicare billing code for a comprehensive cognitive assessment and care plan. It covers approximately 60 minutes of face-to-face time and reimburses at roughly $260. The assessment includes cognition-focused evaluation, functional assessment, care plan creation, and advance care planning. Despite its availability, utilization remains low — the GAO found that while usage tripled between 2018 and 2022, it covers fewer than 3% of the eligible population.",
       },
       {
         question: "Why is cognitive impairment underdiagnosed?",
-        answer: "Over 50% of cognitive impairment cases in primary care go undiagnosed (JPAD, 2024). The primary barrier is provider readiness — not patient access. Over a quarter of primary care clinicians had zero patients with a diagnosed mild cognitive impairment in their panel, despite 20% expected prevalence. Providers report the diagnosis disclosure conversation as the primary reason they avoid formal cognitive assessment.",
+        answer: "Over 50% of cognitive impairment cases in primary care go undiagnosed, with recent research suggesting the MCI detection rate may be as low as 8% (Liu et al., JPAD, 2024). The primary barrier is provider readiness — not patient access. Over a quarter of primary care clinicians had zero patients with a diagnosed mild cognitive impairment in their panel, despite 20% expected prevalence. Providers report the diagnosis disclosure conversation as the primary reason they avoid formal cognitive assessment.",
       },
       {
         question: "How much does Medicare pay for cognitive assessment?",
-        answer: "Medicare reimburses approximately $282 for a comprehensive cognitive assessment and care plan under CPT 99483. This covers approximately 50 minutes and includes cognition-focused evaluation, functional assessment, care plan creation, and advance care planning. For a 75-PCP health system with moderate billing, this represents over $1M in annual revenue opportunity (GAO 2024).",
+        answer: "Medicare reimburses approximately $260 for a comprehensive cognitive assessment and care plan under CPT 99483. This covers approximately 60 minutes and includes cognition-focused evaluation, functional assessment, care plan creation, and advance care planning. For a 75-PCP health system with moderate billing, this represents over $1M in annual revenue opportunity (GAO 2024).",
       },
       {
         question: "What is the cost of dementia care in the United States?",
-        answer: "Alzheimer's and dementia care costs the US $384 billion annually (Alzheimer's Association, 2025). Medicare beneficiaries with dementia cost 3x more than those without. Additionally, unpaid dementia caregiving is valued at $413 billion annually. Seven million Americans are currently living with Alzheimer's disease, and earlier diagnosis through cognitive assessment can significantly improve care planning and reduce crisis-driven costs.",
+        answer: "Alzheimer's and dementia care costs the US $384 billion annually (Alzheimer's Association, 2025). Medicare beneficiaries with dementia cost 3x more than those without. Additionally, unpaid dementia caregiving is valued at $413 billion annually. Over 7.2 million Americans are currently living with Alzheimer's disease (Alzheimer's Association, 2025), and earlier diagnosis through cognitive assessment can significantly improve care planning and reduce crisis-driven costs.",
       },
     ],
 
@@ -565,7 +565,7 @@ const solutions: Solution[] = [
     title: "Menopause & Midlife Women's Health Conversations",
     shortTitle: "Menopause Care",
     description:
-      "Over 55 million American women in perimenopause or menopause — and fewer than 1% of doctors are certified to help them. The gap is training.",
+      "Over 50 million American women in perimenopause or menopause — and fewer than 1% of doctors are certified to help them. The gap is training.",
     icon: Flower2,
     colorVariant: "success",
 
@@ -583,7 +583,7 @@ const solutions: Solution[] = [
       {
         value: "<1%",
         label: "of US physicians are certified menopause practitioners",
-        source: "The Menopause Society, 2025",
+        source: "BCG, 2025",
         variant: "navy",
       },
       {
@@ -606,7 +606,7 @@ const solutions: Solution[] = [
         label: "per year for 10 trained OB/GYNs",
         assumption: "Each seeing 15 menopause patients/week = 7,500 patient-visits/year, plus downstream referrals",
       },
-      source: "Midi Health reached $150M run rate / 25,000 patients per week — proving market demand",
+      source: "Midi Health reached $150M run rate / 25,000 patients per week — proving market demand (Midi Health Series C, October 2025)",
     },
 
     trainingGapHeadline: "69% of OB/GYN residencies have no menopause curriculum.",
@@ -615,7 +615,7 @@ const solutions: Solution[] = [
     trainingGapBullets: [
       "Only 31% of OB/GYN residency programs include a dedicated menopause curriculum",
       "Fewer than 1% of actively licensed US doctors hold Menopause Society certification",
-      "1 in 3 women don't feel confident advocating for themselves in menopause-related healthcare visits",
+      "1 in 3 women don't feel confident advocating for themselves in menopause-related healthcare visits (Bonafide Health, State of Menopause 2025)",
       "Women frequently report being dismissed by providers, with symptoms incorrectly attributed to anxiety or aging",
     ],
 
@@ -654,7 +654,7 @@ const solutions: Solution[] = [
 
     outcomeStats: [
       {
-        value: "55M+",
+        value: "~54M",
         label: "US women currently in perimenopause or menopause",
         source: "US Census / Menopause Society",
         variant: "success",
@@ -667,7 +667,7 @@ const solutions: Solution[] = [
       },
       {
         value: "85%",
-        label: "of menopausal women experience symptoms significant enough to affect daily life",
+        label: "of menopausal women experience symptoms during the menopause transition",
         source: "The Menopause Society",
         variant: "warm",
       },
@@ -685,19 +685,19 @@ const solutions: Solution[] = [
     faqs: [
       {
         question: "Why are so few doctors trained in menopause care?",
-        answer: "A 2023 survey of US OB/GYN residency program directors found that only 31.3% reported having a dedicated menopause curriculum (Menopause, 2023). This means 69% of OB/GYN residencies graduate physicians with no structured menopause training. Fewer than 1% of actively licensed US physicians are certified menopause practitioners through The Menopause Society. The result is that fewer than 7% of residents in key specialties feel prepared to support menopausal patients (BCG, 2025).",
+        answer: "A 2023 survey of US OB/GYN residency program directors found that only 31.3% reported having a dedicated menopause curriculum (Menopause, 2023). This means nearly 69% of OB/GYN residencies graduate physicians with no structured menopause training. Fewer than 1% of actively licensed US physicians are certified menopause practitioners (BCG, 2025). The result is that fewer than 7% of residents in key specialties feel prepared to support menopausal patients (BCG, 2025).",
       },
       {
         question: "What percentage of OB/GYN residencies teach menopause?",
-        answer: "Only 31.3% of OB/GYN residency programs include a dedicated menopause curriculum, according to a 2023 national survey published in Menopause (68.3% response rate, 145 program directors surveyed). This gap leaves the majority of graduating OB/GYNs unprepared to manage the most common midlife health transition affecting over 55 million American women.",
+        answer: "Only 31.3% of OB/GYN residency programs include a dedicated menopause curriculum, according to a 2023 national survey published in Menopause (68.3% response rate, 145 program directors surveyed). This gap leaves the majority of graduating OB/GYNs unprepared to manage the most common midlife health transition affecting approximately 54 million American women.",
       },
       {
         question: "What is the menopause care gap?",
-        answer: "The menopause care gap refers to the disconnect between the large population of women needing menopause care (55M+ in the US, with 1.3M entering menopause each year) and the small number of providers trained to help them (fewer than 1% of US physicians are certified menopause practitioners). 85% of menopausal women experience symptoms significant enough to affect daily life, yet 1 in 3 women don't feel confident advocating for themselves in menopause-related healthcare visits. BCG projects the menopause market at $40B+ as demand grows.",
+        answer: "The menopause care gap refers to the disconnect between the large population of women needing menopause care (~54 million in the US, with 1.3M entering menopause each year) and the small number of providers trained to help them (fewer than 1% of US physicians are certified menopause practitioners, per BCG 2025). 85% of menopausal women experience symptoms, yet 1 in 3 women don't feel confident advocating for themselves in menopause-related healthcare visits (Bonafide Health, State of Menopause 2025). BCG projects the menopause market could reach $40B+ as demand grows.",
       },
       {
         question: "How can hospitals build menopause care programs?",
-        answer: "Hospitals can build menopause care programs by training existing OB/GYN, primary care, and internal medicine providers in menopause symptom assessment, hormone therapy discussion, and patient communication. Midi Health reached $150M in run rate serving 25,000 menopause patients per week — proving significant market demand. A health system with 10 trained OB/GYNs seeing 15 menopause patients per week can generate $500K-$750K in annual visit revenue, plus downstream referrals.",
+        answer: "Hospitals can build menopause care programs by training existing OB/GYN, primary care, and internal medicine providers in menopause symptom assessment, hormone therapy discussion, and patient communication. Midi Health reached $150M in run rate serving 25,000 menopause patients per week — proving significant market demand (Midi Health Series C, October 2025). A health system with 10 trained OB/GYNs seeing 15 menopause patients per week can generate $500K-$750K in annual visit revenue, plus downstream referrals.",
       },
     ],
 

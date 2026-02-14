@@ -76,13 +76,13 @@ const audiences: Audience[] = [
 
     heroHeadline: "Turn training into measurable ROI",
     heroDescription:
-      "Communication failures drive 40% of malpractice claims and put $2-3M in HCAHPS-linked reimbursement at risk for a mid-size academic center. Meanwhile, billable clinical conversations — advance care planning, cognitive assessments, goals of care — go unheld because providers lack the confidence to initiate them. ClinicalSim closes that gap at scale, without the logistics of traditional SP programs.",
+      "Communication failures drive 40% of malpractice claims (Candello, 2025) and put $2-3M in HCAHPS-linked reimbursement at risk for a mid-size academic center. Meanwhile, billable clinical conversations — advance care planning, cognitive assessments, goals of care — go unheld because providers lack the confidence to initiate them. ClinicalSim closes that gap at scale, without the logistics of traditional SP programs.",
 
     painPoints: [
       {
         headline: "Revenue left on the table",
         description:
-          "Medicare reimburses ACP conversations at $87 each with no annual cap, and cognitive assessments at ~$282 — yet fewer than 5% of eligible patients receive a billed ACP conversation. The bottleneck is provider readiness, not patient need.",
+          "Medicare reimburses ACP conversations at $87 each with no annual cap, and cognitive assessments at ~$260 — yet fewer than 5% of eligible patients receive a billed ACP conversation. The bottleneck is provider readiness, not patient need.",
         stat: "$1.5M+",
         statSource: "Combined annual opportunity for a 75-PCP system",
       },
@@ -91,7 +91,7 @@ const audiences: Audience[] = [
         description:
           "Communication-related malpractice cases have 39% greater odds of closing with indemnity payment. 6% of physicians attract 40% of suits — and patient complaints driven by communication failures are the strongest predictor.",
         stat: "$1.7B",
-        statSource: "Annual malpractice costs from communication breakdowns (CRICO/Harvard)",
+        statSource: "Malpractice costs from communication breakdowns over five years (CRICO, 2009-2013)",
       },
       {
         headline: "HCAHPS scores at risk",
@@ -117,7 +117,7 @@ const audiences: Audience[] = [
       {
         value: "$2-3M",
         label: "in HCAHPS-linked reimbursement at risk per mid-size AMC",
-        source: "CMS VBP Program analysis",
+        source: "Based on CMS VBP program structure for a 500-bed AMC",
         variant: "navy",
       },
       {
@@ -143,7 +143,7 @@ const audiences: Audience[] = [
       {
         title: "Reduce Risk System-Wide",
         description:
-          "Target the 6% of providers who attract 40% of malpractice suits with structured communication practice. Reduce the communication failures behind $1.7B in annual claims.",
+          "Target the 6% of providers who attract 40% of malpractice suits with structured communication practice. Reduce the communication failures behind 40% of all malpractice claims (Candello, 2025).",
       },
       {
         title: "Protect HCAHPS Revenue",
@@ -209,9 +209,9 @@ const audiences: Audience[] = [
       {
         headline: "Confidence affects everything",
         description:
-          "90% of physicians say they lack confidence in goals-of-care conversations. That discomfort leads to avoidance — conversations that don't happen, screenings that get skipped, diagnoses that go undelivered.",
-        stat: "90%",
-        statSource: "Physicians lacking confidence in goals-of-care (AAHPM)",
+          "Fewer than half of residents report confidence in goals-of-care conversations. That discomfort leads to avoidance — conversations that don't happen, screenings that get skipped, diagnoses that go undelivered.",
+        stat: "<50%",
+        statSource: "Residents confident in goals-of-care conversations (medical education literature)",
       },
       {
         headline: "Skills atrophy without reinforcement",
@@ -222,9 +222,9 @@ const audiences: Audience[] = [
 
     stats: [
       {
-        value: "90%",
-        label: "of physicians lack confidence in goals-of-care conversations",
-        source: "AAHPM survey data",
+        value: "<50%",
+        label: "of residents report confidence in goals-of-care conversations",
+        source: "Medical education literature",
         variant: "warm",
       },
       {
@@ -373,7 +373,7 @@ const audiences: Audience[] = [
       {
         title: "Evidence You Can Point To",
         description:
-          "The only AI communication platform backed by a published RCT with blinded evaluation using validated tools (ACGME milestones, Calgary-Cambridge). Evidence your accreditation reviewers will recognize.",
+          "Among the first AI communication platforms backed by a published RCT with blinded evaluation using validated tools (ACGME milestones, Calgary-Cambridge). Evidence your accreditation reviewers will recognize.",
       },
       {
         title: "Track Progress Over Time",

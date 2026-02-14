@@ -5,7 +5,7 @@ import { notFound } from "next/navigation"
 
 export const metadata: Metadata = {
   title: "For Health System Leaders — Communication Training ROI",
-  description: "ClinicalSim.ai helps health system leaders capture revenue from billable conversations, reduce $1.7B in communication-driven malpractice costs, and improve HCAHPS scores tied to Medicare reimbursement.",
+  description: "ClinicalSim.ai helps health system leaders capture revenue from billable conversations, reduce communication-driven malpractice risk (40% of all claims per Candello 2025), and improve HCAHPS scores tied to Medicare reimbursement.",
   openGraph: {
     title: "ClinicalSim.ai for Health System Leaders",
     description: "Turn communication training into measurable ROI. Capture billable conversations, reduce malpractice exposure, improve HCAHPS scores.",

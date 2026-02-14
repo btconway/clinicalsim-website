@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "ClinicalSim.ai is an AI-powered voice simulation platform for practicing high-stakes medical conversations — goals of care, advance care planning, diagnosis disclosure — on-demand from any device. Backed by a published randomized controlled trial.",
   openGraph: {
     title: "ClinicalSim.ai — Practice the Conversations That Matter Most",
-    description: "AI voice simulation for high-stakes medical conversations. The only AI communication training platform backed by a published randomized controlled trial.",
+    description: "AI voice simulation for high-stakes medical conversations. Among the first AI communication training platforms backed by a published randomized controlled trial.",
     url: "https://clinicalsim.ai",
   },
   twitter: {
@@ -47,7 +47,7 @@ export default function HomePage() {
     {
       icon: BookOpen,
       title: "Evidence-Based",
-      description: "The only AI communication platform backed by a randomized controlled trial with blinded evaluation using validated assessment tools (ACGME milestones, Calgary-Cambridge).",
+      description: "Among the first AI communication platforms backed by a randomized controlled trial with blinded evaluation using validated assessment tools (ACGME milestones, Calgary-Cambridge).",
       variant: "warm" as const,
     },
     {
@@ -72,9 +72,9 @@ export default function HomePage() {
 
   const stats = [
     {
-      value: "90%",
-      label: "of physicians say they lack confidence in goals-of-care conversations",
-      source: "AAHPM survey data",
+      value: "<50%",
+      label: "of residents report confidence in goals-of-care conversations",
+      source: "Medical education literature",
       variant: "warm" as const,
     },
     {
@@ -90,7 +90,7 @@ export default function HomePage() {
       variant: "warm" as const,
     },
     {
-      value: "$86-282",
+      value: "$87-260",
       label: "in Medicare-reimbursed conversations that patients aren't receiving",
       source: "CMS Fee Schedule 2026",
       variant: "success" as const,
@@ -142,7 +142,7 @@ export default function HomePage() {
           <div className="border-l-4 border-warm pl-6 md:pl-8">
             <h2 className="text-xl md:text-2xl font-light text-navy mb-3">What is ClinicalSim.ai?</h2>
             <p className="text-base md:text-lg text-gray-700 font-light leading-relaxed">
-              ClinicalSim.ai is an AI-powered voice simulation platform for practicing high-stakes medical conversations. Clinicians practice real-time spoken dialogue with AI patients — goals of care, end-of-life discussions, diagnosis disclosure — on-demand from any device. It is the only AI communication training platform backed by a published randomized controlled trial with blinded evaluation using validated assessment tools.
+              ClinicalSim.ai is an AI-powered voice simulation platform for practicing high-stakes medical conversations. Clinicians practice real-time spoken dialogue with AI patients — goals of care, end-of-life discussions, diagnosis disclosure — on-demand from any device. It is among the first AI communication training platforms backed by a published randomized controlled trial with blinded evaluation using validated assessment tools.
             </p>
           </div>
         </div>
@@ -227,7 +227,7 @@ export default function HomePage() {
               Backed by <span className="text-warm font-medium">rigorous evidence</span>
             </h2>
             <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
-              The only AI communication platform with published, peer-reviewed research demonstrating effectiveness.
+              Among the first AI communication platforms with published, peer-reviewed research demonstrating effectiveness.
             </p>
           </div>
 

@@ -50,8 +50,8 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <StatHighlight
-              value="90%"
-              label="of physicians lack confidence in goals-of-care conversations"
+              value="<50%"
+              label="of residents report confidence in goals-of-care conversations"
               variant="warm"
             />
             <StatHighlight
@@ -193,7 +193,7 @@ export default function AboutPage() {
               studyTitle="AI-Powered Simulation for Pediatric Critical Care Communication Training"
               journal="Academic Pediatrics"
               year="2024"
-              summary="ClinicalSim.ai is the only AI communication training platform with published randomized controlled trial data — placing it in the top tier of evidence quality for the entire medical education technology market."
+              summary="ClinicalSim.ai is among the first AI communication training platforms with published randomized controlled trial data — placing it in the top tier of evidence quality for the medical education technology market."
               link="/insights/pilot-study-results"
             />
           </div>

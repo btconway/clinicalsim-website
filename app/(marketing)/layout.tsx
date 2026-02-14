@@ -18,7 +18,7 @@ export default function MarketingLayout({
             url: "https://clinicalsim.ai",
             logo: "https://clinicalsim.ai/logo.svg",
             description:
-              "AI-powered voice simulation platform for practicing high-stakes medical conversations. The only AI communication training platform backed by a published randomized controlled trial.",
+              "AI-powered voice simulation platform for practicing high-stakes medical conversations. Among the first AI communication training platforms backed by a published randomized controlled trial.",
           },
           {
             "@context": "https://schema.org",

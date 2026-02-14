@@ -90,8 +90,8 @@ export default function SolutionsPage() {
             />
             <StatHighlight
               value="$1.7B"
-              label="annual malpractice costs from communication breakdowns"
-              source="CRICO/Harvard"
+              label="in malpractice costs from communication breakdowns (over five years)"
+              source="CRICO, 2009-2013"
               variant="navy"
             />
             <StatHighlight
@@ -150,7 +150,7 @@ export default function SolutionsPage() {
             <FeatureCard
               icon={BookOpen}
               title="Evidence-Based"
-              description="The only AI communication platform backed by a published randomized controlled trial with blinded evaluation using validated assessment tools."
+              description="Among the first AI communication platforms backed by a published randomized controlled trial with blinded evaluation using validated assessment tools."
               variant="warm"
               expandOnHover
             />
