@@ -57,7 +57,8 @@ export function SiteHeader() {
           </button>
 
           {solutionsOpen && (
-            <div className="absolute top-full left-0 mt-2 w-72 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+            <div className="absolute top-full left-0 pt-2 w-72 z-50">
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border border-gray-100 py-2">
               {solutions.map((solution) => {
                 const Icon = solution.icon
                 return (
@@ -81,6 +82,7 @@ export function SiteHeader() {
                   View All Solutions
                 </Link>
               </div>
+            </div>
             </div>
           )}
         </div>
