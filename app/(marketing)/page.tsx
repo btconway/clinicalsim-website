@@ -23,6 +23,12 @@ export default function HomePage() {
       variant: "default" as const,
     },
     {
+      icon: DollarSign,
+      title: "Scalable & Cost-Effective",
+      description: "Traditional SP encounters cost $150-300 each. Scale communication training across your entire program without scaling costs.",
+      variant: "success" as const,
+    },
+    {
       icon: Mic,
       title: "Realistic Voice Practice",
       description: "Real-time spoken conversations with AI patients for goals of care, difficult disclosures, breaking bad news, and family meetings — not text-based chat.",
@@ -39,12 +45,6 @@ export default function HomePage() {
       title: "Structured Feedback",
       description: "Automated assessment scoring empathy, language sensitivity, and information delivery. Full transcripts and progress tracking using validated frameworks.",
       variant: "default" as const,
-    },
-    {
-      icon: DollarSign,
-      title: "Scalable & Cost-Effective",
-      description: "Traditional SP encounters cost $150-300 each. Scale communication training across your entire program without scaling costs.",
-      variant: "success" as const,
     }
   ]
 
@@ -167,7 +167,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <AsymmetricGrid layout="mixed" gap="large">
+          <AsymmetricGrid layout="staggered" gap="large">
             {features.map((feature, index) => (
               <FeatureCard
                 key={index}
