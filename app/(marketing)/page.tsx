@@ -226,7 +226,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             <div className="relative">
-              <div className="absolute -left-4 -top-2 text-6xl text-warm/20 font-serif">&ldquo;</div>
+              <div className="absolute -left-2 md:-left-4 -top-2 text-6xl text-warm/20 font-serif">&ldquo;</div>
               <blockquote className="relative pl-8 pt-4">
                 <p className="text-xl md:text-2xl text-gray-800 font-light leading-relaxed mb-4">
                   It was helpful to have time to think and reflect without feeling the pressure of a person across from you expecting a response.
@@ -238,7 +238,7 @@ export default function HomePage() {
             </div>
 
             <div className="relative">
-              <div className="absolute -left-4 -top-2 text-6xl text-warm/20 font-serif">&ldquo;</div>
+              <div className="absolute -left-2 md:-left-4 -top-2 text-6xl text-warm/20 font-serif">&ldquo;</div>
               <blockquote className="relative pl-8 pt-4">
                 <p className="text-xl md:text-2xl text-gray-800 font-light leading-relaxed mb-4">
                   Helpful to practice responses... and choose phrasing of the responses.

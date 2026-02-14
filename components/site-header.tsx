@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState, useRef, useEffect } from "react"
-import { Brain, ChevronDown } from "lucide-react"
+import { Brain, ChevronDown, Menu, X } from "lucide-react"
 import { getAllSolutions } from "@/lib/solutions"
 import { getAllAudiences } from "@/lib/audiences"
 
@@ -11,6 +11,9 @@ export function SiteHeader() {
   const pathname = usePathname()
   const [solutionsOpen, setSolutionsOpen] = useState(false)
   const [audiencesOpen, setAudiencesOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false)
+  const [mobileAudiencesOpen, setMobileAudiencesOpen] = useState(false)
   const solutionsDropdownRef = useRef<HTMLDivElement>(null)
   const audiencesDropdownRef = useRef<HTMLDivElement>(null)
   const solutionsTimeoutRef = useRef<ReturnType<typeof setTimeout>>(null)
@@ -39,6 +42,25 @@ export function SiteHeader() {
   const closeAudiences = () => {
     audiencesTimeoutRef.current = setTimeout(() => setAudiencesOpen(false), 150)
   }
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMobileMenuOpen(false)
+    setMobileSolutionsOpen(false)
+    setMobileAudiencesOpen(false)
+  }, [pathname])
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+    return () => {
+      document.body.style.overflow = ""
+    }
+  }, [mobileMenuOpen])
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -74,7 +96,18 @@ export function SiteHeader() {
           ClinicalSim<span className="text-blue-600 shimmer">.ai</span>
         </span>
       </Link>
-      <nav className="flex items-center gap-4 md:gap-8">
+
+      {/* Mobile hamburger button */}
+      <button
+        className="md:hidden p-2 -mr-2 text-gray-700 hover:text-gray-900 transition-colors"
+        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+      >
+        {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+      </button>
+
+      {/* Desktop navigation */}
+      <nav className="hidden md:flex items-center gap-4 md:gap-8">
         {/* Solutions dropdown */}
         <div
           ref={solutionsDropdownRef}
@@ -191,6 +224,114 @@ export function SiteHeader() {
           </Link>
         ))}
       </nav>
+
+      {/* Mobile menu overlay */}
+      {mobileMenuOpen && (
+        <div className="fixed inset-0 top-[65px] z-40 md:hidden">
+          <div className="absolute inset-0 bg-black/20 backdrop-blur-sm" onClick={() => setMobileMenuOpen(false)} />
+          <nav className="relative bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-lg max-h-[calc(100dvh-65px)] overflow-y-auto">
+            <div className="px-4 py-3">
+              {/* Solutions accordion */}
+              <div className="border-b border-gray-100">
+                <button
+                  onClick={() => {
+                    setMobileSolutionsOpen(!mobileSolutionsOpen)
+                    setMobileAudiencesOpen(false)
+                  }}
+                  className={`flex items-center justify-between w-full py-3 text-gray-700 font-medium ${
+                    isSolutionsActive ? "text-blue-600" : ""
+                  }`}
+                >
+                  Solutions
+                  <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${mobileSolutionsOpen ? "rotate-180" : ""}`} />
+                </button>
+                {mobileSolutionsOpen && (
+                  <div className="pb-3 pl-2">
+                    {solutions.map((solution) => {
+                      const Icon = solution.icon
+                      return (
+                        <Link
+                          key={solution.slug}
+                          href={`/solutions/${solution.slug}`}
+                          className="flex items-center gap-3 px-3 py-2.5 text-gray-600 hover:text-gray-900 hover:bg-blue-50/70 rounded-lg transition-colors"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          <Icon className="h-4 w-4 text-blue-600 shrink-0" />
+                          <span className="text-sm">{solution.shortTitle}</span>
+                        </Link>
+                      )
+                    })}
+                    <Link
+                      href="/solutions"
+                      className="block px-3 py-2.5 text-sm font-medium text-blue-600 hover:bg-blue-50/70 rounded-lg transition-colors mt-1"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      View All Solutions
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Who We Serve accordion */}
+              <div className="border-b border-gray-100">
+                <button
+                  onClick={() => {
+                    setMobileAudiencesOpen(!mobileAudiencesOpen)
+                    setMobileSolutionsOpen(false)
+                  }}
+                  className={`flex items-center justify-between w-full py-3 text-gray-700 font-medium ${
+                    isAudiencesActive ? "text-blue-600" : ""
+                  }`}
+                >
+                  Who We Serve
+                  <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${mobileAudiencesOpen ? "rotate-180" : ""}`} />
+                </button>
+                {mobileAudiencesOpen && (
+                  <div className="pb-3 pl-2">
+                    {audiences.map((audience) => {
+                      const Icon = audience.icon
+                      return (
+                        <Link
+                          key={audience.slug}
+                          href={`/audiences/${audience.slug}`}
+                          className="flex items-center gap-3 px-3 py-2.5 text-gray-600 hover:text-gray-900 hover:bg-blue-50/70 rounded-lg transition-colors"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          <Icon className="h-4 w-4 text-blue-600 shrink-0" />
+                          <span className="text-sm">{audience.title}</span>
+                        </Link>
+                      )
+                    })}
+                    <Link
+                      href="/audiences"
+                      className="block px-3 py-2.5 text-sm font-medium text-blue-600 hover:bg-blue-50/70 rounded-lg transition-colors mt-1"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      View All
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Simple links */}
+              {links.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`block py-3 font-medium transition-colors border-b border-gray-100 ${
+                    pathname === link.href || pathname?.startsWith(link.href + "/")
+                      ? "text-blue-600"
+                      : "text-gray-700 hover:text-gray-900"
+                  }`}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </nav>
+        </div>
+      )}
     </header>
   )
 }
