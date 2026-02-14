@@ -44,7 +44,7 @@ export default function AboutPage() {
             />
           </div>
 
-          <div className="bg-white/70 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 space-y-6 shadow-lg">
+          <div className="bg-white/70 border border-gray-200 rounded-2xl p-8 space-y-6 shadow-lg">
             <p className="text-lg text-gray-700 font-light leading-relaxed">
               The conversations that matter most — telling a parent their child is dying, disclosing a medical error, guiding a family through goals of care — are <span className="text-navy font-medium">low-frequency, high-stakes events</span>. Residents may encounter only 1-3 real end-of-life conversations during training.
             </p>
@@ -65,7 +65,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-light text-navy mb-8 text-center">Our Approach</h2>
 
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 md:p-10 shadow-xl mb-8">
+          <div className="bg-white/90 rounded-2xl p-8 md:p-10 shadow-xl mb-8">
             <p className="text-lg md:text-xl text-gray-700 font-light leading-relaxed mb-8">
               ClinicalSim.ai uses <span className="text-warm font-medium">AI voice simulation</span> to let clinicians practice difficult conversations on-demand — real-time spoken dialogue with AI patients, not text-based chat. Practice from any device, anytime, without scheduling actors or booking a sim center.
             </p>
@@ -242,7 +242,7 @@ export default function AboutPage() {
       <section className="px-6 py-12 md:py-16 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-light text-navy mb-8 text-center">Our Vision</h2>
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 md:p-10 shadow-xl">
+          <div className="bg-white/90 rounded-2xl p-8 md:p-10 shadow-xl">
             <p className="text-lg md:text-xl text-gray-700 font-light leading-relaxed">
               We&apos;re working to make structured communication training the standard across all levels of medical education — from medical students to practicing physicians. By augmenting existing simulation programs with on-demand AI practice, we aim to ensure that <span className="text-warm font-medium">every clinician enters their most difficult conversations prepared, not just hopeful</span>. Better communication means better outcomes for patients, reduced risk for institutions, and greater confidence for the physicians who carry these conversations for the rest of their careers.
             </p>

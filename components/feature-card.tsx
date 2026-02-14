@@ -45,7 +45,7 @@ export function FeatureCard({
   return (
     <div
       className={cn(
-        "relative bg-white/70 backdrop-blur-sm rounded-xl p-6 md:p-8",
+        "relative bg-white/70 rounded-xl p-6 md:p-8",
         "border transition-all duration-300",
         "border-glow-hover",
         expandOnHover && "hover:bg-white/90 hover:shadow-xl",

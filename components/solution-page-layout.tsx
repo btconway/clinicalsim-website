@@ -275,7 +275,7 @@ export function SolutionPageLayout({ solution, children }: SolutionPageLayoutPro
                 <Link
                   key={post!.slug}
                   href={`/insights/${post!.slug}`}
-                  className="group block bg-white/70 backdrop-blur-sm rounded-xl p-6 border border-gray-200 hover:border-warm/30 transition-all duration-300 border-glow-hover"
+                  className="group block bg-white/70 rounded-xl p-6 border border-gray-200 hover:border-warm/30 transition-all duration-300 border-glow-hover"
                 >
                   <h3 className="text-lg font-medium text-gray-900 group-hover:text-navy transition-colors mb-2">
                     {post!.title}

@@ -26,7 +26,7 @@ export function EvidenceShowcase({
   return (
     <div
       className={cn(
-        "relative bg-gradient-to-br from-white/90 to-blue-50/90 backdrop-blur-sm",
+        "relative bg-gradient-to-br from-white/90 to-blue-50/90",
         "rounded-2xl p-8 md:p-10 border border-blue-200",
         "shadow-xl hover:shadow-2xl transition-all duration-300",
         className

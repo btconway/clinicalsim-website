@@ -73,7 +73,7 @@ export function ScreenshotGallery({
             className="group cursor-pointer"
             onClick={() => openLightbox(index)}
           >
-            <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-white/70 backdrop-blur-sm border border-white/20 aspect-video">
+            <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-white/70 border border-white/20 aspect-video">
               <Image
                 src={screenshot.src}
                 alt={screenshot.alt}

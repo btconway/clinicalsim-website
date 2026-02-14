@@ -49,7 +49,7 @@ export default function InsightsPage() {
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-light text-navy mb-8">Featured Article</h2>
             <Link href={`/insights/${featuredPost.slug}`}>
-              <div className="group bg-gradient-to-br from-white to-blue-50/50 backdrop-blur-sm border-2 border-warm/30 rounded-2xl p-8 md:p-10 shadow-xl hover:shadow-2xl border-glow-hover transition-all duration-300 cursor-pointer">
+              <div className="group bg-gradient-to-br from-white to-blue-50/50 border-2 border-warm/30 rounded-2xl p-8 md:p-10 shadow-xl hover:shadow-2xl border-glow-hover transition-all duration-300 cursor-pointer">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-warm to-orange-600 flex items-center justify-center flex-shrink-0">
                     <BookOpen className="w-7 h-7 text-white" />
@@ -104,7 +104,7 @@ export default function InsightsPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {otherPosts.map((post) => (
                   <Link key={post.slug} href={`/insights/${post.slug}`}>
-                    <div className="group h-full bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl border-glow-hover transition-all duration-300 cursor-pointer">
+                    <div className="group h-full bg-white/90 border border-gray-200 rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl border-glow-hover transition-all duration-300 cursor-pointer">
                       <div className="flex items-center gap-3 text-sm text-gray-500 font-light mb-4">
                         <time dateTime={post.date}>
                           {new Date(post.date).toLocaleDateString("en-US", {

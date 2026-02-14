@@ -47,7 +47,7 @@ export function AudienceCard({
     <Link href={href} className="group block">
       <div
         className={cn(
-          "relative bg-white/70 backdrop-blur-sm rounded-xl p-6 md:p-8",
+          "relative bg-white/70 rounded-xl p-6 md:p-8",
           "border border-gray-200 transition-all duration-300",
           "border-glow-hover h-full",
           "hover:bg-white/90 hover:shadow-xl",
