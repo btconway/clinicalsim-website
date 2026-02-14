@@ -93,7 +93,7 @@ export default function HomePage() {
           </p>
 
           <p className="text-base md:text-lg text-gray-500 font-light mb-8 max-w-2xl mx-auto">
-            Backed by a published randomized controlled trial. The only platform of its kind with peer-reviewed evidence.
+            Built on research with PICU fellows. Designed for the conversations physicians face but rarely get to practice.
           </p>
 
           <div className="space-y-3">
