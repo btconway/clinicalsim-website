@@ -179,9 +179,9 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* The Evidence section - commented out
       <SectionDivider variant="diagonal-up" color="white" />
 
-      {/* The Evidence */}
       <section className="px-6 py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-light text-navy mb-8 text-center">
@@ -198,7 +198,6 @@ export default function AboutPage() {
             />
           </div>
 
-          {/* Results Highlights */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <div className="bg-gradient-to-br from-success/10 to-emerald-50 border border-success/20 rounded-xl p-6">
               <h3 className="text-lg font-medium text-navy mb-4">Measured Improvements</h3>
@@ -237,7 +236,6 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Testimonials - Pull-quote style */}
           <div className="space-y-8">
             <h3 className="text-2xl font-light text-gray-900 text-center mb-8">What Learners Said</h3>
 
@@ -275,6 +273,7 @@ export default function AboutPage() {
       </section>
 
       <SectionDivider variant="curve" color="blue" />
+      */}
 
       {/* Who We Serve */}
       <section className="px-6 py-12 md:py-16 bg-gradient-to-br from-blue-50 via-indigo-50 to-slate-50">

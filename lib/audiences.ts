@@ -400,7 +400,6 @@ const audiences: Audience[] = [
 
     relatedPostSlugs: [
       "osce-case-design-guide",
-      "pilot-study-results",
       "scalability-problem-sp-programs",
       "what-learners-want-from-ai-sps",
     ],

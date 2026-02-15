@@ -73,15 +73,6 @@ const posts: Post[] = [
     tags: ["communication", "malpractice", "training gap"],
   },
   {
-    slug: "pilot-study-results",
-    title: "What Our Pilot Study Revealed",
-    description: "A randomized controlled trial with PICU fellows showed that AI-powered practice improves confidence, reduces anxiety, and produces measurable gains on validated assessment tools.",
-    date: "2025-02-01",
-    author: "ClinicalSim.ai Team",
-    readingTime: "6 min read",
-    tags: ["research", "pilot study", "evidence"],
-  },
-  {
     slug: "scalability-problem-sp-programs",
     title: "The Scalability Problem with Standardized Patient Programs",
     description: "Traditional SP encounters cost $150-300 each and can't scale to meet demand. Why AI augments — rather than replaces — existing simulation programs.",
