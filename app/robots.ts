@@ -12,6 +12,10 @@ export default function robots(): MetadataRoute.Robots {
         disallow: "/",
       },
     ],
-    sitemap: "https://clinicalsim.ai/sitemap.xml",
+    sitemap: [
+      "https://clinicalsim.ai/sitemap.xml",
+      "https://clinicalsim.ai/llms.txt",
+    ],
+    host: "https://clinicalsim.ai",
   }
 }
