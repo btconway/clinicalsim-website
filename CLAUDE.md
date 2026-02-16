@@ -115,6 +115,17 @@ The project uses shadcn/ui components which are:
 - `rounded-xs` (4px), `rounded-sm` (6px), `rounded-md` (8px), `rounded-lg` (8px), `rounded-xl` (16px), `rounded-2xl` (24px)
 - **Guideline**: Vary based on component importance, avoid uniform 8px everywhere
 
+## Hallucination Prevention
+
+This is a healthcare/medical education site. Accuracy is non-negotiable.
+
+- **NEVER fabricate statistics, study results, journal names, or citations.** If you don't know the real source, say so — do not invent one.
+- **NEVER invent CPT codes, reimbursement rates, or regulatory claims.** Verify against existing site content or ask the user for the source.
+- **Before writing any claim with a number, percentage, or dollar amount:** confirm it exists in the codebase already OR the user has provided it. Do not extrapolate or round existing stats into new ones.
+- **Quotes and testimonials:** Only use quotes that already exist in the codebase. Never generate fake testimonials.
+- **When in doubt, leave it out.** A page with no citation is better than a page with a fabricated one. Flag uncertain claims to the user rather than guessing.
+- **Existing site content is not automatically trustworthy.** If something on the site looks wrong or unsourced, flag it rather than propagating it into new content.
+
 ## GEO (Generative Engine Optimization) Guidelines
 
 All content on this site must be optimized for discovery by AI search systems (ChatGPT, Perplexity, Google AI Overviews, etc.). Follow these rules when creating or modifying pages:
