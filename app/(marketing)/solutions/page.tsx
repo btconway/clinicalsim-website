@@ -5,20 +5,33 @@ import { SolutionCard } from "@/components/solution-card"
 import { StatHighlight } from "@/components/stat-highlight"
 import { FeatureCard } from "@/components/feature-card"
 import { SectionDivider } from "@/components/section-divider"
-import { getAllSolutions } from "@/lib/solutions"
+import { getAllSolutions, type Solution } from "@/lib/solutions"
 import { BookOpen, TrendingUp, BarChart3 } from "lucide-react"
 
+// Group solutions into categories for display
+function groupSolutions(solutions: Solution[]) {
+  const chronicPreventive = ["chronic-care-management", "advance-care-planning", "cognitive-assessments"]
+  const acuteBehavioral = ["goals-of-care"]
+  const specialtyEmerging = ["menopause-care"]
+
+  return {
+    "Chronic Care & Preventive Medicine": solutions.filter((s) => chronicPreventive.includes(s.slug)),
+    "Acute & Serious Illness": solutions.filter((s) => acuteBehavioral.includes(s.slug)),
+    "Specialty & Emerging Markets": solutions.filter((s) => specialtyEmerging.includes(s.slug)),
+  }
+}
+
 export const metadata: Metadata = {
-  title: "Clinical Solutions — AI Simulation for High-Stakes Conversations",
-  description: "AI voice simulation training for advance care planning, goals of care, cognitive assessments, and menopause care. Practice billable clinical conversations with dedicated Medicare CPT codes.",
+  title: "Clinical Solutions — AI Simulation for Billable Medical Conversations",
+  description: "AI voice simulation training for chronic care management, advance care planning, goals of care, cognitive assessments, and menopause care. Patients aren't getting the conversations they need — 95% of eligible patients go without chronic care coordination. The bottleneck is provider confidence.",
   openGraph: {
     title: "Clinical Solutions from ClinicalSim.ai",
-    description: "AI voice simulation for advance care planning, goals of care, cognitive assessments, and menopause care conversations.",
+    description: "AI voice simulation for the clinical conversations patients need — chronic care management, ACP, goals of care, cognitive assessments, and more.",
     url: "https://clinicalsim.ai/solutions",
   },
   twitter: {
     title: "Clinical Solutions from ClinicalSim.ai",
-    description: "AI voice simulation for high-stakes clinical conversations with dedicated billing codes.",
+    description: "AI voice simulation for the clinical conversations patients aren't getting. Chronic care, ACP, behavioral health, and more.",
   },
   alternates: {
     canonical: "https://clinicalsim.ai/solutions",
@@ -40,10 +53,10 @@ export default function SolutionsPage() {
             Close the Gap Between Training and Practice
           </h1>
           <p className="text-lg md:text-xl text-gray-700 font-light leading-relaxed mb-4 max-w-3xl mx-auto">
-            Critical clinical conversations — with <span className="text-warm font-medium">dedicated billing codes and proven outcomes</span> — aren&apos;t happening at scale because providers lack the training and confidence to initiate them.
+            Patients with chronic conditions, cognitive decline, serious illness, and behavioral health needs deserve <span className="text-warm font-medium">proactive, confident conversations</span> — but most providers have never practiced them.
           </p>
           <p className="text-base md:text-lg text-gray-500 font-light mb-8 max-w-2xl mx-auto">
-            ClinicalSim solves the bottleneck. The bottleneck is training. The product is training.
+            The bottleneck isn&apos;t knowledge or time. It&apos;s confidence. ClinicalSim builds it.
           </p>
         </div>
       </section>
@@ -54,30 +67,33 @@ export default function SolutionsPage() {
       <section className="px-6 py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-light text-navy mb-6">
-            The <span className="text-warm font-medium">untrained conversation</span> problem
+            The <span className="text-warm font-medium">confidence gap</span>
           </h2>
           <div className="space-y-4 text-lg text-gray-600 font-light leading-relaxed mb-12">
             <p>
-              There are clinical conversations that hospitals should be having — conversations with dedicated CPT codes, clear reimbursement pathways, and proven outcome improvements — that simply aren&apos;t happening at scale.
+              There are clinical conversations that patients need — conversations that improve outcomes, reduce hospitalizations, and help people manage chronic illness — that simply aren&apos;t happening at scale.
             </p>
             <p>
-              The reason isn&apos;t lack of time or patient demand. It&apos;s that providers have never practiced these conversations. They lack the confidence and skill to initiate, navigate, and bill for them consistently.
+              Research shows the barrier isn&apos;t knowledge, time, or patient demand. It&apos;s <span className="text-warm font-medium">provider confidence</span>. Clinicians who have never practiced these conversations avoid initiating them — even when patients would benefit and Medicare has created dedicated codes to support them.
             </p>
             <p>
-              The conversations below are just a starting point — each represents a conversation where better preparation drives better outcomes <span className="text-warm font-medium">and measurable financial impact</span>. ClinicalSim&apos;s platform is built to scale across every evidence-based clinical conversation where training is the bottleneck.
+              The conversations below represent the highest-impact areas where better preparation drives better patient outcomes. When providers are trained, patients get the care they need — and the system works the way it was designed to.
             </p>
           </div>
 
-          {/* Aggregate revenue projection */}
+          {/* Aggregate care gap */}
           <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl border border-warm/20 p-8 text-center mb-12">
             <p className="text-sm uppercase tracking-wider text-gray-500 font-medium mb-3">
-              Combined annual opportunity — initial areas alone
+              The scope of the problem
             </p>
             <div className="font-mono font-bold text-4xl md:text-5xl lg:text-6xl text-warm mb-3">
-              $1.5M+
+              $5.5M+
             </div>
             <p className="text-lg text-gray-700 font-light max-w-lg mx-auto">
-              in annual value from conversations that should already be happening — including cost savings, avoided ICU days, and reimbursable care — for a 75-PCP health system
+              in patient care — including chronic care coordination, preventive services, and avoided hospitalizations — that a 100-provider health system leaves on the table each year when these conversations don&apos;t happen
+            </p>
+            <p className="text-sm text-gray-500 font-light mt-3 max-w-md mx-auto">
+              Source: Agarwal et al., Annals of Internal Medicine, 2022; CMS utilization data
             </p>
           </div>
 
@@ -106,32 +122,41 @@ export default function SolutionsPage() {
 
       <SectionDivider variant="wave" color="slate" />
 
-      {/* Solution Cards */}
+      {/* Solution Cards — Grouped by Category */}
       <section className="px-6 py-12 md:py-16 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
-              Starting with the conversations that <span className="text-warm font-medium">matter most</span>.
+              The conversations patients <span className="text-warm font-medium">need most</span>.
             </h2>
             <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
-              There are hundreds of clinical conversations where better training drives better outcomes. These are where we&apos;re starting — high-value conversations with clear evidence gaps and measurable impact.
+              Each area below represents a conversation where better provider preparation directly improves patient outcomes — and where Medicare has created dedicated codes to support it.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            {solutions.map((solution) => (
-              <SolutionCard
-                key={solution.slug}
-                icon={solution.icon}
-                title={solution.shortTitle}
-                description={solution.description}
-                keyStat={solution.revenueStats[0].value}
-                keyStatLabel={solution.revenueStats[0].label}
-                href={`/solutions/${solution.slug}`}
-                variant={solution.colorVariant}
-              />
-            ))}
-          </div>
+          {Object.entries(groupSolutions(solutions)).map(([category, categorySolutions]) => (
+            categorySolutions.length > 0 && (
+              <div key={category} className="mb-12 last:mb-0">
+                <h3 className="text-xl md:text-2xl font-light text-navy mb-6 border-b border-navy/10 pb-3">
+                  {category}
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                  {categorySolutions.map((solution) => (
+                    <SolutionCard
+                      key={solution.slug}
+                      icon={solution.icon}
+                      title={solution.shortTitle}
+                      description={solution.description}
+                      keyStat={solution.revenueStats[0].value}
+                      keyStatLabel={solution.revenueStats[0].label}
+                      href={`/solutions/${solution.slug}`}
+                      variant={solution.colorVariant}
+                    />
+                  ))}
+                </div>
+              </div>
+            )
+          ))}
         </div>
       </section>
 

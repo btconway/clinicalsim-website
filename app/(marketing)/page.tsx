@@ -13,15 +13,15 @@ import { BookOpen, Heart, TrendingUp, Mic, Users, BarChart3, ArrowRight } from "
 
 export const metadata: Metadata = {
   title: "AI Voice Simulation for Medical Communication Training",
-  description: "ClinicalSim.ai is an AI-powered voice simulation platform for practicing high-stakes medical conversations — goals of care, advance care planning, diagnosis disclosure — on-demand from any device. Backed by a published randomized controlled trial.",
+  description: "ClinicalSim.ai is an AI-powered voice simulation platform for the medical conversations patients need but aren't getting — chronic care management, advance care planning, behavioral health, cognitive assessments. 95% of eligible patients don't receive coordinated care. The bottleneck is provider confidence.",
   openGraph: {
     title: "ClinicalSim.ai — Practice the Conversations That Matter Most",
-    description: "AI voice simulation for high-stakes medical conversations. Among the first AI communication training platforms backed by a published randomized controlled trial.",
+    description: "AI voice simulation for the conversations patients need most. 95% of eligible patients don't receive coordinated chronic care. The bottleneck is provider confidence — and the solution is practice.",
     url: "https://clinicalsim.ai",
   },
   twitter: {
     title: "ClinicalSim.ai — Practice the Conversations That Matter Most",
-    description: "AI voice simulation for high-stakes medical conversations. Backed by a published RCT.",
+    description: "AI voice simulation for medical conversations patients need but aren't getting. Backed by a published RCT.",
   },
   alternates: {
     canonical: "https://clinicalsim.ai",
@@ -40,8 +40,8 @@ export default function HomePage() {
     },
     {
       icon: TrendingUp,
-      title: "Unlock Revenue You're Missing",
-      description: "ACP, cognitive assessments, and other high-value conversations have dedicated billing codes — but most providers never bill them because they've never practiced.",
+      title: "Close the Care Gap — and Get Reimbursed",
+      description: "Chronic care management, wellness visits, behavioral health, advance care planning — Medicare created billing codes to make these conversations happen. When providers are trained, patients get better care and health systems capture the value.",
       variant: "success" as const,
     },
     {
@@ -72,27 +72,27 @@ export default function HomePage() {
 
   const stats = [
     {
-      value: "<50%",
-      label: "of residents report confidence in goals-of-care conversations",
-      source: "Medical education literature",
+      value: "95%",
+      label: "of patients who qualify for chronic care coordination aren't receiving it",
+      source: "ASPE, 2019",
       variant: "warm" as const,
     },
     {
-      value: "<2hrs",
-      label: "of formal communication training in most residency programs",
-      source: "Medical education surveys",
+      value: "2.3%",
+      label: "median utilization of Medicare prevention and care coordination services",
+      source: "Agarwal et al., Annals of Internal Medicine, 2022",
       variant: "navy" as const,
     },
     {
-      value: "50%+",
-      label: "of cognitive impairment cases go undiagnosed due to provider discomfort",
-      source: "Alzheimer's Association",
+      value: ">99%",
+      label: "of patients eligible for behavioral health integration aren't getting it",
+      source: "CMS utilization data, 2017-2018",
       variant: "warm" as const,
     },
     {
-      value: "$87-260",
-      label: "in Medicare-reimbursed conversations that patients aren't receiving",
-      source: "CMS Fee Schedule 2026",
+      value: "50%+",
+      label: "of cognitive impairment cases in primary care go undiagnosed",
+      source: "JPAD, 2024",
       variant: "success" as const,
     }
   ]
@@ -111,7 +111,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-700 font-light leading-relaxed mb-4 max-w-3xl mx-auto">
-            AI voice simulation for <span className="text-warm font-medium">high-stakes medical conversations</span> — goals of care, end-of-life discussions, difficult disclosures — on-demand, from any device.
+            AI voice simulation for <span className="text-warm font-medium">the conversations patients need most</span> — chronic care enrollment, advance care planning, behavioral health, cognitive assessments — on-demand, from any device.
           </p>
 
           <p className="text-base md:text-lg text-gray-500 font-light mb-8 max-w-2xl mx-auto">
@@ -141,8 +141,11 @@ export default function HomePage() {
         <div className="max-w-3xl mx-auto">
           <div className="border-l-4 border-warm pl-6 md:pl-8">
             <h2 className="text-xl md:text-2xl font-light text-navy mb-3">What is ClinicalSim.ai?</h2>
+            <p className="text-base md:text-lg text-gray-700 font-light leading-relaxed mb-3">
+              ClinicalSim.ai is an AI-powered voice simulation platform for the conversations patients need but aren&apos;t getting — chronic care enrollment, advance care planning, behavioral health screening, cognitive assessments — on-demand from any device. It is among the first AI communication training platforms backed by a published randomized controlled trial with blinded evaluation using validated assessment tools.
+            </p>
             <p className="text-base md:text-lg text-gray-700 font-light leading-relaxed">
-              ClinicalSim.ai is an AI-powered voice simulation platform for practicing high-stakes medical conversations. Clinicians practice real-time spoken dialogue with AI patients — goals of care, end-of-life discussions, diagnosis disclosure — on-demand from any device. It is among the first AI communication training platforms backed by a published randomized controlled trial with blinded evaluation using validated assessment tools.
+              The platform addresses the <span className="text-warm font-medium">provider confidence gap</span>. Research shows the barrier to these conversations is not knowledge, not time, and not patient demand — it&apos;s that providers have never practiced them in a structured setting. When providers are trained, patients get the care they need and the system works the way it was designed to.
             </p>
           </div>
         </div>
@@ -310,7 +313,7 @@ export default function HomePage() {
 
           <div className="text-center mt-8">
             <Link href="/solutions" className="inline-flex items-center text-blue-600 font-medium hover:text-warm transition-colors">
-              View our clinical solutions
+              View all clinical solutions
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </div>

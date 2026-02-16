@@ -3,6 +3,7 @@ import {
   MessageCircle,
   Brain,
   Flower2,
+  Activity,
   type LucideIcon,
 } from "lucide-react"
 
@@ -257,6 +258,176 @@ const solutions: Solution[] = [
     ],
 
     lastUpdated: "2026-02-14",
+  },
+
+  {
+    slug: "chronic-care-management",
+    title: "Chronic Care Management Enrollment Conversations",
+    shortTitle: "Chronic Care Management",
+    description:
+      "67% of Medicare beneficiaries qualify for chronic care coordination — but only 3-5% receive it. Millions of patients with complex chronic conditions go without structured support because the enrollment conversation never happens.",
+    icon: Activity,
+    colorVariant: "warm",
+
+    heroSubtitle: "Millions of patients qualify for coordinated care. Almost none receive it.",
+    heroDescription:
+      "Chronic Care Management (CCM) was created so patients with multiple chronic conditions could receive structured, ongoing care coordination between visits. Two-thirds of Medicare beneficiaries qualify. Yet only 3-5% are enrolled — because the enrollment conversation never happens. Providers lack confidence in explaining the program, addressing the 20% coinsurance, and obtaining consent. The result: millions of patients managing complex conditions without the coordinated support Medicare designed for them.",
+
+    revenueStats: [
+      {
+        value: "67%",
+        label: "of Medicare beneficiaries qualify for CCM (2+ chronic conditions)",
+        source: "ASPE data; CMS",
+        variant: "warm",
+      },
+      {
+        value: "3-5%",
+        label: "of eligible Medicare patients currently enrolled in CCM",
+        source: "ASPE, 2019",
+        variant: "navy",
+      },
+      {
+        value: "$55,800",
+        label: "per provider per year at moderate CCM enrollment (50 patients)",
+        source: "CMS Physician Fee Schedule; program modeling",
+        variant: "warm",
+      },
+    ],
+
+    cptCodes: [
+      {
+        code: "99490",
+        description: "Chronic care management, first 20 minutes of clinical staff time",
+        reimbursement: "~$62/mo",
+        notes: "Non-face-to-face care coordination for patients with 2+ chronic conditions",
+      },
+      {
+        code: "99491",
+        description: "Chronic care management, first 30 minutes of physician/QHP time",
+        reimbursement: "~$92/mo",
+        notes: "Requires physician or qualified health professional direct time",
+      },
+      {
+        code: "99437",
+        description: "Chronic care management, each additional 30 minutes of clinical staff time",
+        reimbursement: "~$70/mo",
+        notes: "Add-on to 99490 for complex patients requiring more coordination",
+      },
+      {
+        code: "99439",
+        description: "Chronic care management, each additional 20 minutes of clinical staff time",
+        reimbursement: "~$48/mo",
+        notes: "Add-on to 99490 for additional care coordination time",
+      },
+    ],
+
+    revenueProjection: {
+      sectionHeading: "What this means for your health system",
+      perProvider: {
+        value: "$22K-$126K",
+        label: "per provider per year",
+        assumption: "Range from conservative (20 patients, 99490 only) to comprehensive (100 patients, full code stacking)",
+      },
+      perInstitution: {
+        value: "$4.2M",
+        label: "for a 75-PCP health system",
+        assumption: "At moderate enrollment of 50 patients per provider billing 99490 monthly",
+      },
+      source: "CMS Physician Fee Schedule; ASPE CCM utilization analysis",
+    },
+
+    trainingGapHeadline: "The enrollment conversation nobody teaches.",
+    trainingGapDescription:
+      "CCM is the single largest untapped billing opportunity in primary care — but it requires an enrollment conversation that most providers have never practiced. Explaining what CCM is, why it matters, how the 20% coinsurance works, and obtaining informed consent is a distinct clinical communication skill that residency programs don't teach.",
+    trainingGapBullets: [
+      "No standard residency curriculum covers CCM enrollment conversations or consent documentation workflows",
+      "Providers cite uncertainty about explaining the 20% patient coinsurance as a top barrier to enrollment",
+      "Practice staff lack scripts for the initial outreach call that identifies and engages eligible patients",
+      "Documentation requirements — care plan creation, monthly time tracking — are unfamiliar to most providers",
+    ],
+
+    simulationBenefits: [
+      {
+        title: "Practice Enrollment Scripts",
+        description:
+          "Simulate the complete CCM enrollment conversation — explaining the program, addressing coinsurance concerns, and obtaining informed consent.",
+      },
+      {
+        title: "Build Recurring Revenue",
+        description:
+          "CCM generates monthly recurring revenue per enrolled patient. Even modest enrollment creates a significant, predictable revenue stream.",
+      },
+      {
+        title: "Improve Patient Outcomes",
+        description:
+          "Enrolled CCM patients see fewer hospitalizations and better chronic disease management through structured care coordination.",
+      },
+      {
+        title: "Scale Across Your Panel",
+        description:
+          "Train every provider and care coordinator in enrollment conversations — turning a one-time initiative into a system-wide capability.",
+      },
+    ],
+
+    evidence: {
+      studyTitle:
+        "Evaluation of the Multi-Payer Advanced Primary Care Practice (MAPCP) Demonstration: Final Report",
+      journal: "Mathematica Policy Research (for CMS)",
+      year: "2017",
+      summary:
+        "CMS-commissioned evaluation of comprehensive primary care models found that chronic care management programs reduced hospitalizations by 32 per 1,000 beneficiaries at 6 months and generated $74 per member per month in savings through reduced acute care utilization.",
+      badges: ["CMS-Commissioned", "Multi-State Evaluation"],
+    },
+
+    outcomeStats: [
+      {
+        value: "32 fewer",
+        label: "hospitalizations per 1,000 beneficiaries at 6 months",
+        source: "Mathematica/CMS MAPCP evaluation",
+        variant: "success",
+      },
+      {
+        value: "$74",
+        label: "per member per month in savings from reduced acute utilization",
+        source: "Mathematica/CMS MAPCP evaluation",
+        variant: "warm",
+      },
+      {
+        value: "67%",
+        label: "of Medicare beneficiaries have 2+ chronic conditions qualifying for CCM",
+        source: "ASPE; CMS data",
+        variant: "navy",
+      },
+    ],
+
+    ctaHeadline: "Give your patients the coordinated care they qualify for.",
+    ctaDescription:
+      "ClinicalSim trains your providers and care coordinators to confidently enroll patients in CCM — so the patients who need structured chronic care actually receive it.",
+
+    relatedPostSlugs: [
+      "hospital-communication-training-roi",
+    ],
+
+    faqs: [
+      {
+        question: "What is Chronic Care Management (CCM)?",
+        answer: "Chronic Care Management (CCM) is a Medicare program that reimburses providers for non-face-to-face care coordination for patients with two or more chronic conditions. It covers activities like care plan development, medication management, and coordination between specialists. Medicare reimburses CCM monthly under CPT codes 99490 (~$62/month), 99491 (~$92/month), 99437 (~$70/month), and 99439 (~$48/month). Despite 67% of Medicare beneficiaries qualifying, only 3-5% are currently enrolled (ASPE, 2019).",
+      },
+      {
+        question: "Who qualifies for CCM services?",
+        answer: "Medicare beneficiaries with two or more chronic conditions expected to last at least 12 months — or until death — qualify for CCM services. Common qualifying conditions include diabetes, hypertension, heart failure, COPD, depression, and arthritis. Approximately 67% of all Medicare beneficiaries meet this threshold (ASPE data; CMS). Patients must provide consent to enroll, which is a key barrier — and a key conversation that providers need to practice.",
+      },
+      {
+        question: "What are the CPT codes for Chronic Care Management?",
+        answer: "The primary CCM billing codes are: CPT 99490 (~$62/month) for the first 20 minutes of clinical staff time; CPT 99491 (~$92/month) for the first 30 minutes of physician/QHP time; CPT 99437 (~$70/month) as an add-on for each additional 30 minutes of clinical staff time; and CPT 99439 (~$48/month) as an add-on for each additional 20 minutes. A single complex patient can generate $130+ per month through code stacking.",
+      },
+      {
+        question: "Why is CCM so underutilized?",
+        answer: "Despite two-thirds of Medicare beneficiaries qualifying, only 3-5% are enrolled in CCM (ASPE, 2019). The primary barriers are: (1) providers lack confidence in the enrollment conversation, particularly explaining the 20% patient coinsurance; (2) no standard residency curriculum covers CCM enrollment; (3) practices lack established workflows for identifying eligible patients and obtaining consent; and (4) documentation requirements (care plan creation, monthly time tracking) are unfamiliar. The result is billions in unrealized recurring revenue.",
+      },
+    ],
+
+    lastUpdated: "2026-02-15",
   },
 
   {
