@@ -115,7 +115,7 @@ export default function HomePage() {
           </p>
 
           <p className="text-base md:text-lg text-gray-500 font-light mb-8 max-w-2xl mx-auto">
-            Built on research with PICU fellows. Designed for the conversations clinicians face but rarely get to practice.
+            Built on research with PICU fellows. Designed for conversations clinicians face but rarely get to practice.
           </p>
 
           <div className="space-y-3">
