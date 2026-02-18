@@ -127,7 +127,7 @@ export default function SolutionsPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
-              The conversations patients <span className="text-warm font-medium">need most</span>.
+              Conversations patients <span className="text-warm font-medium">need most</span>.
             </h2>
             <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
               Each area below represents a conversation where better provider preparation directly improves patient outcomes — and where Medicare has created dedicated codes to support it.
@@ -204,7 +204,7 @@ export default function SolutionsPage() {
             Ready to close the training gap?
           </h2>
           <p className="text-lg md:text-xl font-light mb-8 text-blue-100">
-            See how ClinicalSim helps your providers master the conversations that improve patient outcomes — and your bottom line.
+            See how ClinicalSim helps providers master the conversations that improve patient outcomes — and your bottom line.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">

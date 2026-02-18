@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "ClinicalSim.ai is an AI-powered voice simulation platform for the medical conversations patients need but aren't getting — chronic care management, advance care planning, behavioral health, cognitive assessments. 95% of eligible patients don't receive coordinated care. The bottleneck is provider confidence.",
   openGraph: {
     title: "ClinicalSim.ai — Practice the Conversations That Matter Most",
-    description: "AI voice simulation for the conversations patients need most. 95% of eligible patients don't receive coordinated chronic care. The bottleneck is provider confidence — and the solution is practice.",
+    description: "AI voice simulation for conversations patients need most. 95% of eligible patients don't receive coordinated chronic care. The bottleneck is provider confidence — and the solution is practice.",
     url: "https://clinicalsim.ai",
   },
   twitter: {
@@ -111,7 +111,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-700 font-light leading-relaxed mb-4 max-w-3xl mx-auto">
-            AI voice simulation for <span className="text-warm font-medium">the conversations patients need most</span> — chronic care enrollment, advance care planning, behavioral health, cognitive assessments — on-demand, from any device.
+            AI voice simulation for <span className="text-warm font-medium">conversations patients need most</span> — chronic care enrollment, advance care planning, behavioral health, cognitive assessments — on-demand, from any device.
           </p>
 
           <p className="text-base md:text-lg text-gray-500 font-light mb-8 max-w-2xl mx-auto">
@@ -142,7 +142,7 @@ export default function HomePage() {
           <div className="border-l-4 border-warm pl-6 md:pl-8">
             <h2 className="text-xl md:text-2xl font-light text-navy mb-3">What is ClinicalSim.ai?</h2>
             <p className="text-base md:text-lg text-gray-700 font-light leading-relaxed mb-3">
-              ClinicalSim.ai is an AI-powered voice simulation platform for the conversations patients need but aren&apos;t getting — chronic care enrollment, advance care planning, behavioral health screening, cognitive assessments — on-demand from any device. It is among the first AI communication training platforms backed by a published randomized controlled trial with blinded evaluation using validated assessment tools.
+              ClinicalSim.ai is an AI-powered voice simulation platform for conversations patients need but aren&apos;t getting — chronic care enrollment, advance care planning, behavioral health screening, cognitive assessments — on-demand from any device. It is among the first AI communication training platforms backed by a published randomized controlled trial with blinded evaluation using validated assessment tools.
             </p>
             <p className="text-base md:text-lg text-gray-700 font-light leading-relaxed">
               The platform addresses the <span className="text-warm font-medium">provider confidence gap</span>. Research shows the barrier to these conversations is not knowledge, not time, and not patient demand — it&apos;s that providers have never practiced them in a structured setting. When providers are trained, patients get the care they need and the system works the way it was designed to.

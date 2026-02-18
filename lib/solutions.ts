@@ -231,7 +231,7 @@ const solutions: Solution[] = [
 
     ctaHeadline: "Give every patient the conversation they deserve.",
     ctaDescription:
-      "ClinicalSim helps your providers practice ACP conversations so they're confident enough to have them — early, often, and well.",
+      "ClinicalSim helps providers practice ACP conversations so they're confident enough to have them — early, often, and well.",
 
     relatedPostSlugs: [
       "end-of-life-care-communication",
@@ -402,7 +402,7 @@ const solutions: Solution[] = [
 
     ctaHeadline: "Give your patients the coordinated care they qualify for.",
     ctaDescription:
-      "ClinicalSim trains your providers and care coordinators to confidently enroll patients in CCM — so the patients who need structured chronic care actually receive it.",
+      "ClinicalSim trains providers and care coordinators to confidently enroll patients in CCM — so the patients who need structured chronic care actually receive it.",
 
     relatedPostSlugs: [
       "hospital-communication-training-roi",
@@ -702,7 +702,7 @@ const solutions: Solution[] = [
 
     ctaHeadline: "Close the gap between screening and diagnosis.",
     ctaDescription:
-      "ClinicalSim trains your providers to conduct cognitive assessments confidently — so they screen, diagnose, support families, and document care appropriately.",
+      "ClinicalSim trains providers to conduct cognitive assessments confidently — so they screen, diagnose, support families, and document care appropriately.",
 
     relatedPostSlugs: [
       "hospital-communication-training-roi",
@@ -846,7 +846,7 @@ const solutions: Solution[] = [
 
     ctaHeadline: "Build the menopause practice your community needs.",
     ctaDescription:
-      "ClinicalSim trains your providers in menopause conversations — so you can serve the patients who currently have nowhere to turn.",
+      "ClinicalSim trains providers in menopause conversations — so you can serve the patients who currently have nowhere to turn.",
 
     relatedPostSlugs: [
       "hospital-communication-training-roi",

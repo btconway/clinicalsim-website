@@ -26,7 +26,7 @@ export default function MarketingLayout({
             name: "ClinicalSim.ai",
             url: "https://clinicalsim.ai",
             description:
-              "Practice the conversations that matter most. AI voice simulation for goals of care, advance care planning, cognitive assessments, and menopause care conversations.",
+              "Practice conversations that matter most. AI voice simulation for goals of care, advance care planning, cognitive assessments, and menopause care conversations.",
           },
         ]}
       />

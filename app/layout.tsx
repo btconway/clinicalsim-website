@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     default: 'ClinicalSim.ai — AI Voice Simulation for Medical Communication Training',
     template: '%s | ClinicalSim.ai',
   },
-  description: 'Practice the conversations that matter most. AI voice simulation for high-stakes medical conversations — goals of care, advance care planning, diagnosis disclosure — backed by a published randomized controlled trial.',
+  description: 'Practice conversations that matter most. AI voice simulation for high-stakes medical conversations — goals of care, advance care planning, diagnosis disclosure — backed by a published randomized controlled trial.',
   icons: {
     icon: '/favicon.svg',
     apple: '/apple-touch-icon.png',

@@ -3,7 +3,7 @@
 ## Brand Identity
 
 **Brand Name:** ClinicalSim.ai
-**Tagline:** "Practice the conversations that matter most."
+**Tagline:** "Practice conversations that matter most."
 **Mission:** AI voice simulation for high-stakes medical conversations — goals of care, end-of-life discussions, difficult disclosures — on-demand, backed by published research.
 
 ## Typography
@@ -210,7 +210,7 @@ className="bg-transparent border-white border-2 text-white hover:bg-white hover:
 - **Compassionate** focus on healthcare improvement
 
 ### Key Messaging
-- Practice the conversations that matter most — goals of care, end-of-life, difficult disclosures
+- Practice conversations that matter most — goals of care, end-of-life, difficult disclosures
 - The only AI communication platform backed by a published randomized controlled trial
 - On-demand voice simulation from any device, 24/7 — no scheduling, no actors, no sim center
 - ACGME-aligned: directly addresses interpersonal and communication skills milestones
