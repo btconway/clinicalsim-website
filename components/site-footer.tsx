@@ -36,6 +36,9 @@ export function SiteFooter() {
               <Link href="/insights" className="text-sm text-gray-600 hover:text-gray-900 font-light transition-colors">
                 Insights
               </Link>
+              <Link href="/research" className="text-sm text-gray-600 hover:text-gray-900 font-light transition-colors">
+                Research
+              </Link>
               <Link href="/contact" className="text-sm text-gray-600 hover:text-gray-900 font-light transition-colors">
                 Contact
               </Link>

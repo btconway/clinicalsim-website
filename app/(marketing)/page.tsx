@@ -339,6 +339,13 @@ export default function HomePage() {
               Request Early Access
             </Button>
           </Link>
+          <p className="mt-4 text-sm text-blue-200 font-light">
+            Are you a researcher?{" "}
+            <Link href="/research" className="text-warm hover:text-white font-medium transition-colors inline-flex items-center">
+              Apply to collaborate
+              <ArrowRight className="w-3.5 h-3.5 ml-1" />
+            </Link>
+          </p>
         </div>
       </section>
     </>

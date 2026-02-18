@@ -15,4 +15,5 @@
 - [Health System Leaders](https://clinicalsim.ai/audiences/health-system-leaders): ROI-focused communication training for health system executives — revenue capture, malpractice reduction, HCAHPS improvement.
 - [Clinicians](https://clinicalsim.ai/audiences/clinicians): On-demand, private, voice-based practice for clinicians — physicians, NPs, and PAs — preparing for difficult conversations.
 - [Medical Educators](https://clinicalsim.ai/audiences/medical-educators): ACGME-aligned communication training at scale — evidence-based simulation with milestone tracking.
+- [Research Collaboration](https://clinicalsim.ai/research): Apply to collaborate with ClinicalSim.ai on research in medical communication training. Platform access, custom scenarios, data collection, and publication support provided.
 - [Insights](https://clinicalsim.ai/insights): Research and evidence on medical communication training, simulation technology, and clinical conversation outcomes.

@@ -4,7 +4,8 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Checkbox } from "@/components/ui/checkbox"
-import { Users, Handshake, FlaskConical } from "lucide-react"
+import Link from "next/link"
+import { Users, Handshake, FlaskConical, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Contact Us — Request a Pilot",
@@ -192,10 +193,17 @@ export default function ContactPage() {
                 <FlaskConical className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-medium text-navy mb-3">Research Collaboration</h3>
-              <p className="text-gray-700 font-light leading-relaxed">
+              <p className="text-gray-700 font-light leading-relaxed mb-4">
                 Are you a researcher in medical education or healthcare communication? We&apos;d love to explore
                 opportunities for collaboration and knowledge sharing.
               </p>
+              <Link
+                href="/research"
+                className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-warm transition-colors"
+              >
+                Apply to collaborate
+                <ArrowRight className="w-4 h-4 ml-1" />
+              </Link>
             </div>
           </div>
         </div>
