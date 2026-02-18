@@ -103,7 +103,7 @@ const audiences: Audience[] = [
       {
         headline: "Training that doesn't scale",
         description:
-          "Standardized patient actors cost $15-50/hour each, require scheduling, space, and faculty facilitators. You can't train 1,000 providers this way. ClinicalSim deploys 24/7 from any device with no linear cost scaling.",
+          "Standardized patient actors cost $15-50/hour each, require scheduling, space, and faculty facilitators. It's not feasible to train all 1,000 providers at an institution. ClinicalSim deploys 24/7 from any device with no linear cost scaling.",
       },
     ],
 
