@@ -7,7 +7,7 @@ import { getAllAudiences } from "@/lib/audiences"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Who We Serve — Health Systems, Clinicians & Medical Educators",
+  title: "Who We Serve: Health Systems, Clinicians & Medical Educators",
   description: "ClinicalSim.ai serves health system leaders seeking ROI from communication training, clinicians building confidence in difficult conversations, and medical educators meeting ACGME requirements at scale.",
   openGraph: {
     title: "Who ClinicalSim.ai Serves",
@@ -41,7 +41,7 @@ export default function AudiencesPage() {
             Different roles. Different priorities. <span className="text-warm font-medium">Same platform.</span>
           </p>
           <p className="text-base md:text-lg text-gray-500 font-light mb-8 max-w-2xl mx-auto">
-            Whether you&apos;re focused on ROI, clinical confidence, or accreditation compliance — ClinicalSim delivers measurable results for your specific goals.
+            Whether you&apos;re focused on ROI, clinical confidence, or accreditation compliance, ClinicalSim delivers measurable results for your specific goals.
           </p>
         </div>
       </section>
@@ -76,7 +76,7 @@ export default function AudiencesPage() {
             Explore our clinical <span className="text-warm font-medium">solutions</span>
           </h2>
           <p className="text-lg text-gray-600 font-light leading-relaxed mb-8 max-w-2xl mx-auto">
-            See the specific conversations ClinicalSim trains — each with dedicated billing codes, proven outcomes, and measurable impact.
+            See the specific conversations ClinicalSim trains, each with dedicated billing codes, proven outcomes, and measurable results.
           </p>
           <Link href="/solutions">
             <Button variant="warm-accent" size="lg">

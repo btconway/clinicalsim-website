@@ -22,16 +22,16 @@ function groupSolutions(solutions: Solution[]) {
 }
 
 export const metadata: Metadata = {
-  title: "Clinical Solutions — AI Simulation for Billable Medical Conversations",
-  description: "AI voice simulation training for chronic care management, advance care planning, goals of care, cognitive assessments, and menopause care. Patients aren't getting the conversations they need — 95% of eligible patients go without chronic care coordination. The bottleneck is provider confidence.",
+  title: "Clinical Solutions: AI Simulation for Billable Medical Conversations",
+  description: "AI voice simulation training for chronic care management, advance care planning, goals of care, cognitive assessments, and menopause care. 95% of eligible patients go without chronic care coordination. The bottleneck is provider confidence.",
   openGraph: {
     title: "Clinical Solutions from ClinicalSim.ai",
-    description: "AI voice simulation for the clinical conversations patients need — chronic care management, ACP, goals of care, cognitive assessments, and more.",
+    description: "AI voice simulation for clinical conversations: chronic care management, ACP, goals of care, cognitive assessments, and more.",
     url: "https://clinicalsim.ai/solutions",
   },
   twitter: {
     title: "Clinical Solutions from ClinicalSim.ai",
-    description: "AI voice simulation for the clinical conversations patients aren't getting. Chronic care, ACP, behavioral health, and more.",
+    description: "AI voice simulation for clinical conversations: chronic care, ACP, behavioral health, and more.",
   },
   alternates: {
     canonical: "https://clinicalsim.ai/solutions",
@@ -53,10 +53,10 @@ export default function SolutionsPage() {
             Close the Gap Between Training and Practice
           </h1>
           <p className="text-lg md:text-xl text-gray-700 font-light leading-relaxed mb-4 max-w-3xl mx-auto">
-            Patients with chronic conditions, cognitive decline, serious illness, and behavioral health needs deserve <span className="text-warm font-medium">proactive, confident conversations</span> — but most providers have never practiced them.
+            Patients with chronic conditions, cognitive decline, serious illness, and behavioral health needs deserve <span className="text-warm font-medium">proactive, confident conversations</span>. Most providers have never practiced them.
           </p>
           <p className="text-base md:text-lg text-gray-500 font-light mb-8 max-w-2xl mx-auto">
-            The bottleneck isn&apos;t knowledge or time. It&apos;s confidence. ClinicalSim builds it.
+            The bottleneck is confidence. ClinicalSim builds it.
           </p>
         </div>
       </section>
@@ -71,13 +71,13 @@ export default function SolutionsPage() {
           </h2>
           <div className="space-y-4 text-lg text-gray-600 font-light leading-relaxed mb-12">
             <p>
-              There are clinical conversations that patients need — conversations that improve outcomes, reduce hospitalizations, and help people manage chronic illness — that simply aren&apos;t happening at scale.
+              There are clinical conversations that patients need, conversations that improve outcomes and help people manage chronic illness, that simply aren&apos;t happening at scale.
             </p>
             <p>
-              Research shows the barrier isn&apos;t knowledge, time, or patient demand. It&apos;s <span className="text-warm font-medium">provider confidence</span>. Clinicians who have never practiced these conversations avoid initiating them — even when patients would benefit and Medicare has created dedicated codes to support them.
+              Research shows the primary barrier is <span className="text-warm font-medium">provider confidence</span>. Clinicians who have never practiced these conversations avoid initiating them, even when patients would benefit and Medicare has created dedicated codes to support them.
             </p>
             <p>
-              The conversations below represent the highest-impact areas where better preparation drives better patient outcomes. When providers are trained, patients get the care they need — and the system works the way it was designed to.
+              The conversations below represent the highest-impact areas where better preparation drives better patient outcomes. When providers are trained, patients get the care they need.
             </p>
           </div>
 
@@ -90,7 +90,7 @@ export default function SolutionsPage() {
               $5.5M+
             </div>
             <p className="text-lg text-gray-700 font-light max-w-lg mx-auto">
-              in patient care — including chronic care coordination, preventive services, and avoided hospitalizations — that a 100-provider health system leaves on the table each year when these conversations don&apos;t happen
+              in patient care, including chronic care coordination, preventive services, and avoided hospitalizations, that a 100-provider health system leaves on the table each year when these conversations don&apos;t happen
             </p>
             <p className="text-sm text-gray-500 font-light mt-3 max-w-md mx-auto">
               Source: Agarwal et al., Annals of Internal Medicine, 2022; CMS utilization data
@@ -130,7 +130,7 @@ export default function SolutionsPage() {
               Conversations patients <span className="text-warm font-medium">need most</span>.
             </h2>
             <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
-              Each area below represents a conversation where better provider preparation directly improves patient outcomes — and where Medicare has created dedicated codes to support it.
+              Each area below represents a conversation where better provider preparation directly improves patient outcomes, and where Medicare has created dedicated codes to support it.
             </p>
           </div>
 
@@ -182,7 +182,7 @@ export default function SolutionsPage() {
             <FeatureCard
               icon={TrendingUp}
               title="Scalable"
-              description="No scheduling, no actors, no sim center booking. Deploy training across every department from a single platform — without scaling costs."
+              description="No scheduling, no actors, no sim center booking. Deploy training across every department from a single platform without scaling costs."
               variant="default"
               expandOnHover
             />
@@ -204,7 +204,7 @@ export default function SolutionsPage() {
             Ready to close the training gap?
           </h2>
           <p className="text-lg md:text-xl font-light mb-8 text-blue-100">
-            See how ClinicalSim helps providers master the conversations that improve patient outcomes — and your bottom line.
+            See how ClinicalSim helps providers master the conversations that improve patient outcomes and your bottom line.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">

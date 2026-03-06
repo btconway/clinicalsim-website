@@ -162,7 +162,7 @@ export default function ContactPage() {
         <div className="max-w-5xl mx-auto px-6 md:px-12">
           <h2 className="text-3xl md:text-4xl font-light text-navy mb-4 text-center">Other Ways to Connect</h2>
           <p className="text-lg text-gray-600 font-light text-center mb-12 max-w-2xl mx-auto">
-            We&apos;re always looking for innovative partners who share our mission to improve patient care through better communication.
+            There are several ways to work with us beyond the contact form.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -172,8 +172,8 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-medium text-navy mb-3">Pilot Program</h3>
               <p className="text-gray-700 font-light leading-relaxed">
-                Interested in being part of our pilot program? We&apos;re looking for forward-thinking healthcare
-                organizations to help shape the future of medical communication training.
+                Interested in being part of our pilot program? We&apos;re looking for healthcare
+                organizations ready to improve how their clinicians learn to communicate.
               </p>
             </div>
 
@@ -183,8 +183,8 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-medium text-navy mb-3">Partnerships</h3>
               <p className="text-gray-700 font-light leading-relaxed">
-                We&apos;re open to partnerships with medical schools, healthcare systems, and technology companies that share
-                our vision for improving patient care through better communication.
+                We partner with medical schools, healthcare systems, and technology companies
+                working to improve patient care through better communication.
               </p>
             </div>
 

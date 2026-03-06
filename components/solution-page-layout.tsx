@@ -252,7 +252,7 @@ export function SolutionPageLayout({ solution, children }: SolutionPageLayoutPro
               Why <span className="text-warm font-medium">simulation</span> works
             </h2>
             <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
-              Practice builds confidence. Confidence changes behavior. Better conversations change outcomes.
+              Practice builds confidence, and confident providers have better conversations.
             </p>
           </div>
 

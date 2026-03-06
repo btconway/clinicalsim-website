@@ -4,7 +4,7 @@ import { AudiencePageLayout } from "@/components/audience-page-layout"
 import { notFound } from "next/navigation"
 
 export const metadata: Metadata = {
-  title: "For Medical Educators — Meet ACGME Communication Requirements at Scale",
+  title: "For Medical Educators: Meet ACGME Communication Requirements at Scale",
   description: "ClinicalSim.ai helps medical educators meet ACGME communication competency requirements at scale. Among the first AI platforms backed by a published RCT with blinded evaluation using validated assessment tools.",
   openGraph: {
     title: "ClinicalSim.ai for Medical Educators",

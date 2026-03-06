@@ -76,20 +76,20 @@ const audiences: Audience[] = [
 
     heroHeadline: "Turn training into measurable ROI",
     heroDescription:
-      "Communication failures drive 40% of malpractice claims (Candello, 2025) and put $2-3M in HCAHPS-linked reimbursement at risk for a mid-size academic center. Meanwhile, billable clinical conversations — advance care planning, cognitive assessments, goals of care — go unheld because providers lack the confidence to initiate them. ClinicalSim closes that gap at scale, without the logistics of traditional SP programs.",
+      "Communication failures drive 40% of malpractice claims (Candello, 2025) and put $2-3M in HCAHPS-linked reimbursement at risk for a mid-size academic center. At the same time, billable clinical conversations (advance care planning, cognitive assessments, goals of care) go unheld because providers lack the confidence to initiate them. ClinicalSim closes that gap at scale, without the logistics of traditional SP programs.",
 
     painPoints: [
       {
         headline: "Revenue left on the table",
         description:
-          "Medicare reimburses ACP conversations at $87 each with no annual cap, and cognitive assessments at ~$260 — yet fewer than 5% of eligible patients receive a billed ACP conversation. The bottleneck is provider readiness, not patient need.",
+          "Medicare reimburses ACP conversations at $87 each with no annual cap, and cognitive assessments at ~$260. Yet fewer than 5% of eligible patients receive a billed ACP conversation. The bottleneck is provider readiness.",
         stat: "$1.5M+",
         statSource: "Combined annual opportunity for a 75-PCP system",
       },
       {
         headline: "Malpractice exposure you can reduce",
         description:
-          "Communication-related malpractice cases have 39% greater odds of closing with indemnity payment. 6% of physicians attract 40% of suits — and across all provider types, patient complaints driven by communication failures are the strongest predictor of claims.",
+          "Communication-related malpractice cases have 39% greater odds of closing with indemnity payment. 6% of physicians attract 40% of suits. Across all provider types, patient complaints driven by communication failures are the strongest predictor of claims.",
         stat: "$1.7B",
         statSource: "Malpractice costs from communication breakdowns over five years (CRICO, 2009-2013)",
       },
@@ -103,7 +103,7 @@ const audiences: Audience[] = [
       {
         headline: "Training that doesn't scale",
         description:
-          "Standardized patient actors cost $15-50/hour each, require scheduling, space, and faculty facilitators. It's not feasible to train all 1,000 providers at an institution. ClinicalSim deploys 24/7 from any device with no linear cost scaling.",
+          "Standardized patient actors cost $15-50/hour each and require scheduling, space, and faculty facilitators. Training all 1,000 providers at an institution is not feasible at that cost. ClinicalSim deploys 24/7 from any device with no linear cost scaling.",
       },
     ],
 
@@ -138,7 +138,7 @@ const audiences: Audience[] = [
       {
         title: "Capture Billable Conversations",
         description:
-          "Train physicians, NPs, and PAs to confidently initiate and bill for ACP (CPT 99497/98), cognitive assessments (CPT 99483), and other reimbursable conversations that are currently left on the table. These CPT codes are billable by any qualified provider — expanding your revenue potential across the entire care team.",
+          "Train physicians, NPs, and PAs to confidently initiate and bill for ACP (CPT 99497/98), cognitive assessments (CPT 99483), and other reimbursable conversations that are currently going unbilled. These CPT codes are billable by any qualified provider, expanding your revenue potential across the entire care team.",
       },
       {
         title: "Reduce Risk System-Wide",
@@ -148,12 +148,12 @@ const audiences: Audience[] = [
       {
         title: "Protect HCAHPS Revenue",
         description:
-          "Improve provider communication scores that directly drive Medicare Value-Based Purchasing payments. Cleveland Clinic's communication training significantly improved CGCAHPS scores across 1,537 physicians — and the same communication skills drive HCAHPS performance regardless of provider type.",
+          "Improve provider communication scores that directly drive Medicare Value-Based Purchasing payments. Cleveland Clinic's communication training significantly improved CGCAHPS scores across 1,537 physicians. The same communication skills drive HCAHPS performance regardless of provider type.",
       },
       {
         title: "Scale Without Logistics",
         description:
-          "Deploy training across every department and provider level — from 10 to 1,000 — without scheduling, sim center booking, or linear cost increases. SaaS model stays under departmental approval thresholds.",
+          "Deploy training across every department and provider level, from 10 to 1,000, without scheduling, sim center booking, or linear cost increases. SaaS model stays under departmental approval thresholds.",
       },
     ],
 
@@ -166,7 +166,7 @@ const audiences: Audience[] = [
 
     ctaHeadline: "See the ROI for your system.",
     ctaDescription:
-      "ClinicalSim helps health systems capture revenue, reduce risk, and improve patient experience scores — starting with the conversations that matter most.",
+      "ClinicalSim helps health systems capture revenue, reduce risk, and improve patient experience scores.",
 
     relatedPostSlugs: [
       "hospital-communication-training-roi",
@@ -191,13 +191,13 @@ const audiences: Audience[] = [
 
     heroHeadline: "Practice on your terms, build real confidence",
     heroDescription:
-      "You know the conversations that keep you up at night — goals of care, breaking bad news, difficult disclosures. You've seen colleagues struggle with them. You've struggled yourself. But when did you last get to practice? Whether you're a physician, nurse practitioner, or PA, ClinicalSim gives you unlimited, private, voice-based practice with AI patients — on your schedule, from your phone, with no one watching until you're ready.",
+      "You know the conversations that keep you up at night: goals of care, breaking bad news, difficult disclosures. You've seen colleagues struggle with them. You've struggled yourself. But when did you last get to practice? Whether you're a physician, nurse practitioner, or PA, ClinicalSim gives you unlimited, private, voice-based practice with AI patients. On your schedule, from your phone, with no one watching until you're ready.",
 
     painPoints: [
       {
         headline: "High stakes, minimal preparation",
         description:
-          "The average resident receives fewer than two hours of formal communication training across their entire residency — and NP and PA programs rarely include dedicated communication simulation either. Yet these conversations determine patient outcomes, family satisfaction, and your own professional confidence.",
+          "The average resident receives fewer than two hours of formal communication training across their entire residency. NP and PA programs rarely include dedicated communication simulation either. Yet these conversations determine patient outcomes, family satisfaction, and your own professional confidence.",
         stat: "<2hrs",
         statSource: "Formal communication training in most residency programs",
       },
@@ -209,7 +209,7 @@ const audiences: Audience[] = [
       {
         headline: "Confidence affects everything",
         description:
-          "Fewer than half of residents report confidence in goals-of-care conversations — and the gap persists across all provider types. That discomfort leads to avoidance — conversations that don't happen, screenings that get skipped, diagnoses that go undelivered.",
+          "Fewer than half of residents report confidence in goals-of-care conversations, and the gap persists across all provider types. That discomfort leads to avoidance: conversations that don't happen, screenings that get skipped, diagnoses that go undelivered.",
         stat: "<50%",
         statSource: "Residents confident in goals-of-care conversations (medical education literature)",
       },
@@ -235,7 +235,7 @@ const audiences: Audience[] = [
       },
       {
         value: "24/7",
-        label: "on-demand access from any device — no scheduling required",
+        label: "on-demand access from any device, no scheduling required",
         variant: "blue",
       },
       {
@@ -248,9 +248,9 @@ const audiences: Audience[] = [
 
     valueProps: [
       {
-        title: "Voice-Based, Not Chat",
+        title: "Real Voice Conversations",
         description:
-          "Practice real-time spoken conversations with AI patients — because the real thing isn't typed. Goals of care, diagnosis disclosure, family meetings — all through natural voice dialogue.",
+          "Practice real-time spoken conversations with AI patients. Goals of care, diagnosis disclosure, family meetings, all through natural voice dialogue the way these conversations actually happen.",
       },
       {
         title: "Practice Without Pressure",
@@ -260,17 +260,17 @@ const audiences: Audience[] = [
       {
         title: "Structured Feedback That Helps",
         description:
-          "Get automated assessment using validated frameworks — ACGME milestones, Calgary-Cambridge — with specific, actionable feedback on empathy, language, and information delivery.",
+          "Get automated assessment using validated frameworks (ACGME milestones, Calgary-Cambridge) with specific feedback on empathy, language, and information delivery.",
       },
       {
         title: "Build Skills That Stick",
         description:
-          "Unlimited repetitions means you can practice the exact conversation you're preparing for — not a one-time workshop you'll forget in a month.",
+          "Unlimited repetitions means you can practice the exact conversation you're preparing for, as many times as you need. One workshop a year doesn't build lasting skill.",
       },
       {
         title: "Bill the Conversations You Practice",
         description:
-          "Physicians, NPs, and PAs can all bill for advance care planning (CPT 99497/98), cognitive assessments (CPT 99483), and other reimbursable conversations. ClinicalSim prepares you to initiate, navigate, and document these conversations confidently — regardless of your credential.",
+          "Physicians, NPs, and PAs can all bill for advance care planning (CPT 99497/98), cognitive assessments (CPT 99483), and other reimbursable conversations. ClinicalSim prepares you to initiate, navigate, and document these conversations confidently, regardless of your credential.",
       },
     ],
 
@@ -283,7 +283,7 @@ const audiences: Audience[] = [
 
     ctaHeadline: "Practice the conversation before it counts.",
     ctaDescription:
-      "ClinicalSim gives you unlimited, private, voice-based practice with the conversations that matter most — so you're ready when it's real.",
+      "ClinicalSim gives you unlimited, private, voice-based practice so you're ready when the real conversation happens.",
 
     relatedPostSlugs: [
       "breaking-bad-news-medical-training",
@@ -308,18 +308,18 @@ const audiences: Audience[] = [
 
     heroHeadline: "Meet accreditation standards at scale",
     heroDescription:
-      "ACGME requires structured communication competency training across every specialty — and explicitly states that on-the-job training alone is not sufficient. Yet most programs rely on ad-hoc observation and role-modeling. ClinicalSim gives you a scalable, evidence-based platform to meet accreditation requirements, track milestones, and fill curriculum gaps — without overwhelming your simulation center budget.",
+      "ACGME requires structured communication competency training across every specialty and explicitly states that on-the-job training alone is not sufficient. Yet most programs rely on ad-hoc observation and role-modeling. ClinicalSim gives you a scalable, evidence-based platform to meet accreditation requirements, track milestones, and fill curriculum gaps without overwhelming your simulation center budget.",
 
     painPoints: [
       {
         headline: "Accreditation requirements are explicit",
         description:
-          "ACGME Common Program Requirements mandate that residents demonstrate interpersonal and communication skills — and guidance explicitly states simulation is \"increasingly used as an effective method.\" Most programs can't deliver this at the scale ACGME expects.",
+          "ACGME Common Program Requirements mandate that residents demonstrate interpersonal and communication skills, and guidance explicitly states simulation is \"increasingly used as an effective method.\" Most programs can't deliver this at the scale ACGME expects.",
       },
       {
         headline: "Milestone tracking gaps",
         description:
-          "36% of palliative care-relevant milestones reside in the Interpersonal and Communication Skills competency. Harmonized Milestones 2.0 created universal assessment requirements across specialties — but few programs have systematic ways to assess them.",
+          "36% of palliative care-relevant milestones reside in the Interpersonal and Communication Skills competency. Harmonized Milestones 2.0 created universal assessment requirements across specialties, yet few programs have systematic ways to assess them.",
         stat: "36%",
         statSource: "Palliative care milestones in ICS competency",
       },
@@ -373,12 +373,12 @@ const audiences: Audience[] = [
       {
         title: "Extend Your Sim Center's Reach",
         description:
-          "Free your SPs for high-stakes assessments like OSCEs while ClinicalSim handles the high-volume communication reps that build foundational skill. Complement, don't replace.",
+          "Free your SPs for high-stakes assessments like OSCEs while ClinicalSim handles the high-volume communication reps that build foundational skill. It works alongside your existing program.",
       },
       {
         title: "Evidence You Can Point To",
         description:
-          "Among the first AI communication platforms backed by a published RCT with blinded evaluation using validated tools (ACGME milestones, Calgary-Cambridge). Evidence your accreditation reviewers will recognize.",
+          "One of the first AI communication platforms backed by a published RCT with blinded evaluation using validated tools (ACGME milestones, Calgary-Cambridge). Evidence your accreditation reviewers will recognize.",
       },
       {
         title: "Track Progress Over Time",
@@ -396,7 +396,7 @@ const audiences: Audience[] = [
 
     ctaHeadline: "Build the curriculum your learners need.",
     ctaDescription:
-      "ClinicalSim gives medical educators a scalable, evidence-based platform for communication training — with the milestone tracking and assessment data accreditation demands.",
+      "ClinicalSim gives medical educators a scalable, evidence-based platform for communication training, with the milestone tracking and assessment data accreditation demands.",
 
     relatedPostSlugs: [
       "osce-case-design-guide",

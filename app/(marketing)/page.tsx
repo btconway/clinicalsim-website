@@ -13,15 +13,15 @@ import { BookOpen, Heart, TrendingUp, Mic, Users, BarChart3, ArrowRight } from "
 
 export const metadata: Metadata = {
   title: "AI Voice Simulation for Medical Communication Training",
-  description: "ClinicalSim.ai is an AI-powered voice simulation platform for the medical conversations patients need but aren't getting — chronic care management, advance care planning, behavioral health, cognitive assessments. 95% of eligible patients don't receive coordinated care. The bottleneck is provider confidence.",
+  description: "ClinicalSim.ai is an AI-powered voice simulation platform for medical conversations patients need most: chronic care management, advance care planning, behavioral health, and cognitive assessments. 95% of eligible patients don't receive coordinated care. The bottleneck is provider confidence.",
   openGraph: {
-    title: "ClinicalSim.ai — Practice the Conversations That Matter Most",
-    description: "AI voice simulation for conversations patients need most. 95% of eligible patients don't receive coordinated chronic care. The bottleneck is provider confidence — and the solution is practice.",
+    title: "ClinicalSim.ai | Practice the Conversations That Matter Most",
+    description: "AI voice simulation for conversations patients need most. 95% of eligible patients don't receive coordinated chronic care. The bottleneck is provider confidence, and the solution is practice.",
     url: "https://clinicalsim.ai",
   },
   twitter: {
-    title: "ClinicalSim.ai — Practice the Conversations That Matter Most",
-    description: "AI voice simulation for medical conversations patients need but aren't getting. Backed by a published RCT.",
+    title: "ClinicalSim.ai | Practice the Conversations That Matter Most",
+    description: "AI voice simulation for the medical conversations patients need most. Backed by a published RCT.",
   },
   alternates: {
     canonical: "https://clinicalsim.ai",
@@ -40,8 +40,8 @@ export default function HomePage() {
     },
     {
       icon: TrendingUp,
-      title: "Close the Care Gap — and Get Reimbursed",
-      description: "Chronic care management, wellness visits, behavioral health, advance care planning — Medicare created billing codes to make these conversations happen. When providers are trained, patients get better care and health systems capture the value.",
+      title: "Close the Care Gap and Get Reimbursed",
+      description: "Medicare created billing codes for chronic care management, wellness visits, behavioral health, and advance care planning. When providers are trained in these conversations, patients get better care and health systems capture the value.",
       variant: "success" as const,
     },
     {
@@ -52,20 +52,20 @@ export default function HomePage() {
     },
     {
       icon: Mic,
-      title: "Voice-Based, Not Chat",
-      description: "Real-time spoken conversations with AI patients — goals of care, diagnosis disclosure, family meetings — because the real thing isn't typed.",
+      title: "Voice-Based Practice",
+      description: "Real-time spoken conversations with AI patients across goals of care, diagnosis disclosure, and family meetings. Clinical communication happens out loud, and training should too.",
       variant: "default" as const,
     },
     {
       icon: Users,
       title: "Scale Across Your System",
-      description: "Deploy training across every department and provider level without scheduling, logistics, or linear cost scaling. From 10 providers to 1,000.",
+      description: "Deploy training across every department and provider level without scheduling, logistics, or linear cost scaling. Works for a single team or an entire health system.",
       variant: "default" as const,
     },
     {
       icon: BarChart3,
       title: "Measurable Impact",
-      description: "Track provider confidence, conversation quality, and billing patterns over time. Demonstrate ROI to leadership with structured data, not anecdotes.",
+      description: "Track provider confidence, conversation quality, and billing patterns over time. Demonstrate ROI to leadership with structured data tied to specific training milestones.",
       variant: "default" as const,
     }
   ]
@@ -111,11 +111,11 @@ export default function HomePage() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-700 font-light leading-relaxed mb-4 max-w-3xl mx-auto">
-            AI voice simulation for <span className="text-warm font-medium">conversations patients need most</span> — chronic care enrollment, advance care planning, behavioral health, cognitive assessments — on-demand, from any device.
+            AI voice simulation for the <span className="text-warm font-medium">conversations patients need most</span>: chronic care enrollment, advance care planning, behavioral health, and cognitive assessments. On-demand, from any device.
           </p>
 
           <p className="text-base md:text-lg text-gray-500 font-light mb-8 max-w-2xl mx-auto">
-            Built on research with PICU fellows. Designed for conversations clinicians face but rarely get to practice.
+            Built on research with medical practitioners. Designed for conversations clinicians face but rarely get to practice.
           </p>
 
           <div className="space-y-3">
@@ -136,16 +136,16 @@ export default function HomePage() {
 
       <SectionDivider variant="diagonal-down" color="white" />
 
-      {/* Definition Block — GEO citation magnet */}
+      {/* Definition Block - GEO citation magnet */}
       <section className="px-6 py-10 md:py-12 bg-white">
         <div className="max-w-3xl mx-auto">
           <div className="border-l-4 border-warm pl-6 md:pl-8">
             <h2 className="text-xl md:text-2xl font-light text-navy mb-3">What is ClinicalSim.ai?</h2>
             <p className="text-base md:text-lg text-gray-700 font-light leading-relaxed mb-3">
-              ClinicalSim.ai is an AI-powered voice simulation platform for conversations patients need but aren&apos;t getting — chronic care enrollment, advance care planning, behavioral health screening, cognitive assessments — on-demand from any device. It is among the first AI communication training platforms backed by a published randomized controlled trial with blinded evaluation using validated assessment tools.
+              ClinicalSim.ai is an AI-powered voice simulation platform for conversations patients need most: chronic care enrollment, advance care planning, behavioral health screening, and cognitive assessments. Available on-demand from any device, it is among the first AI communication training platforms backed by a published randomized controlled trial with blinded evaluation using validated assessment tools.
             </p>
             <p className="text-base md:text-lg text-gray-700 font-light leading-relaxed">
-              The platform addresses the <span className="text-warm font-medium">provider confidence gap</span>. Research shows the barrier to these conversations is not knowledge, not time, and not patient demand — it&apos;s that providers have never practiced them in a structured setting. When providers are trained, patients get the care they need and the system works the way it was designed to.
+              The platform addresses the <span className="text-warm font-medium">provider confidence gap</span>. Providers already have the knowledge, the time, and the patient demand. What they lack is structured practice. When providers are trained, patients get the care they need and the system works the way it was designed to.
             </p>
           </div>
         </div>
@@ -159,7 +159,7 @@ export default function HomePage() {
               The confidence gap is <span className="text-warm font-medium">real</span>.
             </h2>
             <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
-              Clinicians want to have these conversations well. They just never get to practice. The result is avoidable suffering, missed diagnoses, and revenue that never materializes.
+              Clinicians want to have these conversations well. They just never get to practice. The result is missed diagnoses and care that patients qualify for but never receive.
             </p>
           </div>
 
@@ -293,7 +293,7 @@ export default function HomePage() {
               Built for how you think about <span className="text-warm font-medium">training</span>
             </h2>
             <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
-              Different roles. Different priorities. Same platform.
+              See how ClinicalSim.ai fits your organization.
             </p>
           </div>
 

@@ -4,7 +4,7 @@ import { AudiencePageLayout } from "@/components/audience-page-layout"
 import { notFound } from "next/navigation"
 
 export const metadata: Metadata = {
-  title: "For Health System Leaders — Communication Training ROI",
+  title: "For Health System Leaders: Communication Training ROI",
   description: "ClinicalSim.ai helps health system leaders capture revenue from billable conversations, reduce communication-driven malpractice risk (40% of all claims per Candello 2025), and improve HCAHPS scores tied to Medicare reimbursement.",
   openGraph: {
     title: "ClinicalSim.ai for Health System Leaders",

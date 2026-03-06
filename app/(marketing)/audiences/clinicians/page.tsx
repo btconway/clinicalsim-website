@@ -4,8 +4,8 @@ import { AudiencePageLayout } from "@/components/audience-page-layout"
 import { notFound } from "next/navigation"
 
 export const metadata: Metadata = {
-  title: "For Clinicians — Practice Difficult Conversations On-Demand",
-  description: "Fewer than half of residents report confidence in goals-of-care conversations. ClinicalSim.ai provides unlimited, private, voice-based practice with AI patients — on your schedule, from any device.",
+  title: "For Clinicians: Practice Difficult Conversations On-Demand",
+  description: "Fewer than half of residents report confidence in goals-of-care conversations. ClinicalSim.ai provides unlimited, private, voice-based practice with AI patients on your schedule, from any device.",
   openGraph: {
     title: "ClinicalSim.ai for Clinicians",
     description: "Practice difficult conversations on-demand. Voice-based AI simulation, private and available 24/7.",

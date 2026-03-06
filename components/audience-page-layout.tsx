@@ -76,7 +76,7 @@ export function AudiencePageLayout({ audience }: AudiencePageLayoutProps) {
 
       <SectionDivider variant="diagonal-down" color="white" />
 
-      {/* Pain Points — "What's at stake" */}
+      {/* Pain Points - "What's at stake" */}
       <section className="px-6 py-12 md:py-16 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -177,7 +177,7 @@ export function AudiencePageLayout({ audience }: AudiencePageLayoutProps) {
                 Clinical <span className="text-warm font-medium">solutions</span>
               </h2>
               <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
-                Explore the specific conversations ClinicalSim trains — each with dedicated billing codes and proven outcomes.
+                Explore the specific conversations ClinicalSim trains, each with dedicated billing codes and proven outcomes.
               </p>
             </div>
 

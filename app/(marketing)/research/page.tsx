@@ -101,7 +101,7 @@ export default function ResearchPage() {
                   <h3 className="text-xl font-medium mb-2">What We Provide</h3>
                   <p className="text-base font-light text-blue-50">
                     Platform access, custom scenario development, data collection support,
-                    and co-authorship opportunities — at no cost to your research team.
+                    and co-authorship opportunities, all at no cost to your research team.
                   </p>
                 </div>
 
@@ -286,7 +286,7 @@ export default function ResearchPage() {
               Why collaborate with <span className="text-warm font-medium">ClinicalSim.ai</span>?
             </h2>
             <p className="text-lg text-gray-600 font-light max-w-2xl mx-auto">
-              We make it easy to study AI simulation in medical education — so you can focus on the research.
+              We handle the platform logistics so you can focus on the research.
             </p>
           </div>
 

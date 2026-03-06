@@ -10,7 +10,7 @@ import { Check, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "About ClinicalSim.ai — AI Medical Communication Training",
-  description: "ClinicalSim.ai is an AI-powered voice simulation platform for high-stakes medical conversations. Built on research with PICU fellows, backed by a published randomized controlled trial.",
+  description: "ClinicalSim.ai is an AI-powered voice simulation platform for high-stakes medical conversations. Built on research with medical practitioners, backed by a published randomized controlled trial.",
   openGraph: {
     title: "About ClinicalSim.ai",
     description: "AI-powered voice simulation for high-stakes medical conversations. Built on research, backed by a published RCT.",
@@ -36,7 +36,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-light shimmer mb-6">About ClinicalSim.ai</h1>
           <p className="text-xl text-gray-700 font-light leading-relaxed">
-            Better patient outcomes. Lower institutional risk. New revenue from conversations that aren&apos;t happening yet. The gap between how clinicians learn to communicate and what the healthcare system needs has never been wider. <span className="text-warm font-medium">ClinicalSim closes that gap.</span>
+            Better patient outcomes. Lower institutional risk. New revenue from conversations that aren&apos;t happening yet. How clinicians learn to communicate has not kept pace with what the healthcare system needs. <span className="text-warm font-medium">ClinicalSim closes that gap.</span>
           </p>
         </div>
       </section>
@@ -73,13 +73,13 @@ export default function AboutPage() {
 
           <div className="bg-white/70 border border-gray-200 rounded-2xl p-8 space-y-6 shadow-lg">
             <p className="text-lg text-gray-700 font-light leading-relaxed">
-              Billable clinical conversations — advance care planning, cognitive assessments, goals of care — go unheld every day because providers lack the confidence to initiate them. Medicare reimburses ACP at <span className="font-mono text-warm font-medium">$87 per conversation</span> with no annual cap, yet fewer than 5% of eligible patients receive one. The gap isn&apos;t patient need. It&apos;s <span className="text-navy font-medium">provider readiness</span>.
+              Billable clinical conversations (advance care planning, cognitive assessments, goals of care) go unheld every day because providers lack the confidence to initiate them. Medicare reimburses ACP at <span className="font-mono text-warm font-medium">$87 per conversation</span> with no annual cap, yet fewer than 5% of eligible patients receive one. The missing piece is <span className="text-navy font-medium">provider readiness</span>.
             </p>
             <p className="text-lg text-gray-700 font-light leading-relaxed">
-              The bottleneck is training. The average resident receives fewer than two hours of formal communication instruction across their entire residency. Standardized patient programs cost <span className="font-mono text-warm font-medium">$150-300</span> per encounter and can&apos;t scale to meet demand. Most programs still rely on ad-hoc observation and role-modeling — an approach the ACGME explicitly acknowledges <span className="text-navy font-medium">is not sufficient</span>.
+              The bottleneck is training. The average resident receives fewer than two hours of formal communication instruction across their entire residency. Standardized patient programs cost <span className="font-mono text-warm font-medium">$150-300</span> per encounter and can&apos;t scale to meet demand. Most programs still rely on ad-hoc observation and role-modeling, an approach the ACGME explicitly acknowledges <span className="text-navy font-medium">is not sufficient</span>.
             </p>
             <p className="text-lg text-gray-700 font-light leading-relaxed">
-              The cost is concrete: communication failures drive 40% of malpractice claims, drag down HCAHPS scores tied to Medicare reimbursement, and leave <span className="font-mono text-warm font-medium">$1.5M+</span> in billable revenue on the table annually for a mid-size system. These aren&apos;t soft skills — they&apos;re <span className="text-navy font-medium">operational, financial, and clinical imperatives</span>.
+              The cost is concrete: communication failures drive 40% of malpractice claims, drag down HCAHPS scores tied to Medicare reimbursement, and leave <span className="font-mono text-warm font-medium">$1.5M+</span> in billable revenue on the table annually for a mid-size system. These are <span className="text-navy font-medium">operational, financial, and clinical problems</span> with a measurable cost.
             </p>
           </div>
         </div>
@@ -94,7 +94,7 @@ export default function AboutPage() {
 
           <div className="bg-white/90 rounded-2xl p-8 md:p-10 shadow-xl mb-8">
             <p className="text-lg md:text-xl text-gray-700 font-light leading-relaxed mb-4">
-              ClinicalSim.ai uses <span className="text-warm font-medium">AI voice simulation</span> to let clinicians practice difficult conversations on-demand — real-time spoken dialogue with AI patients, not text-based chat. Practice from any device, anytime, without scheduling actors or booking a sim center.
+              ClinicalSim.ai uses <span className="text-warm font-medium">AI voice simulation</span> to let clinicians practice difficult conversations on demand. Learners have real-time spoken dialogue with AI patients, available from any device, anytime, without scheduling actors or booking a sim center.
             </p>
             <p className="text-lg text-navy font-medium mb-8">
               The bottleneck is training. The product is training.
@@ -280,7 +280,7 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-light text-navy mb-4 text-center">Who We Serve</h2>
           <p className="text-lg text-gray-600 font-light text-center mb-10 max-w-2xl mx-auto">
-            ClinicalSim works for everyone involved in clinical communication — from the systems that deploy it, to the clinicians who use it, to the educators who build curricula around it.
+            ClinicalSim works for health systems, clinicians, and medical educators alike.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -316,7 +316,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-light mb-4">Ready to close the training gap?</h2>
           <p className="text-lg md:text-xl font-light mb-8 text-blue-100 max-w-3xl mx-auto">
-            We&apos;re scaling structured communication training from PICU to every specialty — measurable impact for patients, institutions, and the clinicians who carry these conversations for the rest of their careers. <span className="text-warm font-medium">Every clinician enters their most difficult conversations prepared, not just hopeful.</span>
+            We&apos;re scaling structured communication training across specialties, with measurable impact for patients, institutions, and the clinicians who carry these conversations for the rest of their careers. <span className="text-warm font-medium">Every clinician deserves to enter their most difficult conversations prepared.</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
