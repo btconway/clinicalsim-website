@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: "ClinicalSim.ai | Practice the Conversations That Matter Most",
-    description: "AI voice simulation for the medical conversations patients need most. Backed by a published RCT.",
+    description: "AI voice simulation for the medical conversations patients need most. Built on research with medical practitioners.",
   },
   alternates: {
     canonical: "https://clinicalsim.ai",
@@ -47,7 +47,7 @@ export default function HomePage() {
     {
       icon: BookOpen,
       title: "Evidence-Based",
-      description: "Among the first AI communication platforms backed by a randomized controlled trial with blinded evaluation using validated assessment tools (ACGME milestones, Calgary-Cambridge).",
+      description: "Built on research with medical practitioners, with blinded evaluation using validated assessment tools (ACGME milestones, Calgary-Cambridge).",
       variant: "warm" as const,
     },
     {
@@ -142,7 +142,7 @@ export default function HomePage() {
           <div className="border-l-4 border-warm pl-6 md:pl-8">
             <h2 className="text-xl md:text-2xl font-light text-navy mb-3">What is ClinicalSim.ai?</h2>
             <p className="text-base md:text-lg text-gray-700 font-light leading-relaxed mb-3">
-              ClinicalSim.ai is an AI-powered voice simulation platform for conversations patients need most: chronic care enrollment, advance care planning, behavioral health screening, and cognitive assessments. Available on-demand from any device, it is among the first AI communication training platforms backed by a published randomized controlled trial with blinded evaluation using validated assessment tools.
+              ClinicalSim.ai is an AI-powered voice simulation platform for conversations patients need most: chronic care enrollment, advance care planning, behavioral health screening, and cognitive assessments. Available on-demand from any device, it is built on research with medical practitioners using blinded evaluation and validated assessment tools.
             </p>
             <p className="text-base md:text-lg text-gray-700 font-light leading-relaxed">
               The platform addresses the <span className="text-warm font-medium">provider confidence gap</span>. Providers already have the knowledge, the time, and the patient demand. What they lack is structured practice. When providers are trained, patients get the care they need and the system works the way it was designed to.
@@ -238,8 +238,8 @@ export default function HomePage() {
             studyTitle="AI-Powered Simulation for Pediatric Critical Care Communication Training"
             journal="Academic Pediatrics"
             year="2024"
-            summary="Randomized controlled trial with PICU fellows demonstrating significant improvements in communication skills through AI voice simulation, with blinded evaluation using validated assessment tools (ACGME milestones, Calgary-Cambridge framework)."
-            link="/insights/ai-simulation-rct-evidence"
+            summary="Pilot study with PICU fellows demonstrating significant improvements in communication skills through AI voice simulation, with blinded evaluation using validated assessment tools (ACGME milestones, Calgary-Cambridge framework)."
+            link="/insights/pilot-study-results"
           />
         </div>
       </section>

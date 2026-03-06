@@ -85,7 +85,7 @@ The project uses shadcn/ui components which are:
 **Feature Components:**
 - `components/feature-card.tsx` - Asymmetric cards with border glow hover, color variants (default, warm, navy, success)
 - `components/stat-highlight.tsx` - Large statistics with IBM Plex Mono font, multiple color variants
-- `components/evidence-showcase.tsx` - RCT study display with badges and citations
+- `components/evidence-showcase.tsx` - Research study display with badges and citations
 
 **Layout Components:**
 - `components/asymmetric-grid.tsx` - Flexible layouts: featured-left/right, staggered, mixed

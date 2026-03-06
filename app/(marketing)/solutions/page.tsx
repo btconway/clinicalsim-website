@@ -175,7 +175,7 @@ export default function SolutionsPage() {
             <FeatureCard
               icon={BookOpen}
               title="Evidence-Based"
-              description="Among the first AI communication platforms backed by a published randomized controlled trial with blinded evaluation using validated assessment tools."
+              description="Built on research with medical practitioners, with blinded evaluation using validated assessment tools."
               variant="warm"
               expandOnHover
             />

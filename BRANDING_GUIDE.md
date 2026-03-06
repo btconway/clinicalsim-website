@@ -211,7 +211,7 @@ className="bg-transparent border-white border-2 text-white hover:bg-white hover:
 
 ### Key Messaging
 - Practice conversations that matter most — goals of care, end-of-life, difficult disclosures
-- The only AI communication platform backed by a published randomized controlled trial
+- Built on research with medical practitioners, with blinded evaluation using validated assessment tools
 - On-demand voice simulation from any device, 24/7 — no scheduling, no actors, no sim center
 - ACGME-aligned: directly addresses interpersonal and communication skills milestones
 - Scalable and cost-effective: traditional SP encounters cost $150-300 each

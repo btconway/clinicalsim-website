@@ -357,8 +357,8 @@ const audiences: Audience[] = [
         variant: "navy",
       },
       {
-        value: "RCT",
-        label: "Published randomized controlled trial with PICU fellows using validated assessment",
+        value: "PICU",
+        label: "Pilot study with PICU fellows using blinded evaluation and validated assessment tools",
         source: "ClinicalSim pilot study",
         variant: "success",
       },
@@ -378,7 +378,7 @@ const audiences: Audience[] = [
       {
         title: "Evidence You Can Point To",
         description:
-          "One of the first AI communication platforms backed by a published RCT with blinded evaluation using validated tools (ACGME milestones, Calgary-Cambridge). Evidence your accreditation reviewers will recognize.",
+          "Built on research with medical practitioners, with blinded evaluation using validated tools (ACGME milestones, Calgary-Cambridge). Evidence your accreditation reviewers will recognize.",
       },
       {
         title: "Track Progress Over Time",

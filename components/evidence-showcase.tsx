@@ -19,7 +19,7 @@ export function EvidenceShowcase({
   year,
   summary,
   link,
-  badges = ["Peer-Reviewed", "Randomized Controlled Trial"],
+  badges = ["Peer-Reviewed"],
   className,
   ...props
 }: EvidenceShowcaseProps) {

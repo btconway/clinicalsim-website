@@ -10,15 +10,15 @@ import { Check, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "About ClinicalSim.ai — AI Medical Communication Training",
-  description: "ClinicalSim.ai is an AI-powered voice simulation platform for high-stakes medical conversations. Built on research with medical practitioners, backed by a published randomized controlled trial.",
+  description: "ClinicalSim.ai is an AI-powered voice simulation platform for high-stakes medical conversations. Built on research with medical practitioners.",
   openGraph: {
     title: "About ClinicalSim.ai",
-    description: "AI-powered voice simulation for high-stakes medical conversations. Built on research, backed by a published RCT.",
+    description: "AI-powered voice simulation for high-stakes medical conversations. Built on research with medical practitioners.",
     url: "https://clinicalsim.ai/about",
   },
   twitter: {
     title: "About ClinicalSim.ai",
-    description: "AI-powered voice simulation for high-stakes medical conversations. Built on research, backed by a published RCT.",
+    description: "AI-powered voice simulation for high-stakes medical conversations. Built on research with medical practitioners.",
   },
   alternates: {
     canonical: "https://clinicalsim.ai/about",
@@ -193,7 +193,7 @@ export default function AboutPage() {
               studyTitle="AI-Powered Simulation for Pediatric Critical Care Communication Training"
               journal="Academic Pediatrics"
               year="2024"
-              summary="ClinicalSim.ai is among the first AI communication training platforms with published randomized controlled trial data — placing it in the top tier of evidence quality for the medical education technology market."
+              summary="ClinicalSim.ai is built on research with medical practitioners, with blinded evaluation using validated assessment tools — placing it among the most rigorously developed AI communication training platforms on the market."
               link="/insights/pilot-study-results"
             />
           </div>
